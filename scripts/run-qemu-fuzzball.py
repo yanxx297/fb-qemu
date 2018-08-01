@@ -21,9 +21,7 @@ else:
 
 #GDB = os.path.join(HERE, "gdb")
 GDB = "gdb"
-# OUTDIR = os.getenv("FUZZBALL_OUTDIR", "/export/scratch/tmp/fuzzball-output")
-SNAPSHOT = sys.argv[1]
-OUTDIR = sys.argv[2]
+OUTDIR = sys.argv[1]
 print OUTDIR
 FUZZBALL_ENV_ARGS = os.getenv("FUZZBALL_ARGS", "")
 FUZZBALL_MAX_ITERS = os.getenv("FUZZBALL_MAX_ITERATIONS", "4096")
@@ -31,10 +29,12 @@ FUZZBALL_ARGS = "-solver smtlib -solver-path ../../lib/z3/build/z3 -arch x64 \
         -load-base 0x60000000 -linux-syscalls -trace-iterations -zero-memory \
         -trace-basic -table-limit 8 -no-sym-regions %s -total-timeout 7200" % \
     (FUZZBALL_ENV_ARGS)
+KERNEL = os.getenv("KERNEL_MODE", False)
 EXTRA_DESC_COND = os.path.join(HERE, "extra-desc-conds.txt")
+SNAPSHOT = "../base.snap"
 
 
-usrcmdline = sys.argv[3:]
+usrcmdline = sys.argv[2:]
 
 # To disable use of GDB core file generation, set the "corefile" variable
 # to empty, as in the second line
@@ -97,7 +97,7 @@ preferred_value = False
 cpustate_addr = 0x622dd2a0
 phys_mem = (0x544d3000, 16777216)
 start_address = 0x6004ae15
-end_address = 0x6004ae1d
+end_address = 0x6004ae20 #0x6004ae1d
 fuzzball_reg = {
         0 : "reg_EAX",
         1 : "reg_ECX",
@@ -117,10 +117,11 @@ fuzzball_sreg = {
         5 : "sreg_GS",
         }
 
-buf = open(SNAPSHOT).read()
-snapshot = X86Dump(buf)
-snapshot_file = SNAPSHOT
-snapshot_md5 = md5(buf)
+if KERNEL:
+    buf = open(SNAPSHOT).read()
+    snapshot = X86Dump(buf)
+    snapshot_file = SNAPSHOT
+    snapshot_md5 = md5(buf)
 
 def extra_cond_eq(n, v, m = 0xff):
     if m == 0xff:
@@ -384,6 +385,9 @@ for i in range(8):
         r, s, a = "dreg_DR%d" % i, 4, int(cpustate_addr+offset)
         cpu_regs += [(r, s, a)]
     offset += 4
+# Exception index
+offset += 34132
+exception = int(cpustate_addr+offset)
 
 # ===-----------------------------------------------------------------------===
 # generate a coredump
@@ -428,8 +432,11 @@ for r, s, a in cpu_regs:
             cmdline += ["-dump-region", "0x%.8x:%d=out_%s__%d" % (a, s, r, s)]
 
     if r.startswith("sreg_") and symbolic_sregs:
-        v = getattr(snapshot.cpus[0].sregs_state, 
+        if KERNEL:
+            v = getattr(snapshot.cpus[0].sregs_state,
                     r.strip("sreg_").lower()).selector
+        else:
+            v = 0
         cmdline += make_reg_symbolic(a, r, 2, v, 0xfffc)
         if dump_region:
             cmdline += ["-dump-region", "0x%.8x:%d=out_%s__%d" % (a, 2, r, s)]
@@ -437,15 +444,18 @@ for r, s, a in cpu_regs:
     if r.startswith("creg_") and symbolic_cregs:
         v, m, z = 0, 0, False
         if r == "creg_CR3":
-            v = snapshot.cpus[0].sregs_state.cr3
+            if KERNEL:
+                v = snapshot.cpus[0].sregs_state.cr3
             m = CR3_PAGING_MASK
             z = True
         elif r == "creg_CR0":
-            v = snapshot.cpus[0].sregs_state.cr0
+            if KERNEL:
+                v = snapshot.cpus[0].sregs_state.cr0
             m = (1<<31) | 1
             z = True
         elif r == "creg_CR4":
-            v = snapshot.cpus[0].sregs_state.cr4
+            if KERNEL:
+                v = snapshot.cpus[0].sregs_state.cr4
             m = (1 << 4) | (1 << 5)
             z = True
             
@@ -475,44 +485,46 @@ for r, s, a in cpu_regs:
 # |       Base [15-0]      |    Limit [15-0]    |
 # |------------------------|--------------------|
 # ===-----------------------------------------------------------------------===
-gdt_base = snapshot.cpus[0].sregs_state.gdtr.base
-gdt_limit = snapshot.cpus[0].sregs_state.gdtr.limit
-gdt_data = snapshot.mem.data[gdt_base:gdt_base+gdt_limit]
-# keep limit, base, s, and g concrete
-# masks = [0xff, 0xff, 0xff, 0xff, 0xff, 0x10, 0xf|0x80, 0xff]
-# keep base, s, type, and g concrete
-mask = [0x0, 0x0, 0xff, 0xff, 0xff, 0x0, 0x40, 0xff]
-print "gdt_limit: %d" % gdt_limit
-for i in range(1, gdt_limit / 8):
-    data = gdt_data[i*8:(i+1)*8]
-    ga = gdt_base + i*8
-    ha = ga + phys_mem[0]
-    sym = "GDT_%d_8" % i
-    if symbolic_gdt:
-        cmdline += make_mem_symbolic(ha, ga, sym, data, mask, True)
-        for desc in descrs:
-            if desc[3] == i:
-                cmdline += make_extra_cond_desc(ga, sym, data, desc)
+if KERNEL:
+    gdt_base = snapshot.cpus[0].sregs_state.gdtr.base
+    gdt_limit = snapshot.cpus[0].sregs_state.gdtr.limit
+    gdt_data = snapshot.mem.data[gdt_base:gdt_base+gdt_limit]
+    # keep limit, base, s, and g concrete
+    # masks = [0xff, 0xff, 0xff, 0xff, 0xff, 0x10, 0xf|0x80, 0xff]
+    # keep base, s, type, and g concrete
+    mask = [0x0, 0x0, 0xff, 0xff, 0xff, 0x0, 0x40, 0xff]
+    print "gdt_limit: %d" % gdt_limit
+    for i in range(1, gdt_limit / 8):
+        data = gdt_data[i*8:(i+1)*8]
+        ga = gdt_base + i*8
+        ha = ga + phys_mem[0]
+        sym = "GDT_%d_8" % i
+        if symbolic_gdt:
+            cmdline += make_mem_symbolic(ha, ga, sym, data, mask, True)
+            for desc in descrs:
+                if desc[3] == i:
+                    cmdline += make_extra_cond_desc(ga, sym, data, desc)
 
-    else:
-        cmdline += make_mem_concrete(ha, len(data))
+        else:
+            cmdline += make_mem_concrete(ha, len(data))
         
 # ===-----------------------------------------------------------------------===
 # IDT
 # ===-----------------------------------------------------------------------===
-idt_base = snapshot.cpus[0].sregs_state.idtr.base
-idt_limit = snapshot.cpus[0].sregs_state.idtr.limit
-idt_data = snapshot.mem.data[idt_base:idt_base+idt_limit]
-masks = [0xff, 0xff, 0xff, 0xff, 0x0, 0x0, 0xff, 0xff]
-for i in range(1, idt_limit / 8):
-    data = idt_data[i*8:(i+1)*8]
-    ga = idt_base + i*8
-    ha = ga + phys_mem[0]
-    sym = "IDT_%d_8" % i
-    if symbolic_idt:
-        cmdline += make_mem_symbolic(ha, ga, sym, data, mask, True)
-    else:
-        cmdline += make_mem_concrete(ha, len(data))
+if KERNEL:
+    idt_base = snapshot.cpus[0].sregs_state.idtr.base
+    idt_limit = snapshot.cpus[0].sregs_state.idtr.limit
+    idt_data = snapshot.mem.data[idt_base:idt_base+idt_limit]
+    masks = [0xff, 0xff, 0xff, 0xff, 0x0, 0x0, 0xff, 0xff]
+    for i in range(1, idt_limit / 8):
+        data = idt_data[i*8:(i+1)*8]
+        ga = idt_base + i*8
+        ha = ga + phys_mem[0]
+        sym = "IDT_%d_8" % i
+        if symbolic_idt:
+            cmdline += make_mem_symbolic(ha, ga, sym, data, mask, True)
+        else:
+            cmdline += make_mem_concrete(ha, len(data))
 
 
 # ===-----------------------------------------------------------------------===
@@ -549,50 +561,51 @@ for i in range(1, idt_limit / 8):
 # 31-12 | Physical address of the 4-KByte page
 # -----------------------------------------------------------
 # ===-----------------------------------------------------------------------===
-cr0 = snapshot.cpus[0].sregs_state.cr0
-cr4 = snapshot.cpus[0].sregs_state.cr4
-cr3 = snapshot.cpus[0].sregs_state.cr3 & CR3_PAGING_MASK
-assert (cr0 & CR0_PG) and not (cr4 & CR4_PAE)
+if KERNEL:
+    cr0 = snapshot.cpus[0].sregs_state.cr0
+    cr4 = snapshot.cpus[0].sregs_state.cr4
+    cr3 = snapshot.cpus[0].sregs_state.cr3 & CR3_PAGING_MASK
+    assert (cr0 & CR0_PG) and not (cr4 & CR4_PAE)
 
-deref4 = lambda x: deref(snapshot.mem.data, x, 4)
-chunk4 = lambda x: chunk(x)[0]
-pde_mask = pte_mask = [0x00, 0xff, 0xff, 0xff]
-ptes_done = set()
-for i in range(bit(10)):
-    pde = cr3 + i*4
-    pde_data = snapshot.mem.data[pde:pde+4]
-    pde_ha = pde + phys_mem[0]
-    if deref4(pde) & 1:
-        sym = "PDE_%d_4" % i
-        if symbolic_pt:
-            cmdline += make_mem_symbolic(pde_ha, pde, sym, pde_data, pde_mask)
-        else:
-            cmdline += make_mem_concrete(pde_ha, len(pde_data))
+    deref4 = lambda x: deref(snapshot.mem.data, x, 4)
+    chunk4 = lambda x: chunk(x)[0]
+    pde_mask = pte_mask = [0x00, 0xff, 0xff, 0xff]
+    ptes_done = set()
+    for i in range(bit(10)):
+        pde = cr3 + i*4
+        pde_data = snapshot.mem.data[pde:pde+4]
+        pde_ha = pde + phys_mem[0]
+        if deref4(pde) & 1:
+            sym = "PDE_%d_4" % i
+            if symbolic_pt:
+                cmdline += make_mem_symbolic(pde_ha, pde, sym, pde_data, pde_mask)
+            else:
+                cmdline += make_mem_concrete(pde_ha, len(pde_data))
 
-        if (deref4(pde) & CR3_PAGING_MASK) in ptes_done:
-            # Skip PTE if already seen
-            continue
+            if (deref4(pde) & CR3_PAGING_MASK) in ptes_done:
+                # Skip PTE if already seen
+                continue
 
-        for j in range(bit(10)):
-            pte = (deref4(pde) & CR3_PAGING_MASK) + j*4
-            pte_data = snapshot.mem.data[pte:pte+4]
-            pte_ha = pte + phys_mem[0]
-            if deref4(pte) & 1:
-                sym = "PTE_%d_4" % i
-                if symbolic_pt:
-                    cmdline += make_mem_symbolic(pte_ha, pte, sym, pte_data, 
-                                                 pte_mask, True)
+            for j in range(bit(10)):
+                pte = (deref4(pde) & CR3_PAGING_MASK) + j*4
+                pte_data = snapshot.mem.data[pte:pte+4]
+                pte_ha = pte + phys_mem[0]
+                if deref4(pte) & 1:
+                    sym = "PTE_%d_4" % i
+                    if symbolic_pt:
+                        cmdline += make_mem_symbolic(pte_ha, pte, sym, pte_data,
+                                                     pte_mask, True)
+                    else:
+                        cmdline += make_mem_concrete(pte_ha, len(pte_data))
+
                 else:
                     cmdline += make_mem_concrete(pte_ha, len(pte_data))
 
-            else:
-                cmdline += make_mem_concrete(pte_ha, len(pte_data))
+            # Mark the PTE as processed in case multiple PDEs point to the same PTE
+            ptes_done.add(deref4(pde) & CR3_PAGING_MASK)
 
-        # Mark the PTE as processed in case multiple PDEs point to the same PTE
-        ptes_done.add(deref4(pde) & CR3_PAGING_MASK)
-
-    else:
-        cmdline += make_mem_concrete(pde_ha, len(pde_data))
+        else:
+            cmdline += make_mem_concrete(pde_ha, len(pde_data))
 
 
 # ===-----------------------------------------------------------------------===
@@ -636,10 +649,12 @@ if dump_region:
     #cmdline += ["-dump-region", "0x%.8x:%u=out_fpu___%u" % (fpu[0], fpu[1], fpu[1])]
     #cmdline += ["-dump-region", "0x%.8x:4=out_exception___4" % exception]
     #cmdline += ["-dump-region", "0x%.8x:%u=out_msrs___%u" % (msrs[0], msrs[1], msrs[0])]
+# TODO: port -exit-status-exp from emuFuzzBALL for better debugging
 #cmdline += ["-exit-status-exp", "exception#" + vine_for_mem(exception)]
 #cmdline += ["-exit-status-exp", "eip#" + vine_for_mem(eip)]
 
 cmdline += ["-fuzz-start-addr", "0x%.8x" % start_address]
+cmdline += ["-fuzz-end-addr", "0x%.8x" % end_address]
 #cmdline += ["-trace-insns"]
 for a in ignore_paths:
     cmdline += ["-ignore-path", "0x%.8x" % a]
@@ -693,7 +708,8 @@ print
 
 open("/tmp/fuzzball.cmd", "w").write(" ".join(["\"%s\"" % c for c in cmdline]))
 
-open("%s/snapshot" % OUTDIR, "w").write(snapshot_md5)
+if KERNEL:
+    open("%s/snapshot" % OUTDIR, "w").write(snapshot_md5)
 open("%s/cmdline" % OUTDIR, "w").write("\x00".join(usrcmdline))
 open("%s/exe" % OUTDIR, "w").write(md5(open(usrcmdline[0])))
 #open("%s/shellcode" % OUTDIR, "w").write(shellcode)
