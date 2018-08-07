@@ -25,9 +25,10 @@ OUTDIR = sys.argv[1]
 print OUTDIR
 FUZZBALL_ENV_ARGS = os.getenv("FUZZBALL_ARGS", "")
 FUZZBALL_MAX_ITERS = os.getenv("FUZZBALL_MAX_ITERATIONS", "4096")
-FUZZBALL_ARGS = "-solver smtlib -solver-path ../../lib/z3/build/z3 -arch x64 \
+FUZZBALL_ARGS = "-solver stp-external -solver-path ../fuzzball/stp/stp -arch x64 \
         -load-base 0x60000000 -linux-syscalls -trace-iterations -zero-memory \
-        -trace-basic -table-limit 8 -no-sym-regions %s -total-timeout 7200" % \
+        -trace-basic -table-limit 8 -no-sym-regions -query-branch-limit 5 %s \
+        -total-timeout 7200" % \
     (FUZZBALL_ENV_ARGS)
 KERNEL = os.getenv("KERNEL_MODE", False)
 EXTRA_DESC_COND = os.path.join(HERE, "extra-desc-conds.txt")
@@ -97,7 +98,7 @@ preferred_value = False
 cpustate_addr = 0x622dd2a0
 phys_mem = (0x544d3000, 16777216)
 start_address = 0x6004ae15
-end_address = 0x6004ae20 #0x6004ae1d
+end_address = 0x6004ae20    # One instruction after the first instruction after the test case
 fuzzball_reg = {
         0 : "reg_EAX",
         1 : "reg_ECX",
