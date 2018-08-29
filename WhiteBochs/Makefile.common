@@ -1,0 +1,55 @@
+# Tune according to your configuration
+LLVM_PATH = /opt/llvm-2.7
+KLEE_PATH = /opt/klee
+
+# Do not edit below this libe
+PWD := $(shell pwd)
+SRCs = $(OBJs:%.o=%.cc)
+
+CXX = g++
+LINK = g++
+CXXFLAGS = -I./ -I../ -DWHITEBOCHS -DWHITEBOCHS_NO_TLB -Wno-narrowing -g -m32 -fno-jump-tables
+LDFLAGS = -static
+STRIP = strip
+
+ifdef ENABLE_OPTIMIZED
+CXXFLAGS += -O2
+else
+CXXFLAGS += -O0
+endif
+
+FUZZBALL_CFLAGS = -DFUZZBALL
+
+ifdef LLVM_PATH
+LLVM_CXX = $(LLVM_PATH)/bin/llvm-g++
+LLVM_LINK = $(LLVM_PATH)/bin/llvm-ld
+else
+LLVM_CXX = llvm-g++
+LLVM_LINK = llvm-ld
+endif
+
+LLVM_CXXFLAGS = $(CXXFLAGS) -DKLEE
+ifdef KLEE_PATH
+LLVM_CXXFLAGS += -I$(KLEE_PATH)/include
+endif
+LLVM_LDFLAGS = $(LDFLAGS) -disable-opt
+LLVM_OBJs = $(OBJs:%.o=%.bc)
+
+%.d: %.cc
+	@set -e; rm -f $@; \
+        $(CXX) -MM $(CXXFLAGS) $< > $@.$$$$; \
+        sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
+        sed 's,\($*\)\.o[ :]*,\1.bc $@ : ,g' < $@.$$$$ >> $@; \
+        rm -f $@.$$$$
+
+-include $(SRCs:%.cc=%.d)
+
+%.o: %.cc
+	$(CXX) -c -o $@ $(CXXFLAGS) $<
+
+%.bc: %.cc
+	$(LLVM_CXX) -c --emit-llvm -o $@ $(LLVM_CXXFLAGS) $<
+
+# Local Variables: 
+# mode: makefile
+# End:

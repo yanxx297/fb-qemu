@@ -1,0 +1,4322 @@
+
+3dnow.cc,926
+#define NEED_CPU_REG_SHORTCUTS 24,1161
+#define LOG_THIS 27,1230
+BX_CPP_INLINE void prepare_softfloat_status_word(31,1286
+void BX_CPP_AttrRegparmN(39,1600
+void BX_CPP_AttrRegparmN(45,1766
+void BX_CPP_AttrRegparmN(78,2636
+void BX_CPP_AttrRegparmN(110,3468
+void BX_CPP_AttrRegparmN(116,3630
+void BX_CPP_AttrRegparmN(148,4490
+void BX_CPP_AttrRegparmN(153,4636
+void BX_CPP_AttrRegparmN(158,4784
+void BX_CPP_AttrRegparmN(163,4928
+void BX_CPP_AttrRegparmN(168,5072
+void BX_CPP_AttrRegparmN(173,5220
+void BX_CPP_AttrRegparmN(178,5364
+void BX_CPP_AttrRegparmN(183,5508
+void BX_CPP_AttrRegparmN(188,5656
+void BX_CPP_AttrRegparmN(193,5800
+void BX_CPP_AttrRegparmN(198,5950
+void BX_CPP_AttrRegparmN(203,6100
+void BX_CPP_AttrRegparmN(208,6246
+void BX_CPP_AttrRegparmN(213,6390
+void BX_CPP_AttrRegparmN(218,6538
+void BX_CPP_AttrRegparmN(223,6682
+void BX_CPP_AttrRegparmN(229,6850
+void BX_CPP_AttrRegparmN(264,7962
+
+access32.cc,989
+#define NEED_CPU_REG_SHORTCUTS 24,1164
+#define LOG_THIS 27,1233
+  void BX_CPP_AttrRegparmN(31,1292
+  void BX_CPP_AttrRegparmN(78,2954
+  void BX_CPP_AttrRegparmN(139,5068
+  void BX_CPP_AttrRegparmN(200,7190
+  void BX_CPP_AttrRegparmN(263,9336
+  void BX_CPP_AttrRegparmN(312,11143
+  Bit8u BX_CPP_AttrRegparmN(366,13140
+  Bit16u BX_CPP_AttrRegparmN(413,14766
+  Bit32u BX_CPP_AttrRegparmN(474,16847
+  Bit64u BX_CPP_AttrRegparmN(535,18936
+  void BX_CPP_AttrRegparmN(598,21049
+  void BX_CPP_AttrRegparmN(645,22806
+  Bit8u BX_CPP_AttrRegparmN(703,25006
+  Bit16u BX_CPP_AttrRegparmN(752,26762
+  Bit32u BX_CPP_AttrRegparmN(815,28976
+  Bit64u BX_CPP_AttrRegparmN(878,31198
+  void BX_CPP_AttrRegparmN(941,33421
+  void BX_CPP_AttrRegparmN(958,33964
+  void BX_CPP_AttrRegparmN(992,35581
+  void BX_CPP_AttrRegparmN(1038,37732
+void BX_CPU_C::write_new_stack_word_32(1090,40049
+void BX_CPU_C::write_new_stack_dword_32(1151,42319
+void BX_CPU_C::write_new_stack_qword_32(1212,44597
+
+access64.cc,832
+#define NEED_CPU_REG_SHORTCUTS 24,1164
+#define LOG_THIS 27,1233
+  void BX_CPP_AttrRegparmN(31,1290
+  void BX_CPP_AttrRegparmN(66,2562
+  void BX_CPP_AttrRegparmN(119,4388
+  void BX_CPP_AttrRegparmN(172,6219
+  void BX_CPP_AttrRegparmN(225,8050
+  void BX_CPP_AttrRegparmN(261,9483
+  Bit8u BX_CPP_AttrRegparmN(302,11084
+  Bit16u BX_CPP_AttrRegparmN(337,12334
+  Bit32u BX_CPP_AttrRegparmN(390,14140
+  Bit64u BX_CPP_AttrRegparmN(443,15951
+  void BX_CPP_AttrRegparmN(496,17762
+  void BX_CPP_AttrRegparmN(530,19148
+  Bit8u BX_CPP_AttrRegparmN(574,20954
+  Bit16u BX_CPP_AttrRegparmN(611,22324
+  Bit32u BX_CPP_AttrRegparmN(666,24258
+  Bit64u BX_CPP_AttrRegparmN(721,26197
+void BX_CPU_C::write_new_stack_word_64(776,28136
+void BX_CPU_C::write_new_stack_dword_64(824,29820
+void BX_CPU_C::write_new_stack_qword_64(872,31509
+
+access.cc,625
+#define NEED_CPU_REG_SHORTCUTS 23,1086
+#define LOG_THIS 26,1155
+  bx_bool BX_CPP_AttrRegparmN(28,1189
+  bx_bool BX_CPP_AttrRegparmN(92,3425
+  bx_bool BX_CPP_AttrRegparmN(152,5281
+const char *BX_CPU_C::strseg(BX_CPU_C::strseg216,7283
+int BX_CPU_C::int_number(230,7849
+  Bit8u BX_CPP_AttrRegparmN(238,7980
+  Bit16u BX_CPP_AttrRegparmN(261,8735
+  Bit32u BX_CPP_AttrRegparmN(284,9522
+  Bit64u BX_CPP_AttrRegparmN(307,10311
+  void BX_CPP_AttrRegparmN(330,11100
+  void BX_CPP_AttrRegparmN(355,12034
+  void BX_CPP_AttrRegparmN(380,12999
+  Bit8u* BX_CPP_AttrRegparmN(405,13966
+  Bit8u* BX_CPP_AttrRegparmN(425,14604
+
+aes.cc,893
+#define NEED_CPU_REG_SHORTCUTS 24,1159
+#define LOG_THIS 27,1228
+BX_CPP_INLINE void AES_ShiftRows(58,2034
+BX_CPP_INLINE void AES_InverseShiftRows(89,3034
+static Bit8u sbox_transformation[sbox_transformation111,3871
+static Bit8u inverse_sbox_transformation[inverse_sbox_transformation146,5516
+BX_CPP_INLINE void AES_SubstituteBytes(181,7169
+BX_CPP_INLINE void AES_InverseSubstituteBytes(187,7332
+BX_CPP_INLINE unsigned gf_mul(200,7743
+#define AES_STATE(218,7958
+static void AES_MixColumns(220,8008
+static void AES_InverseMixColumns(247,9072
+BX_CPP_INLINE Bit32u AES_SubWord(274,10247
+BX_CPP_INLINE Bit32u AES_RotWord(285,10593
+void BX_CPP_AttrRegparmN(293,10698
+void BX_CPP_AttrRegparmN(317,11232
+void BX_CPP_AttrRegparmN(346,11916
+void BX_CPP_AttrRegparmN(374,12581
+void BX_CPP_AttrRegparmN(403,13286
+void BX_CPP_AttrRegparmN(431,13965
+void BX_CPP_AttrRegparmN(460,14739
+
+apic.cc,3503
+#define NEED_CPU_REG_SHORTCUTS 23,1104
+#define LOG_THIS 33,1283
+#define BX_CPU_APIC(35,1308
+#define BX_LAPIC_FIRST_VECTOR	37,1354
+#define BX_LAPIC_LAST_VECTOR	38,1389
+int apic_bus_deliver_interrupt(42,1462
+int apic_bus_deliver_lowest_priority(92,2846
+int apic_bus_broadcast_interrupt(131,3906
+static void apic_bus_broadcast_eoi(147,4365
+void apic_bus_deliver_smi(155,4506
+void apic_bus_broadcast_smi(160,4571
+bx_local_apic_c::bx_local_apic_c(172,4772
+void bx_local_apic_c::reset(198,5497
+void bx_local_apic_c::set_base(244,6418
+bx_bool bx_local_apic_c::is_selected(257,6845
+void bx_local_apic_c::read(269,7127
+void bx_local_apic_c::write(290,7783
+#define BX_LAPIC_ID 305,8111
+#define BX_LAPIC_VERSION 306,8155
+#define BX_LAPIC_TPR 307,8199
+#define BX_LAPIC_ARBITRATION_PRIORITY 308,8243
+#define BX_LAPIC_PPR 309,8287
+#define BX_LAPIC_EOI 310,8331
+#define BX_LAPIC_LDR 311,8375
+#define BX_LAPIC_DESTINATION_FORMAT 312,8419
+#define BX_LAPIC_SPURIOUS_VECTOR 313,8463
+#define BX_LAPIC_ISR1 314,8507
+#define BX_LAPIC_ISR2 315,8551
+#define BX_LAPIC_ISR3 316,8595
+#define BX_LAPIC_ISR4 317,8639
+#define BX_LAPIC_ISR5 318,8683
+#define BX_LAPIC_ISR6 319,8727
+#define BX_LAPIC_ISR7 320,8771
+#define BX_LAPIC_ISR8 321,8815
+#define BX_LAPIC_TMR1 322,8859
+#define BX_LAPIC_TMR2 323,8903
+#define BX_LAPIC_TMR3 324,8947
+#define BX_LAPIC_TMR4 325,8991
+#define BX_LAPIC_TMR5 326,9035
+#define BX_LAPIC_TMR6 327,9079
+#define BX_LAPIC_TMR7 328,9123
+#define BX_LAPIC_TMR8 329,9167
+#define BX_LAPIC_IRR1 330,9211
+#define BX_LAPIC_IRR2 331,9255
+#define BX_LAPIC_IRR3 332,9299
+#define BX_LAPIC_IRR4 333,9343
+#define BX_LAPIC_IRR5 334,9387
+#define BX_LAPIC_IRR6 335,9431
+#define BX_LAPIC_IRR7 336,9475
+#define BX_LAPIC_IRR8 337,9519
+#define BX_LAPIC_ESR 338,9563
+#define BX_LAPIC_LVT_CMCI 339,9607
+#define BX_LAPIC_ICR_LO 340,9651
+#define BX_LAPIC_ICR_HI 341,9695
+#define BX_LAPIC_LVT_TIMER 342,9739
+#define BX_LAPIC_LVT_THERMAL 343,9783
+#define BX_LAPIC_LVT_PERFMON 344,9827
+#define BX_LAPIC_LVT_LINT0 345,9871
+#define BX_LAPIC_LVT_LINT1 346,9915
+#define BX_LAPIC_LVT_ERROR 347,9959
+#define BX_LAPIC_TIMER_INITIAL_COUNT 348,10003
+#define BX_LAPIC_TIMER_CURRENT_COUNT 349,10047
+#define BX_LAPIC_TIMER_DIVIDE_CFG 350,10091
+#define BX_LAPIC_SELF_IPI 351,10135
+void bx_local_apic_c::write_aligned(354,10240
+void bx_local_apic_c::send_ipi(452,14026
+void bx_local_apic_c::write_spurious_interrupt_register(498,15585
+void bx_local_apic_c::receive_EOI(518,16098
+void bx_local_apic_c::startup_msg(539,16627
+Bit32u bx_local_apic_c::read_aligned(545,16769
+int bx_local_apic_c::highest_priority_int(666,20723
+void bx_local_apic_c::service_local_apic(674,20890
+bx_bool bx_local_apic_c::deliver(701,21908
+void bx_local_apic_c::trigger_irq(736,22731
+void bx_local_apic_c::untrigger_irq(763,23416
+Bit8u bx_local_apic_c::acknowledge_int(773,23766
+void bx_local_apic_c::print_status(802,24527
+bx_bool bx_local_apic_c::match_logical_addr(813,24807
+Bit8u bx_local_apic_c::get_ppr(849,25759
+void bx_local_apic_c::set_tpr(861,25974
+Bit8u bx_local_apic_c::get_apr(871,26159
+bx_bool bx_local_apic_c::is_focus(895,26714
+void bx_local_apic_c::periodic_smf(901,26843
+void bx_local_apic_c::periodic(907,26985
+void bx_local_apic_c::set_divide_configuration(946,28128
+void bx_local_apic_c::set_initial_timer_count(956,28468
+bx_bool bx_local_apic_c::read_x2apic(984,29431
+bx_bool bx_local_apic_c::write_x2apic(1057,31236
+void bx_local_apic_c::register_state(1143,33462
+
+arith16.cc,1364
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+void BX_CPP_AttrRegparmN(27,1186
+void BX_CPP_AttrRegparmN(33,1338
+void BX_CPP_AttrRegparmN(39,1490
+void BX_CPP_AttrRegparmN(53,1867
+void BX_CPP_AttrRegparmN(66,2174
+void BX_CPP_AttrRegparmN(78,2410
+void BX_CPP_AttrRegparmN(93,2856
+void BX_CPP_AttrRegparmN(106,3231
+void BX_CPP_AttrRegparmN(119,3536
+void BX_CPP_AttrRegparmN(134,3988
+void BX_CPP_AttrRegparmN(147,4369
+void BX_CPP_AttrRegparmN(160,4680
+void BX_CPP_AttrRegparmN(174,5102
+void BX_CPP_AttrRegparmN(186,5452
+void BX_CPP_AttrRegparmN(200,5833
+void BX_CPP_AttrRegparmN(212,6143
+void BX_CPP_AttrRegparmN(224,6383
+void BX_CPP_AttrRegparmN(237,6725
+void BX_CPP_AttrRegparmN(248,6994
+void BX_CPP_AttrRegparmN(259,7218
+void BX_CPP_AttrRegparmN(265,7339
+void BX_CPP_AttrRegparmN(276,7513
+void BX_CPP_AttrRegparmN(299,8146
+void BX_CPP_AttrRegparmN(323,8875
+void BX_CPP_AttrRegparmN(336,9222
+void BX_CPP_AttrRegparmN(347,9497
+void BX_CPP_AttrRegparmN(361,9913
+void BX_CPP_AttrRegparmN(373,10257
+void BX_CPP_AttrRegparmN(386,10608
+void BX_CPP_AttrRegparmN(397,10887
+void BX_CPP_AttrRegparmN(408,11198
+void BX_CPP_AttrRegparmN(417,11436
+void BX_CPP_AttrRegparmN(430,11764
+void BX_CPP_AttrRegparmN(439,12009
+void BX_CPP_AttrRegparmN(452,12296
+void BX_CPP_AttrRegparmN(465,12583
+void BX_CPP_AttrRegparmN(486,13094
+
+arith32.cc,1516
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+#define RAX 29,1263
+#define RDX 30,1279
+void BX_CPP_AttrRegparmN(33,1303
+void BX_CPP_AttrRegparmN(40,1497
+void BX_CPP_AttrRegparmN(47,1691
+void BX_CPP_AttrRegparmN(61,2070
+void BX_CPP_AttrRegparmN(74,2378
+void BX_CPP_AttrRegparmN(85,2607
+void BX_CPP_AttrRegparmN(101,3056
+void BX_CPP_AttrRegparmN(115,3433
+void BX_CPP_AttrRegparmN(128,3732
+void BX_CPP_AttrRegparmN(144,4187
+void BX_CPP_AttrRegparmN(158,4570
+void BX_CPP_AttrRegparmN(172,4885
+void BX_CPP_AttrRegparmN(187,5310
+void BX_CPP_AttrRegparmN(200,5662
+void BX_CPP_AttrRegparmN(214,6045
+void BX_CPP_AttrRegparmN(226,6356
+void BX_CPP_AttrRegparmN(238,6599
+void BX_CPP_AttrRegparmN(251,6942
+void BX_CPP_AttrRegparmN(262,7211
+void BX_CPP_AttrRegparmN(273,7437
+void BX_CPP_AttrRegparmN(280,7582
+void BX_CPP_AttrRegparmN(304,8117
+void BX_CPP_AttrRegparmN(310,8279
+void BX_CPP_AttrRegparmN(316,8441
+void BX_CPP_AttrRegparmN(339,9077
+void BX_CPP_AttrRegparmN(363,9808
+void BX_CPP_AttrRegparmN(377,10167
+void BX_CPP_AttrRegparmN(390,10454
+void BX_CPP_AttrRegparmN(405,10873
+void BX_CPP_AttrRegparmN(418,11219
+void BX_CPP_AttrRegparmN(431,11572
+void BX_CPP_AttrRegparmN(442,11852
+void BX_CPP_AttrRegparmN(455,12175
+void BX_CPP_AttrRegparmN(466,12424
+void BX_CPP_AttrRegparmN(479,12754
+void BX_CPP_AttrRegparmN(488,13000
+void BX_CPP_AttrRegparmN(501,13289
+void BX_CPP_AttrRegparmN(514,13578
+void BX_CPP_AttrRegparmN(535,14094
+void BX_CPP_AttrRegparmN(554,14537
+
+arith64.cc,1406
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+void BX_CPP_AttrRegparmN(29,1209
+void BX_CPP_AttrRegparmN(44,1629
+void BX_CPP_AttrRegparmN(56,1935
+void BX_CPP_AttrRegparmN(70,2226
+void BX_CPP_AttrRegparmN(87,2716
+void BX_CPP_AttrRegparmN(103,3135
+void BX_CPP_AttrRegparmN(119,3496
+void BX_CPP_AttrRegparmN(136,3992
+void BX_CPP_AttrRegparmN(152,4418
+void BX_CPP_AttrRegparmN(168,4786
+void BX_CPP_AttrRegparmN(185,5271
+void BX_CPP_AttrRegparmN(199,5641
+void BX_CPP_AttrRegparmN(214,6065
+void BX_CPP_AttrRegparmN(228,6419
+void BX_CPP_AttrRegparmN(242,6715
+void BX_CPP_AttrRegparmN(255,7061
+void BX_CPP_AttrRegparmN(266,7330
+void BX_CPP_AttrRegparmN(277,7565
+void BX_CPP_AttrRegparmN(283,7691
+void BX_CPP_AttrRegparmN(293,7904
+void BX_CPP_AttrRegparmN(317,8580
+void BX_CPP_AttrRegparmN(341,9309
+void BX_CPP_AttrRegparmN(356,9718
+void BX_CPP_AttrRegparmN(368,10012
+void BX_CPP_AttrRegparmN(385,10491
+void BX_CPP_AttrRegparmN(399,10855
+void BX_CPP_AttrRegparmN(414,11268
+void BX_CPP_AttrRegparmN(426,11566
+void BX_CPP_AttrRegparmN(439,11901
+void BX_CPP_AttrRegparmN(450,12159
+void BX_CPP_AttrRegparmN(464,12530
+void BX_CPP_AttrRegparmN(473,12775
+void BX_CPP_AttrRegparmN(487,13105
+void BX_CPP_AttrRegparmN(493,13253
+void BX_CPP_AttrRegparmN(507,13583
+void BX_CPP_AttrRegparmN(513,13731
+void BX_CPP_AttrRegparmN(535,14288
+void BX_CPP_AttrRegparmN(554,14730
+
+arith8.cc,1295
+#define NEED_CPU_REG_SHORTCUTS 22,1082
+#define LOG_THIS 25,1151
+void BX_CPP_AttrRegparmN(27,1185
+void BX_CPP_AttrRegparmN(41,1542
+void BX_CPP_AttrRegparmN(53,1864
+void BX_CPP_AttrRegparmN(65,2062
+void BX_CPP_AttrRegparmN(80,2487
+void BX_CPP_AttrRegparmN(93,2877
+void BX_CPP_AttrRegparmN(106,3143
+void BX_CPP_AttrRegparmN(121,3598
+void BX_CPP_AttrRegparmN(134,4018
+void BX_CPP_AttrRegparmN(147,4314
+void BX_CPP_AttrRegparmN(161,4722
+void BX_CPP_AttrRegparmN(173,5094
+void BX_CPP_AttrRegparmN(187,5479
+void BX_CPP_AttrRegparmN(199,5829
+void BX_CPP_AttrRegparmN(211,6055
+void BX_CPP_AttrRegparmN(224,6402
+void BX_CPP_AttrRegparmN(235,6694
+void BX_CPP_AttrRegparmN(246,6905
+void BX_CPP_AttrRegparmN(269,7535
+void BX_CPP_AttrRegparmN(293,8297
+void BX_CPP_AttrRegparmN(306,8609
+void BX_CPP_AttrRegparmN(317,8885
+void BX_CPP_AttrRegparmN(331,9265
+void BX_CPP_AttrRegparmN(343,9609
+void BX_CPP_AttrRegparmN(356,9947
+void BX_CPP_AttrRegparmN(367,10249
+void BX_CPP_AttrRegparmN(380,10550
+void BX_CPP_AttrRegparmN(389,10794
+void BX_CPP_AttrRegparmN(402,11112
+void BX_CPP_AttrRegparmN(411,11384
+void BX_CPP_AttrRegparmN(424,11664
+void BX_CPP_AttrRegparmN(433,11898
+void BX_CPP_AttrRegparmN(446,12178
+void BX_CPP_AttrRegparmN(455,12412
+void BX_CPP_AttrRegparmN(476,12927
+
+bcd.cc,274
+#define NEED_CPU_REG_SHORTCUTS 22,1079
+#define LOG_THIS 25,1148
+void BX_CPP_AttrRegparmN(27,1182
+void BX_CPP_AttrRegparmN(75,2258
+void BX_CPP_AttrRegparmN(103,2854
+void BX_CPP_AttrRegparmN(120,3222
+void BX_CPP_AttrRegparmN(134,3533
+void BX_CPP_AttrRegparmN(167,4124
+
+bit16.cc,727
+#define NEED_CPU_REG_SHORTCUTS 22,1081
+#define LOG_THIS 25,1150
+void BX_CPP_AttrRegparmN(29,1207
+void BX_CPP_AttrRegparmN(51,1651
+void BX_CPP_AttrRegparmN(73,2098
+void BX_CPP_AttrRegparmN(98,2742
+void BX_CPP_AttrRegparmN(108,2974
+void BX_CPP_AttrRegparmN(137,3730
+void BX_CPP_AttrRegparmN(151,4090
+void BX_CPP_AttrRegparmN(181,4879
+void BX_CPP_AttrRegparmN(195,5240
+void BX_CPP_AttrRegparmN(222,5983
+void BX_CPP_AttrRegparmN(237,6342
+void BX_CPP_AttrRegparmN(247,6603
+void BX_CPP_AttrRegparmN(255,6791
+void BX_CPP_AttrRegparmN(269,7156
+void BX_CPP_AttrRegparmN(281,7449
+void BX_CPP_AttrRegparmN(295,7832
+void BX_CPP_AttrRegparmN(307,8143
+void BX_CPP_AttrRegparmN(321,8509
+void BX_CPP_AttrRegparmN(334,8818
+
+bit32.cc,727
+#define NEED_CPU_REG_SHORTCUTS 22,1081
+#define LOG_THIS 25,1150
+void BX_CPP_AttrRegparmN(29,1207
+void BX_CPP_AttrRegparmN(51,1652
+void BX_CPP_AttrRegparmN(73,2104
+void BX_CPP_AttrRegparmN(98,2753
+void BX_CPP_AttrRegparmN(109,2986
+void BX_CPP_AttrRegparmN(140,3748
+void BX_CPP_AttrRegparmN(154,4109
+void BX_CPP_AttrRegparmN(185,4905
+void BX_CPP_AttrRegparmN(199,5267
+void BX_CPP_AttrRegparmN(227,6017
+void BX_CPP_AttrRegparmN(242,6377
+void BX_CPP_AttrRegparmN(252,6640
+void BX_CPP_AttrRegparmN(260,6829
+void BX_CPP_AttrRegparmN(274,7197
+void BX_CPP_AttrRegparmN(286,7492
+void BX_CPP_AttrRegparmN(300,7878
+void BX_CPP_AttrRegparmN(312,8191
+void BX_CPP_AttrRegparmN(326,8560
+void BX_CPP_AttrRegparmN(339,8871
+
+bit64.cc,727
+#define NEED_CPU_REG_SHORTCUTS 22,1081
+#define LOG_THIS 25,1150
+void BX_CPP_AttrRegparmN(29,1207
+void BX_CPP_AttrRegparmN(51,1651
+void BX_CPP_AttrRegparmN(73,2122
+void BX_CPP_AttrRegparmN(95,2717
+void BX_CPP_AttrRegparmN(105,2949
+void BX_CPP_AttrRegparmN(130,3646
+void BX_CPP_AttrRegparmN(144,4006
+void BX_CPP_AttrRegparmN(169,4737
+void BX_CPP_AttrRegparmN(183,5098
+void BX_CPP_AttrRegparmN(207,5779
+void BX_CPP_AttrRegparmN(222,6138
+void BX_CPP_AttrRegparmN(232,6404
+void BX_CPP_AttrRegparmN(240,6593
+void BX_CPP_AttrRegparmN(254,6964
+void BX_CPP_AttrRegparmN(266,7258
+void BX_CPP_AttrRegparmN(280,7647
+void BX_CPP_AttrRegparmN(292,7959
+void BX_CPP_AttrRegparmN(306,8331
+void BX_CPP_AttrRegparmN(319,8641
+
+bit.cc,1492
+#define NEED_CPU_REG_SHORTCUTS 22,1079
+#define LOG_THIS 25,1148
+void BX_CPP_AttrRegparmN(29,1205
+void BX_CPP_AttrRegparmN(37,1421
+void BX_CPP_AttrRegparmN(42,1553
+void BX_CPP_AttrRegparmN(50,1771
+void BX_CPP_AttrRegparmN(55,1905
+void BX_CPP_AttrRegparmN(63,2121
+void BX_CPP_AttrRegparmN(68,2253
+void BX_CPP_AttrRegparmN(76,2471
+void BX_CPP_AttrRegparmN(81,2605
+void BX_CPP_AttrRegparmN(89,2821
+void BX_CPP_AttrRegparmN(94,2953
+void BX_CPP_AttrRegparmN(102,3171
+void BX_CPP_AttrRegparmN(107,3305
+void BX_CPP_AttrRegparmN(115,3536
+void BX_CPP_AttrRegparmN(120,3683
+void BX_CPP_AttrRegparmN(128,3916
+void BX_CPP_AttrRegparmN(133,4065
+void BX_CPP_AttrRegparmN(141,4281
+void BX_CPP_AttrRegparmN(146,4413
+void BX_CPP_AttrRegparmN(154,4631
+void BX_CPP_AttrRegparmN(159,4765
+void BX_CPP_AttrRegparmN(167,4981
+void BX_CPP_AttrRegparmN(172,5113
+void BX_CPP_AttrRegparmN(180,5331
+void BX_CPP_AttrRegparmN(185,5465
+void BX_CPP_AttrRegparmN(193,5695
+void BX_CPP_AttrRegparmN(198,5841
+void BX_CPP_AttrRegparmN(206,6073
+void BX_CPP_AttrRegparmN(211,6221
+void BX_CPP_AttrRegparmN(219,6464
+void BX_CPP_AttrRegparmN(225,6652
+void BX_CPP_AttrRegparmN(233,6899
+void BX_CPP_AttrRegparmN(239,7091
+void BX_CPP_AttrRegparmN(245,7268
+void BX_CPP_AttrRegparmN(260,7650
+void BX_CPP_AttrRegparmN(279,8212
+void BX_CPP_AttrRegparmN(298,8617
+void BX_CPP_AttrRegparmN(315,9010
+void BX_CPP_AttrRegparmN(336,9515
+void BX_CPP_AttrRegparmN(357,10031
+void BX_CPP_AttrRegparmN(382,10731
+
+call_far.cc,194
+#define NEED_CPU_REG_SHORTCUTS 24,1163
+#define LOG_THIS 27,1232
+#define RIP 31,1337
+  void BX_CPP_AttrRegparmN(34,1361
+void BX_CPP_AttrRegparmN(230,8291
+void BX_CPP_AttrRegparmN(470,17502
+
+cpu.cc,1040
+#define NEED_CPU_REG_SHORTCUTS 22,1080
+#define LOG_THIS 25,1149
+#define RIP 29,1250
+#define RCX 30,1266
+#define InstrumentICACHE 33,1290
+static unsigned iCacheLookups=36,1339
+static unsigned iCacheMisses=37,1372
+#define InstrICache_StatsMask 39,1405
+#define InstrICache_Stats(41,1445
+#define InstrICache_Increment(50,1772
+#define InstrICache_Stats(52,1817
+#define InstrICache_Increment(53,1845
+  #define CHECK_MAX_INSTRUCTIONS(64,2254
+  #define CHECK_MAX_INSTRUCTIONS(70,2434
+void BX_CPU_C::cpu_loop(73,2482
+void BX_CPP_AttrRegparmN(196,6388
+void BX_CPP_AttrRegparmN(276,8087
+unsigned BX_CPU_C::handleAsyncEvent(417,11303
+void BX_CPU_C::prefetch(686,20622
+void BX_CPU_C::deliver_SIPI(763,23064
+void BX_CPU_C::deliver_INIT(777,23636
+void BX_CPU_C::deliver_NMI(785,23794
+void BX_CPU_C::deliver_SMI(791,23902
+void BX_CPU_C::set_INTR(797,24010
+bx_bool BX_CPU_C::dbg_instruction_epilog(804,24151
+void BX_CPU_C::dbg_take_irq(924,28189
+void BX_CPU_C::dbg_force_interrupt(939,28671
+void BX_CPU_C::dbg_take_dma(952,29063
+
+cpuid.cc,823
+#define NEED_CPU_REG_SHORTCUTS 24,1162
+#define LOG_THIS 27,1231
+#define BX_CPUID_SUPPORT_NOSSE 31,1320
+#define BX_CPUID_SUPPORT_SSE 32,1355
+#define BX_CPUID_SUPPORT_SSE2 33,1390
+#define BX_CPUID_SUPPORT_SSE3 34,1425
+#define BX_CPUID_SUPPORT_SSSE3 35,1460
+#define BX_CPUID_SUPPORT_SSE4_1 36,1495
+#define BX_CPUID_SUPPORT_SSE4_2 37,1530
+#define RAX 43,1631
+#define RBX 44,1647
+#define RCX 45,1663
+#define RDX 46,1679
+Bit32u BX_CPU_C::get_cpu_version_information(59,1928
+Bit32u BX_CPU_C::get_extended_cpuid_features(142,3506
+Bit32u BX_CPU_C::get_std_cpuid_features(228,5935
+void BX_CPP_AttrRegparmN(329,9231
+void BX_CPU_C::set_cpuid_defaults(385,10972
+void BX_CPU_C::bx_cpuid_extended_topology_leaf(826,26131
+void BX_CPU_C::bx_cpuid_xsave_leaf(923,28323
+void BX_CPU_C::init_isa_features_bitmask(941,28810
+
+crc32.cc,399
+#define NEED_CPU_REG_SHORTCUTS 24,1160
+#define LOG_THIS 27,1229
+#define CRC32_POLYNOMIAL 31,1282
+BX_CPP_INLINE Bit8u BitReflect8(34,1362
+BX_CPP_INLINE Bit16u BitReflect16(46,1666
+BX_CPP_INLINE Bit32u BitReflect32(51,1798
+static Bit32u mod2_64bit(56,1936
+void BX_CPP_AttrRegparmN(73,2349
+void BX_CPP_AttrRegparmN(98,2976
+void BX_CPP_AttrRegparmN(121,3585
+void BX_CPP_AttrRegparmN(146,4218
+
+crregs.cc,1036
+#define NEED_CPU_REG_SHORTCUTS 24,1157
+#define LOG_THIS 27,1226
+void BX_CPP_AttrRegparmN(29,1260
+void BX_CPP_AttrRegparmN(144,4928
+void BX_CPP_AttrRegparmN(211,6667
+void BX_CPP_AttrRegparmN(326,10324
+void BX_CPP_AttrRegparmN(392,12050
+void BX_CPP_AttrRegparmN(459,13761
+void BX_CPP_AttrRegparmN(508,15045
+void BX_CPP_AttrRegparmN(592,17329
+void BX_CPP_AttrRegparmN(657,19119
+void BX_CPP_AttrRegparmN(693,20020
+void BX_CPP_AttrRegparmN(705,20281
+void BX_CPP_AttrRegparmN(712,20527
+void BX_CPP_AttrRegparmN(723,20824
+bx_address BX_CPU_C::read_CR0(734,21121
+bx_address BX_CPU_C::read_CR4(749,21456
+bx_bool BX_CPP_AttrRegparmN(764,21777
+bx_bool BX_CPP_AttrRegparmN(807,22923
+bx_address get_cr4_allow_mask(888,25384
+bx_bool BX_CPP_AttrRegparmN(965,27380
+bx_bool BX_CPP_AttrRegparmN(1004,28347
+bx_bool BX_CPP_AttrRegparmN(1028,29017
+bx_bool BX_CPU_C::hwbreakpoint_check(1053,29564
+void BX_CPU_C::hwbreakpoint_match(1065,29755
+Bit32u BX_CPU_C::hwdebug_compare(1083,30367
+void BX_CPU_C::iobreakpoint_match(1140,32105
+
+ctrl_xfer16.cc,1289
+#define NEED_CPU_REG_SHORTCUTS 22,1087
+#define LOG_THIS 25,1156
+#define RSP 29,1257
+#define RIP 30,1273
+BX_CPP_INLINE void BX_CPP_AttrRegparmN(33,1297
+void BX_CPP_AttrRegparmN(52,1892
+void BX_CPP_AttrRegparmN(84,2564
+void BX_CPP_AttrRegparmN(109,3077
+void BX_CPP_AttrRegparmN(153,4044
+void BX_CPP_AttrRegparmN(190,4857
+void BX_CPP_AttrRegparmN(209,5206
+void BX_CPP_AttrRegparmN(248,6171
+void BX_CPP_AttrRegparmN(268,6536
+void BX_CPP_AttrRegparmN(310,7574
+void BX_CPP_AttrRegparmN(317,7763
+void BX_CPP_AttrRegparmN(331,8058
+void BX_CPP_AttrRegparmN(345,8356
+void BX_CPP_AttrRegparmN(359,8651
+void BX_CPP_AttrRegparmN(373,8949
+void BX_CPP_AttrRegparmN(387,9244
+void BX_CPP_AttrRegparmN(401,9542
+void BX_CPP_AttrRegparmN(415,9850
+void BX_CPP_AttrRegparmN(429,10163
+void BX_CPP_AttrRegparmN(443,10458
+void BX_CPP_AttrRegparmN(457,10756
+void BX_CPP_AttrRegparmN(471,11051
+void BX_CPP_AttrRegparmN(485,11349
+void BX_CPP_AttrRegparmN(499,11658
+void BX_CPP_AttrRegparmN(513,11968
+void BX_CPP_AttrRegparmN(527,12292
+void BX_CPP_AttrRegparmN(541,12619
+void BX_CPP_AttrRegparmN(549,12847
+void BX_CPP_AttrRegparmN(582,13759
+void BX_CPP_AttrRegparmN(630,14960
+void BX_CPP_AttrRegparmN(664,15833
+void BX_CPP_AttrRegparmN(705,16667
+void BX_CPP_AttrRegparmN(746,17490
+
+ctrl_xfer32.cc,1326
+#define NEED_CPU_REG_SHORTCUTS 22,1087
+#define LOG_THIS 25,1156
+#define RSP 29,1257
+#define RIP 30,1273
+BX_CPP_INLINE void BX_CPP_AttrRegparmN(35,1320
+void BX_CPP_AttrRegparmN(54,1918
+void BX_CPP_AttrRegparmN(83,2589
+void BX_CPP_AttrRegparmN(106,3120
+void BX_CPP_AttrRegparmN(150,4129
+void BX_CPP_AttrRegparmN(188,4994
+void BX_CPP_AttrRegparmN(208,5348
+void BX_CPP_AttrRegparmN(250,6326
+void BX_CPP_AttrRegparmN(270,6694
+void BX_CPP_AttrRegparmN(313,7773
+void BX_CPP_AttrRegparmN(320,7975
+void BX_CPP_AttrRegparmN(334,8283
+void BX_CPP_AttrRegparmN(348,8594
+void BX_CPP_AttrRegparmN(362,8902
+void BX_CPP_AttrRegparmN(376,9213
+void BX_CPP_AttrRegparmN(390,9521
+void BX_CPP_AttrRegparmN(404,9832
+void BX_CPP_AttrRegparmN(418,10153
+void BX_CPP_AttrRegparmN(432,10479
+void BX_CPP_AttrRegparmN(446,10787
+void BX_CPP_AttrRegparmN(460,11098
+void BX_CPP_AttrRegparmN(474,11406
+void BX_CPP_AttrRegparmN(488,11717
+void BX_CPP_AttrRegparmN(502,12039
+void BX_CPP_AttrRegparmN(516,12362
+void BX_CPP_AttrRegparmN(530,12699
+void BX_CPP_AttrRegparmN(544,13039
+void BX_CPP_AttrRegparmN(581,13946
+void BX_CPP_AttrRegparmN(589,14177
+void BX_CPP_AttrRegparmN(622,15128
+void BX_CPP_AttrRegparmN(672,16414
+void BX_CPP_AttrRegparmN(706,17301
+void BX_CPP_AttrRegparmN(747,18161
+void BX_CPP_AttrRegparmN(788,19010
+
+ctrl_xfer64.cc,1165
+#define NEED_CPU_REG_SHORTCUTS 22,1087
+#define LOG_THIS 25,1156
+BX_CPP_INLINE void BX_CPP_AttrRegparmN(29,1213
+void BX_CPP_AttrRegparmN(46,1695
+void BX_CPP_AttrRegparmN(65,2136
+void BX_CPP_AttrRegparmN(84,2610
+void BX_CPP_AttrRegparmN(101,3008
+void BX_CPP_AttrRegparmN(123,3500
+void BX_CPP_AttrRegparmN(146,3999
+void BX_CPP_AttrRegparmN(169,4637
+void BX_CPP_AttrRegparmN(183,4951
+void BX_CPP_AttrRegparmN(196,5204
+void BX_CPP_AttrRegparmN(209,5460
+void BX_CPP_AttrRegparmN(222,5713
+void BX_CPP_AttrRegparmN(235,5969
+void BX_CPP_AttrRegparmN(248,6222
+void BX_CPP_AttrRegparmN(261,6478
+void BX_CPP_AttrRegparmN(274,6744
+void BX_CPP_AttrRegparmN(287,7015
+void BX_CPP_AttrRegparmN(300,7268
+void BX_CPP_AttrRegparmN(313,7524
+void BX_CPP_AttrRegparmN(326,7777
+void BX_CPP_AttrRegparmN(339,8033
+void BX_CPP_AttrRegparmN(352,8300
+void BX_CPP_AttrRegparmN(365,8568
+void BX_CPP_AttrRegparmN(378,8850
+void BX_CPP_AttrRegparmN(391,9135
+void BX_CPP_AttrRegparmN(406,9475
+void BX_CPP_AttrRegparmN(423,9959
+void BX_CPP_AttrRegparmN(444,10441
+void BX_CPP_AttrRegparmN(474,11184
+void BX_CPP_AttrRegparmN(508,11828
+void BX_CPP_AttrRegparmN(542,12461
+
+ctrl_xfer_pro.cc,232
+#define NEED_CPU_REG_SHORTCUTS 22,1088
+#define LOG_THIS 25,1157
+#define RIP 29,1262
+void BX_CPU_C::check_cs(34,1381
+  void BX_CPP_AttrRegparmN(84,3273
+void BX_CPU_C::branch_far32(120,4373
+void BX_CPU_C::branch_far64(137,4874
+
+data_xfer16.cc,1248
+#define NEED_CPU_REG_SHORTCUTS 22,1087
+#define LOG_THIS 25,1156
+void BX_CPP_AttrRegparmN(27,1190
+void BX_CPP_AttrRegparmN(32,1309
+void BX_CPP_AttrRegparmN(39,1492
+void BX_CPP_AttrRegparmN(46,1698
+void BX_CPP_AttrRegparmN(51,1831
+void BX_CPP_AttrRegparmN(59,2061
+void BX_CPP_AttrRegparmN(77,2510
+void BX_CPP_AttrRegparmN(91,2949
+void BX_CPP_AttrRegparmN(122,3899
+void BX_CPP_AttrRegparmN(129,4083
+void BX_CPP_AttrRegparmN(134,4203
+void BX_CPP_AttrRegparmN(139,4323
+void BX_CPP_AttrRegparmN(147,4531
+void BX_CPP_AttrRegparmN(157,4815
+void BX_CPP_AttrRegparmN(165,5044
+void BX_CPP_AttrRegparmN(175,5327
+void BX_CPP_AttrRegparmN(184,5561
+void BX_CPP_AttrRegparmN(197,5892
+void BX_CPP_AttrRegparmN(221,6565
+void BX_CPP_AttrRegparmN(227,6718
+void BX_CPP_AttrRegparmN(233,6873
+void BX_CPP_AttrRegparmN(239,7026
+void BX_CPP_AttrRegparmN(245,7181
+void BX_CPP_AttrRegparmN(251,7334
+void BX_CPP_AttrRegparmN(257,7489
+void BX_CPP_AttrRegparmN(263,7655
+void BX_CPP_AttrRegparmN(269,7826
+void BX_CPP_AttrRegparmN(275,7979
+void BX_CPP_AttrRegparmN(281,8134
+void BX_CPP_AttrRegparmN(287,8287
+void BX_CPP_AttrRegparmN(293,8442
+void BX_CPP_AttrRegparmN(299,8609
+void BX_CPP_AttrRegparmN(305,8777
+void BX_CPP_AttrRegparmN(311,8959
+
+data_xfer32.cc,1302
+#define NEED_CPU_REG_SHORTCUTS 22,1087
+#define LOG_THIS 25,1156
+#define RAX 34,1320
+void BX_CPP_AttrRegparmN(37,1344
+void BX_CPP_AttrRegparmN(49,1648
+void BX_CPP_AttrRegparmN(54,1769
+void BX_CPP_AttrRegparmN(61,1986
+void BX_CPP_AttrRegparmN(66,2120
+void BX_CPP_AttrRegparmN(74,2362
+void BX_CPP_AttrRegparmN(81,2538
+void BX_CPP_AttrRegparmN(86,2661
+void BX_CPP_AttrRegparmN(91,2784
+void BX_CPP_AttrRegparmN(98,2971
+void BX_CPP_AttrRegparmN(108,3257
+void BX_CPP_AttrRegparmN(116,3488
+void BX_CPP_AttrRegparmN(126,3777
+void BX_CPP_AttrRegparmN(134,3993
+void BX_CPP_AttrRegparmN(144,4278
+void BX_CPP_AttrRegparmN(152,4508
+void BX_CPP_AttrRegparmN(162,4797
+void BX_CPP_AttrRegparmN(170,5013
+void BX_CPP_AttrRegparmN(183,5347
+void BX_CPP_AttrRegparmN(196,5784
+void BX_CPP_AttrRegparmN(204,6015
+void BX_CPP_AttrRegparmN(212,6248
+void BX_CPP_AttrRegparmN(220,6479
+void BX_CPP_AttrRegparmN(228,6712
+void BX_CPP_AttrRegparmN(236,6943
+void BX_CPP_AttrRegparmN(244,7176
+void BX_CPP_AttrRegparmN(252,7420
+void BX_CPP_AttrRegparmN(260,7669
+void BX_CPP_AttrRegparmN(268,7900
+void BX_CPP_AttrRegparmN(276,8133
+void BX_CPP_AttrRegparmN(284,8364
+void BX_CPP_AttrRegparmN(292,8597
+void BX_CPP_AttrRegparmN(300,8842
+void BX_CPP_AttrRegparmN(308,9088
+void BX_CPP_AttrRegparmN(316,9348
+
+data_xfer64.cc,1664
+#define NEED_CPU_REG_SHORTCUTS 22,1087
+#define LOG_THIS 25,1156
+void BX_CPP_AttrRegparmN(29,1213
+void BX_CPP_AttrRegparmN(36,1400
+void BX_CPP_AttrRegparmN(41,1520
+void BX_CPP_AttrRegparmN(49,1753
+void BX_CPP_AttrRegparmN(56,1961
+void BX_CPP_AttrRegparmN(63,2171
+void BX_CPP_AttrRegparmN(71,2405
+void BX_CPP_AttrRegparmN(76,2538
+void BX_CPP_AttrRegparmN(83,2713
+void BX_CPP_AttrRegparmN(88,2833
+void BX_CPP_AttrRegparmN(93,2953
+void BX_CPP_AttrRegparmN(98,3073
+void BX_CPP_AttrRegparmN(103,3193
+void BX_CPP_AttrRegparmN(108,3316
+void BX_CPP_AttrRegparmN(113,3439
+void BX_CPP_AttrRegparmN(118,3562
+void BX_CPP_AttrRegparmN(123,3685
+void BX_CPP_AttrRegparmN(132,3909
+void BX_CPP_AttrRegparmN(138,4055
+void BX_CPP_AttrRegparmN(148,4343
+void BX_CPP_AttrRegparmN(156,4573
+void BX_CPP_AttrRegparmN(166,4864
+void BX_CPP_AttrRegparmN(174,5079
+void BX_CPP_AttrRegparmN(184,5366
+void BX_CPP_AttrRegparmN(192,5595
+void BX_CPP_AttrRegparmN(202,5886
+void BX_CPP_AttrRegparmN(210,6101
+void BX_CPP_AttrRegparmN(220,6393
+void BX_CPP_AttrRegparmN(228,6608
+void BX_CPP_AttrRegparmN(241,6944
+void BX_CPP_AttrRegparmN(254,7378
+void BX_CPP_AttrRegparmN(260,7531
+void BX_CPP_AttrRegparmN(266,7686
+void BX_CPP_AttrRegparmN(272,7839
+void BX_CPP_AttrRegparmN(278,7994
+void BX_CPP_AttrRegparmN(284,8147
+void BX_CPP_AttrRegparmN(290,8302
+void BX_CPP_AttrRegparmN(296,8468
+void BX_CPP_AttrRegparmN(302,8639
+void BX_CPP_AttrRegparmN(308,8792
+void BX_CPP_AttrRegparmN(314,8947
+void BX_CPP_AttrRegparmN(320,9100
+void BX_CPP_AttrRegparmN(326,9255
+void BX_CPP_AttrRegparmN(332,9422
+void BX_CPP_AttrRegparmN(338,9590
+void BX_CPP_AttrRegparmN(344,9772
+
+data_xfer8.cc,441
+#define NEED_CPU_REG_SHORTCUTS 22,1086
+#define LOG_THIS 25,1155
+void BX_CPP_AttrRegparmN(27,1189
+void BX_CPP_AttrRegparmN(32,1326
+void BX_CPP_AttrRegparmN(37,1445
+void BX_CPP_AttrRegparmN(44,1669
+void BX_CPP_AttrRegparmN(52,1914
+void BX_CPP_AttrRegparmN(58,2102
+void BX_CPP_AttrRegparmN(63,2222
+void BX_CPP_AttrRegparmN(68,2342
+void BX_CPP_AttrRegparmN(75,2528
+void BX_CPP_AttrRegparmN(91,2864
+void BX_CPP_AttrRegparmN(105,3250
+
+debugstuff.cc,603
+#define NEED_CPU_REG_SHORTCUTS 23,1090
+#define LOG_THIS 26,1159
+void BX_CPU_C::debug_disasm_instruction(34,1261
+const char* cpu_mode_string(80,2766
+const char* cpu_state_string(95,3058
+#undef debug111,3378
+void BX_CPU_C::debug(112,3391
+bx_bool BX_CPU_C::dbg_set_reg(281,11915
+unsigned BX_CPU_C::dbg_query_pending(318,13144
+bx_bool BX_CPU_C::dbg_get_sreg(333,13395
+bx_bool BX_CPU_C::dbg_set_sreg(347,13891
+void BX_CPU_C::dbg_get_tr(364,14274
+void BX_CPU_C::dbg_get_ldtr(375,14640
+void BX_CPU_C::dbg_get_gdtr(386,15018
+void BX_CPU_C::dbg_get_idtr(392,15166
+void BX_CPU_C::atexit(400,15342
+
+exception.cc,751
+#define NEED_CPU_REG_SHORTCUTS 23,1089
+#define LOG_THIS 26,1158
+#undef debug34,1293
+#define debug(35,1306
+#define RIP 39,1395
+#define RSP 40,1411
+void BX_CPU_C::long_mode_int(44,1457
+void BX_CPU_C::protected_mode_int(262,9516
+void BX_CPU_C::real_mode_int(722,27952
+void BX_CPU_C::interrupt(753,29012
+#define BX_ET_BENIGN 828,30711
+#define BX_ET_CONTRIBUTORY 829,30740
+#define BX_ET_PAGE_FAULT 830,30769
+#define BX_ET_DOUBLE_FAULT 832,30799
+static const bx_bool is_exception_OK[is_exception_OK834,30830
+#define BX_EXCEPTION_CLASS_TRAP 840,31032
+#define BX_EXCEPTION_CLASS_FAULT 841,31067
+#define BX_EXCEPTION_CLASS_ABORT 842,31102
+struct BxExceptionInfo exceptions_info[exceptions_info844,31138
+void BX_CPU_C::exception(872,32802
+
+fetchdecode64.cc,901
+#define NEED_CPU_REG_SHORTCUTS 23,1093
+#define LOG_THIS 26,1162
+#define X 42,1504
+static const Bit8u BxOpcodeHasModrm64[BxOpcodeHasModrm6444,1540
+#undef X85,3525
+static unsigned sreg_mod0_base32[sreg_mod0_base32109,4503
+static unsigned sreg_mod1or2_base32[sreg_mod1or2_base32128,4819
+static const BxOpcodeInfo_t BxOpcodeInfo64R[BxOpcodeInfo64R157,5399
+static const BxOpcodeInfo_t BxOpcodeInfo64M[BxOpcodeInfo64M1720,90111
+  BX_RESOLVE32_BASE,::BX_RESOLVE32_BASE3280,174549
+  BX_RESOLVE32_BASE_INDEX,::BX_RESOLVE32_BASE_INDEX3281,174570
+  BX_RESOLVE64_BASE,::BX_RESOLVE64_BASE3282,174597
+  BX_RESOLVE64_BASE_INDEX,::BX_RESOLVE64_BASE_INDEX3283,174618
+  BX_RESOLVE_NONE::BX_RESOLVE_NONE3284,174645
+  int BX_CPP_AttrRegparmN(3287,174667
+#define SSE_PREFIX_NONE 3298,175139
+#define SSE_PREFIX_66 3299,175165
+#define SSE_PREFIX_F2 3300,175191
+#define SSE_PREFIX_F3 3301,175217
+
+fetchdecode.cc,1523
+#define NEED_CPU_REG_SHORTCUTS 23,1091
+#define LOG_THIS 26,1160
+#define X 42,1405
+void eager_b1(44,1441
+static const Bit8u BxOpcodeHasModrm32[BxOpcodeHasModrm3280,3498
+#undef X121,5483
+static unsigned Resolve16BaseReg[Resolve16BaseReg140,6275
+static unsigned Resolve16IndexReg[Resolve16IndexReg151,6470
+static unsigned sreg_mod00_rm16[sreg_mod00_rm16163,6721
+static unsigned sreg_mod01or10_rm16[sreg_mod01or10_rm16174,6899
+static unsigned sreg_mod0_base32[sreg_mod0_base32186,7136
+static unsigned sreg_mod1or2_base32[sreg_mod1or2_base32197,7315
+bxIAOpcodeTable BxOpcodesTable[BxOpcodesTable212,7594
+#define bx_define_opcode(213,7631
+#undef  bx_define_opcode216,7705
+static const BxOpcodeInfo_t BxOpcodeInfo32R[BxOpcodeInfo32R223,7864
+static const BxOpcodeInfo_t BxOpcodeInfo32M[BxOpcodeInfo32M1332,66565
+  BX_RESOLVE16,::BX_RESOLVE162437,124963
+  BX_RESOLVE32_BASE,::BX_RESOLVE32_BASE2438,124979
+  BX_RESOLVE32_BASE_INDEX,::BX_RESOLVE32_BASE_INDEX2439,125000
+  BX_RESOLVE_NONE::BX_RESOLVE_NONE2440,125027
+  int BX_CPP_AttrRegparmN(2443,125049
+#define SSE_PREFIX_NONE 2455,125502
+#define SSE_PREFIX_66 2456,125528
+#define SSE_PREFIX_F2 2457,125554
+#define SSE_PREFIX_F3 2458,125580
+void BX_CPP_AttrRegparmN(2957,138152
+const char *get_bx_opcode_name(get_bx_opcode_name2980,138916
+#define bx_define_opcode(2984,139025
+#undef  bx_define_opcode2987,139095
+void BX_CPU_C::init_FetchDecodeTables(2992,139195
+#define bx_define_opcode(2996,139292
+#undef  bx_define_opcode2999,139361
+
+flag_ctrl.cc,641
+#define NEED_CPU_REG_SHORTCUTS 22,1085
+#define LOG_THIS 25,1154
+#define RSP 29,1255
+void BX_CPP_AttrRegparmN(32,1279
+void BX_CPP_AttrRegparmN(41,1481
+void BX_CPP_AttrRegparmN(46,1578
+void BX_CPP_AttrRegparmN(51,1659
+void BX_CPP_AttrRegparmN(56,1741
+void BX_CPP_AttrRegparmN(96,2522
+void BX_CPP_AttrRegparmN(144,3604
+void BX_CPP_AttrRegparmN(149,3701
+void BX_CPP_AttrRegparmN(154,3799
+void BX_CPP_AttrRegparmN(159,3888
+void BX_CPP_AttrRegparmN(185,4455
+void BX_CPP_AttrRegparmN(240,5892
+void BX_CPP_AttrRegparmN(251,6203
+void BX_CPP_AttrRegparmN(293,7364
+void BX_CPP_AttrRegparmN(299,7531
+void BX_CPP_AttrRegparmN(323,8192
+
+flag_ctrl_pro.cc,210
+#define NEED_CPU_REG_SHORTCUTS 23,1092
+#define LOG_THIS 26,1161
+void BX_CPP_AttrRegparmN(28,1195
+  void BX_CPP_AttrRegparmN(57,1955
+  void BX_CPP_AttrRegparmN(79,2630
+Bit32u BX_CPU_C::force_flags(98,3203
+
+fpu_emu.cc,134
+#define NEED_CPU_REG_SHORTCUTS 23,1160
+#define LOG_THIS 26,1229
+void BX_CPP_AttrRegparmN(29,1272
+void BX_CPP_AttrRegparmN(41,1594
+
+icache.cc,421
+#define NEED_CPU_REG_SHORTCUTS 24,1162
+#define LOG_THIS 27,1231
+#define RIP 31,1332
+bxPageWriteStampTable pageWriteStampTable;34,1356
+void flushICaches(36,1400
+void purgeICaches(51,1726
+void handleSMC(58,1801
+void BX_CPU_C::serveICacheMiss(64,1931
+bx_bool BX_CPU_C::mergeTraces(123,3789
+bx_bool BX_CPU_C::fetchInstruction(147,4518
+void BX_CPU_C::serveICacheMiss(174,5303
+void BX_CPU_C::boundaryFetch(188,5709
+
+init.cc,1183
+#define NEED_CPU_REG_SHORTCUTS 23,1085
+#define LOG_THIS 26,1154
+#define RIP 30,1259
+BX_CPU_C::BX_CPU_C(33,1283
+#define IF_SEG_REG_GET(48,1650
+#define IF_SEG_REG_SET(52,1788
+#define IF_LAZY_EFLAG_GET(56,1947
+#define IF_LAZY_EFLAG_SET(60,2076
+#define IF_EFLAG_GET(64,2206
+#define IF_EFLAG_SET(68,2330
+static Bit64s cpu_param_handler(75,2545
+#undef IF_SEG_REG_GET143,4395
+#undef IF_SEG_REG_SET144,4417
+void BX_CPU_C::initialize(149,4472
+void BX_CPU_C::register_wx_state(176,5009
+#define DEFPARAM_NORMAL(195,5851
+#define DEFPARAM_SEG_REG(222,6725
+#define DEFPARAM_GLOBAL_SEG_REG(227,6904
+#undef DEFPARAM_NORMAL243,7455
+#undef DEFPARAM_SEG_REG244,7478
+#undef DEFPARAM_GLOBAL_SEG_REG245,7502
+#define DEFPARAM_EFLAG(252,7763
+#define DEFPARAM_LAZY_EFLAG(256,7924
+void BX_CPU_C::register_state(301,9065
+Bit64s BX_CPU_C::param_save_handler(563,19444
+Bit64s BX_CPU_C::param_save(570,19622
+void BX_CPU_C::param_restore_handler(622,21336
+void BX_CPU_C::param_restore(629,21528
+void BX_CPU_C::after_restore_state(690,23641
+BX_CPU_C::~BX_CPU_C(715,24141
+void BX_CPU_C::reset(721,24219
+void BX_CPU_C::sanity_checks(1085,35950
+void BX_CPU_C::assert_checks(1163,37752
+
+io.cc,1556
+#define NEED_CPU_REG_SHORTCUTS 23,1081
+#define LOG_THIS 26,1150
+#define RDI 32,1292
+#define RSI 33,1308
+#define RAX 34,1324
+#define RCX 35,1340
+Bit32u BX_CPU_C::FastRepINSW(43,1427
+Bit32u BX_CPU_C::FastRepOUTSW(116,3697
+void BX_CPP_AttrRegparmN(197,6029
+void BX_CPP_AttrRegparmN(220,6593
+void BX_CPP_AttrRegparmN(236,6943
+void BX_CPP_AttrRegparmN(257,7377
+void BX_CPP_AttrRegparmN(274,7715
+void BX_CPP_AttrRegparmN(297,8300
+void BX_CPP_AttrRegparmN(313,8681
+void BX_CPP_AttrRegparmN(366,10132
+void BX_CPP_AttrRegparmN(383,10480
+void BX_CPP_AttrRegparmN(406,11065
+void BX_CPP_AttrRegparmN(422,11448
+void BX_CPP_AttrRegparmN(440,11864
+void BX_CPP_AttrRegparmN(461,12241
+void BX_CPP_AttrRegparmN(484,12810
+void BX_CPP_AttrRegparmN(496,13048
+void BX_CPP_AttrRegparmN(510,13325
+void BX_CPP_AttrRegparmN(523,13551
+void BX_CPP_AttrRegparmN(546,14141
+void BX_CPP_AttrRegparmN(558,14409
+void BX_CPP_AttrRegparmN(599,15539
+void BX_CPP_AttrRegparmN(612,15774
+void BX_CPP_AttrRegparmN(635,16364
+void BX_CPP_AttrRegparmN(647,16633
+void BX_CPP_AttrRegparmN(661,16935
+void BX_CPP_AttrRegparmN(678,17211
+void BX_CPP_AttrRegparmN(690,17459
+void BX_CPP_AttrRegparmN(702,17707
+void BX_CPP_AttrRegparmN(714,17958
+void BX_CPP_AttrRegparmN(726,18208
+void BX_CPP_AttrRegparmN(738,18458
+void BX_CPP_AttrRegparmN(750,18711
+void BX_CPP_AttrRegparmN(762,18954
+void BX_CPP_AttrRegparmN(774,19197
+void BX_CPP_AttrRegparmN(786,19443
+void BX_CPP_AttrRegparmN(798,19688
+void BX_CPP_AttrRegparmN(810,19933
+bx_bool BX_CPP_AttrRegparmN(822,20181
+
+iret.cc,161
+#define NEED_CPU_REG_SHORTCUTS 24,1159
+#define LOG_THIS 27,1228
+#define RIP 31,1333
+  void BX_CPP_AttrRegparmN(34,1357
+  void BX_CPP_AttrRegparmN(331,11433
+
+jmp_far.cc,232
+#define NEED_CPU_REG_SHORTCUTS 24,1161
+#define LOG_THIS 27,1230
+#define RIP 31,1335
+  void BX_CPP_AttrRegparmN(34,1359
+void BX_CPU_C::task_gate(137,4722
+  void BX_CPP_AttrRegparmN(200,6951
+  void BX_CPP_AttrRegparmN(240,8347
+
+lazy_flags.cc,604
+#define NEED_CPU_REG_SHORTCUTS 22,1086
+#define LOG_THIS 25,1155
+const Bit8u bx_parity_lookup[bx_parity_lookup30,1343
+#define op1_8 49,2184
+#define op2_8 50,2240
+#define result_8 51,2296
+#define op1_16 53,2356
+#define op2_16 54,2413
+#define result_16 55,2470
+#define op1_32 57,2531
+#define op2_32 58,2588
+#define result_32 59,2645
+#define op1_64 62,2728
+#define op2_64 63,2785
+#define result_64 64,2842
+bx_bool BX_CPU_C::get_CFLazy(67,2910
+bx_bool BX_CPU_C::get_AFLazy(149,5051
+#define GET_ADD_OVERFLOW(214,6590
+#define GET_SUB_OVERFLOW(217,6704
+bx_bool BX_CPU_C::get_OFLazy(220,6816
+
+load32.cc,202
+#define NEED_CPU_REG_SHORTCUTS 24,1161
+#define LOG_THIS 27,1230
+void BX_CPP_AttrRegparmN(29,1264
+void BX_CPP_AttrRegparmN(36,1485
+void BX_CPP_AttrRegparmN(43,1706
+void BX_CPP_AttrRegparmN(51,1950
+
+logical16.cc,759
+#define NEED_CPU_REG_SHORTCUTS 22,1085
+#define LOG_THIS 25,1154
+void BX_CPP_AttrRegparmN(27,1188
+void BX_CPP_AttrRegparmN(41,1535
+void BX_CPP_AttrRegparmN(53,1811
+void BX_CPP_AttrRegparmN(64,1990
+void BX_CPP_AttrRegparmN(77,2290
+void BX_CPP_AttrRegparmN(86,2507
+void BX_CPP_AttrRegparmN(99,2806
+void BX_CPP_AttrRegparmN(108,3022
+void BX_CPP_AttrRegparmN(119,3281
+void BX_CPP_AttrRegparmN(126,3457
+void BX_CPP_AttrRegparmN(140,3803
+void BX_CPP_AttrRegparmN(152,4078
+void BX_CPP_AttrRegparmN(164,4283
+void BX_CPP_AttrRegparmN(178,4630
+void BX_CPP_AttrRegparmN(190,4906
+void BX_CPP_AttrRegparmN(202,5112
+void BX_CPP_AttrRegparmN(215,5412
+void BX_CPP_AttrRegparmN(224,5629
+void BX_CPP_AttrRegparmN(234,5865
+void BX_CPP_AttrRegparmN(245,6057
+
+logical32.cc,781
+#define NEED_CPU_REG_SHORTCUTS 22,1085
+#define LOG_THIS 25,1154
+#define RAX 29,1267
+void BX_CPP_AttrRegparmN(32,1291
+void BX_CPP_AttrRegparmN(46,1640
+void BX_CPP_AttrRegparmN(58,1917
+void BX_CPP_AttrRegparmN(69,2099
+void BX_CPP_AttrRegparmN(82,2401
+void BX_CPP_AttrRegparmN(91,2619
+void BX_CPP_AttrRegparmN(104,2920
+void BX_CPP_AttrRegparmN(113,3137
+void BX_CPP_AttrRegparmN(124,3398
+void BX_CPP_AttrRegparmN(131,3575
+void BX_CPP_AttrRegparmN(145,3923
+void BX_CPP_AttrRegparmN(157,4199
+void BX_CPP_AttrRegparmN(169,4407
+void BX_CPP_AttrRegparmN(183,4756
+void BX_CPP_AttrRegparmN(195,5033
+void BX_CPP_AttrRegparmN(207,5242
+void BX_CPP_AttrRegparmN(220,5544
+void BX_CPP_AttrRegparmN(229,5762
+void BX_CPP_AttrRegparmN(240,5999
+void BX_CPP_AttrRegparmN(251,6193
+
+logical64.cc,760
+#define NEED_CPU_REG_SHORTCUTS 22,1085
+#define LOG_THIS 25,1154
+void BX_CPP_AttrRegparmN(29,1211
+void BX_CPP_AttrRegparmN(43,1563
+void BX_CPP_AttrRegparmN(57,1885
+void BX_CPP_AttrRegparmN(70,2104
+void BX_CPP_AttrRegparmN(83,2435
+void BX_CPP_AttrRegparmN(94,2689
+void BX_CPP_AttrRegparmN(107,3019
+void BX_CPP_AttrRegparmN(118,3272
+void BX_CPP_AttrRegparmN(129,3536
+void BX_CPP_AttrRegparmN(136,3712
+void BX_CPP_AttrRegparmN(150,4063
+void BX_CPP_AttrRegparmN(164,4384
+void BX_CPP_AttrRegparmN(177,4602
+void BX_CPP_AttrRegparmN(191,4954
+void BX_CPP_AttrRegparmN(205,5276
+void BX_CPP_AttrRegparmN(217,5494
+void BX_CPP_AttrRegparmN(230,5825
+void BX_CPP_AttrRegparmN(241,6079
+void BX_CPP_AttrRegparmN(252,6316
+void BX_CPP_AttrRegparmN(263,6519
+
+logical8.cc,760
+#define NEED_CPU_REG_SHORTCUTS 22,1084
+#define LOG_THIS 25,1153
+void BX_CPP_AttrRegparmN(27,1187
+void BX_CPP_AttrRegparmN(41,1526
+void BX_CPP_AttrRegparmN(53,1830
+void BX_CPP_AttrRegparmN(64,1992
+void BX_CPP_AttrRegparmN(77,2286
+void BX_CPP_AttrRegparmN(88,2544
+void BX_CPP_AttrRegparmN(101,2837
+void BX_CPP_AttrRegparmN(112,3094
+void BX_CPP_AttrRegparmN(123,3347
+void BX_CPP_AttrRegparmN(130,3554
+void BX_CPP_AttrRegparmN(144,3892
+void BX_CPP_AttrRegparmN(156,4195
+void BX_CPP_AttrRegparmN(168,4374
+void BX_CPP_AttrRegparmN(182,4713
+void BX_CPP_AttrRegparmN(194,5017
+void BX_CPP_AttrRegparmN(206,5197
+void BX_CPP_AttrRegparmN(219,5491
+void BX_CPP_AttrRegparmN(230,5749
+void BX_CPP_AttrRegparmN(241,5999
+void BX_CPP_AttrRegparmN(252,6168
+
+mmx.cc,3650
+#define NEED_CPU_REG_SHORTCUTS 24,1159
+#define LOG_THIS 27,1228
+void BX_CPU_C::print_state_MMX(31,1285
+void BX_CPU_C::prepareFPU2MMX(39,1468
+void BX_CPP_AttrRegparmN(48,1603
+void BX_CPP_AttrRegparmN(81,2393
+void BX_CPP_AttrRegparmN(110,3179
+void BX_CPP_AttrRegparmN(137,3873
+void BX_CPP_AttrRegparmN(167,4861
+void BX_CPP_AttrRegparmN(200,5753
+void BX_CPP_AttrRegparmN(230,6741
+void BX_CPP_AttrRegparmN(259,7527
+void BX_CPP_AttrRegparmN(286,8221
+void BX_CPP_AttrRegparmN(315,8939
+void BX_CPP_AttrRegparmN(344,9651
+void BX_CPP_AttrRegparmN(375,10397
+void BX_CPP_AttrRegparmN(410,11464
+void BX_CPP_AttrRegparmN(443,12400
+void BX_CPP_AttrRegparmN(472,13144
+void BX_CPP_AttrRegparmN(499,13792
+void BX_CPP_AttrRegparmN(535,14714
+void BX_CPP_AttrRegparmN(569,15617
+void BX_CPP_AttrRegparmN(599,16392
+void BX_CPP_AttrRegparmN(626,17057
+void BX_CPP_AttrRegparmN(660,18135
+void BX_CPP_AttrRegparmN(694,19217
+void BX_CPP_AttrRegparmN(724,20083
+void BX_CPP_AttrRegparmN(752,20841
+void BX_CPP_AttrRegparmN(786,21919
+void BX_CPP_AttrRegparmN(820,22822
+void BX_CPP_AttrRegparmN(850,23597
+void BX_CPP_AttrRegparmN(878,24308
+void BX_CPP_AttrRegparmN(908,25174
+void BX_CPP_AttrRegparmN(924,25539
+void BX_CPP_AttrRegparmN(944,26012
+void BX_CPP_AttrRegparmN(959,26348
+void BX_CPP_AttrRegparmN(969,26601
+void BX_CPP_AttrRegparmN(987,27033
+void BX_CPP_AttrRegparmN(1018,27859
+void BX_CPP_AttrRegparmN(1052,28949
+void BX_CPP_AttrRegparmN(1082,29819
+void BX_CPP_AttrRegparmN(1110,30579
+void BX_CPP_AttrRegparmN(1120,30797
+void BX_CPP_AttrRegparmN(1131,31067
+void BX_CPP_AttrRegparmN(1150,31544
+void BX_CPP_AttrRegparmN(1162,31803
+void BX_CPP_AttrRegparmN(1172,32031
+void BX_CPP_AttrRegparmN(1189,32484
+void BX_CPP_AttrRegparmN(1217,33157
+void BX_CPP_AttrRegparmN(1231,33517
+void BX_CPP_AttrRegparmN(1267,34342
+void BX_CPP_AttrRegparmN(1301,35113
+void BX_CPP_AttrRegparmN(1333,35838
+void BX_CPP_AttrRegparmN(1360,36498
+void BX_CPP_AttrRegparmN(1395,37547
+void BX_CPP_AttrRegparmN(1419,38242
+void BX_CPP_AttrRegparmN(1455,39517
+void BX_CPP_AttrRegparmN(1487,40488
+void BX_CPP_AttrRegparmN(1521,41593
+void BX_CPP_AttrRegparmN(1548,42252
+void BX_CPP_AttrRegparmN(1582,43569
+void BX_CPP_AttrRegparmN(1612,44554
+void BX_CPP_AttrRegparmN(1646,45659
+void BX_CPP_AttrRegparmN(1673,46334
+void BX_CPP_AttrRegparmN(1707,47398
+void BX_CPP_AttrRegparmN(1754,48838
+void BX_CPP_AttrRegparmN(1798,49977
+void BX_CPP_AttrRegparmN(1828,50825
+void BX_CPP_AttrRegparmN(1863,51903
+void BX_CPP_AttrRegparmN(1898,52972
+void BX_CPP_AttrRegparmN(1913,53389
+void BX_CPP_AttrRegparmN(1947,54705
+void BX_CPP_AttrRegparmN(1977,55689
+void BX_CPP_AttrRegparmN(2007,56558
+void BX_CPP_AttrRegparmN(2034,57216
+void BX_CPP_AttrRegparmN(2068,58532
+void BX_CPP_AttrRegparmN(2098,59516
+void BX_CPP_AttrRegparmN(2128,60385
+void BX_CPP_AttrRegparmN(2155,61044
+void BX_CPP_AttrRegparmN(2191,61869
+void BX_CPP_AttrRegparmN(2225,62640
+void BX_CPP_AttrRegparmN(2257,63365
+void BX_CPP_AttrRegparmN(2284,64071
+void BX_CPP_AttrRegparmN(2323,65151
+void BX_CPP_AttrRegparmN(2360,66170
+void BX_CPP_AttrRegparmN(2402,67291
+void BX_CPP_AttrRegparmN(2436,68163
+void BX_CPP_AttrRegparmN(2466,68915
+void BX_CPP_AttrRegparmN(2494,69607
+void BX_CPP_AttrRegparmN(2521,70267
+void BX_CPP_AttrRegparmN(2555,71139
+void BX_CPP_AttrRegparmN(2585,71891
+void BX_CPP_AttrRegparmN(2613,72592
+void BX_CPP_AttrRegparmN(2637,73119
+void BX_CPP_AttrRegparmN(2672,74254
+void BX_CPP_AttrRegparmN(2696,74781
+void BX_CPP_AttrRegparmN(2718,75256
+void BX_CPP_AttrRegparmN(2750,76096
+void BX_CPP_AttrRegparmN(2772,76571
+void BX_CPP_AttrRegparmN(2794,77027
+
+msr.cc,540
+#define NEED_CPU_REG_SHORTCUTS 24,1159
+#define LOG_THIS 27,1228
+#define RAX 31,1325
+#define RDX 32,1341
+bx_bool BX_CPP_AttrRegparmN(36,1387
+void BX_CPP_AttrRegparmN(270,7841
+bx_bool isMemTypeValidMTRR(304,8551
+BX_CPP_INLINE bx_bool isMemTypeValidPAT(318,8774
+bx_bool isValidMSR_PAT(323,8906
+bx_bool isValidMSR_FixedMTRR(337,9382
+bx_bool BX_CPP_AttrRegparmN(353,9964
+bx_bool BX_CPU_C::relocate_apic(655,19516
+#define BX_MSR_APICBASE_RESERVED_BITS 667,19848
+void BX_CPP_AttrRegparmN(715,21478
+int BX_CPU_C::load_MSRs(746,22144
+
+mult16.cc,272
+#define NEED_CPU_REG_SHORTCUTS 22,1082
+#define LOG_THIS 25,1151
+void BX_CPP_AttrRegparmN(27,1185
+void BX_CPP_AttrRegparmN(48,1684
+void BX_CPP_AttrRegparmN(72,2285
+void BX_CPP_AttrRegparmN(92,2806
+void BX_CPP_AttrRegparmN(117,3432
+void BX_CPP_AttrRegparmN(139,3995
+
+mult32.cc,315
+#define NEED_CPU_REG_SHORTCUTS 22,1082
+#define LOG_THIS 25,1151
+#define RAX 28,1210
+#define RDX 29,1226
+void BX_CPP_AttrRegparmN(32,1250
+void BX_CPP_AttrRegparmN(53,1751
+void BX_CPP_AttrRegparmN(77,2358
+void BX_CPP_AttrRegparmN(104,3012
+void BX_CPP_AttrRegparmN(135,3802
+void BX_CPP_AttrRegparmN(157,4399
+
+mult64.cc,528
+#define NEED_CPU_REG_SHORTCUTS 22,1082
+#define LOG_THIS 25,1151
+static unsigned partial_add(29,1208
+void long_mul(36,1316
+void long_neg(68,2107
+void long_imul(76,2231
+void long_shl(87,2477
+void long_shr(95,2578
+unsigned long_sub(104,2684
+int long_le(114,2849
+void long_div(123,2984
+void long_idiv(183,3993
+void BX_CPP_AttrRegparmN(202,4407
+void BX_CPP_AttrRegparmN(227,5010
+void BX_CPP_AttrRegparmN(257,5802
+void BX_CPP_AttrRegparmN(289,6584
+void BX_CPP_AttrRegparmN(329,7711
+void BX_CPP_AttrRegparmN(348,8174
+
+mult8.cc,202
+#define NEED_CPU_REG_SHORTCUTS 22,1081
+#define LOG_THIS 25,1150
+void BX_CPP_AttrRegparmN(27,1184
+void BX_CPP_AttrRegparmN(48,1656
+void BX_CPP_AttrRegparmN(71,2177
+void BX_CPP_AttrRegparmN(94,2663
+
+paging.cc,3026
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+  #define BX_INVALID_TLB_ENTRY 228,10451
+  #define BX_INVALID_TLB_ENTRY 230,10519
+#define TLB_LPFOf(234,10634
+#  define BX_PRIV_CHECK_SIZE 237,10715
+#  define BX_PRIV_CHECK_SIZE 239,10753
+static const Bit8u priv_check[priv_check257,11372
+#define BX_PAGING_PHY_ADDRESS_RESERVED_BITS 265,11558
+#define PAGE_DIRECTORY_NX_BIT 268,11670
+#define BX_CR3_PAGING_MASK 270,11734
+#define BX_CR3_LEGACY_PAE_PAGING_MASK 272,11798
+#define TLB_HostPtr 327,14138
+#define TLB_GlobalPage 329,14224
+#define TLB_SysOnly 331,14262
+#define TLB_ReadOnly 332,14292
+#define TLB_NoExecute 333,14322
+#define InstrumentTLB 339,14481
+static unsigned tlbLookups=342,14524
+static unsigned tlbMisses=343,14554
+static unsigned tlbGlobalFlushes=344,14583
+static unsigned tlbNonGlobalFlushes=345,14619
+#define InstrTLB_StatsMask 347,14659
+#define InstrTLB_Stats(349,14695
+#define InstrTLB_Increment(361,15159
+#define InstrTLB_Stats(364,15202
+#define InstrTLB_Increment(365,15227
+void BX_CPU_C::TLB_flush(370,15332
+void BX_CPU_C::TLB_flushNonGlobal(396,15927
+void BX_CPU_C::TLB_invlpg(427,16671
+void BX_CPP_AttrRegparmN(471,17873
+#define ERROR_NOT_PRESENT 497,18553
+#define ERROR_PROTECTION 498,18590
+#define ERROR_RESERVED 499,18627
+#define ERROR_CODE_ACCESS 500,18664
+void BX_CPU_C::page_fault(502,18702
+#define BX_LEVEL_PML4 529,19513
+#define BX_LEVEL_PDPE 530,19537
+#define BX_LEVEL_PDE 531,19561
+#define BX_LEVEL_PTE 532,19585
+int BX_CPU_C::check_entry_PAE(536,19633
+#define PAGING_PAE_RESERVED_BITS 588,21250
+#define PAGING_PAE_PDPTE1G_RESERVED_BITS 610,22089
+#define PAGING_PAE_PDE2M_RESERVED_BITS 633,23021
+static const char *bx_paging_level[bx_paging_level656,23875
+bx_phy_address BX_CPU_C::translate_linear_long_mode(659,24015
+#define PAGING_PAE_PDPTE_RESERVED_BITS 769,28243
+bx_bool BX_CPP_AttrRegparmN(772,28360
+bx_bool BX_CPP_AttrRegparmN(807,29332
+bx_phy_address BX_CPU_C::translate_linear_PAE(820,29648
+#define PAGING_PDE4M_RESERVED_BITS 954,34883
+bx_phy_address BX_CPU_C::translate_linear(958,35052
+#define BX_EPT_READ 1193,42862
+#define BX_EPT_WRITE 1194,42890
+#define BX_EPT_EXECUTE 1195,42918
+#define BX_EPT_ENTRY_NOT_PRESENT 1198,42969
+#define BX_EPT_ENTRY_READ_ONLY 1199,43014
+#define BX_EPT_ENTRY_WRITE_ONLY 1200,43059
+#define BX_EPT_ENTRY_READ_WRITE 1201,43104
+#define BX_EPT_ENTRY_EXECUTE_ONLY 1202,43149
+#define BX_EPT_ENTRY_READ_EXECUTE 1203,43194
+#define BX_EPT_ENTRY_WRITE_EXECUTE 1204,43239
+#define BX_EPT_ENTRY_READ_WRITE_EXECUTE 1205,43284
+#define PAGING_EPT_RESERVED_BITS 1207,43330
+bx_phy_address BX_CPU_C::translate_guest_physical(1209,43402
+bx_bool BX_CPU_C::dbg_translate_guest_physical(1329,47757
+bx_bool BX_CPU_C::dbg_xlate_linear2phy(1369,48870
+void BX_CPU_C::access_write_linear(1491,52364
+void BX_CPU_C::access_read_linear(1564,55797
+void BX_CPU_C::access_write_physical(1639,59286
+void BX_CPU_C::access_read_physical(1658,59715
+bx_hostpageaddr_t BX_CPU_C::getHostMemAddr(1677,60140
+
+proc_ctrl.cc,1134
+#define NEED_CPU_REG_SHORTCUTS 23,1089
+#define LOG_THIS 27,1186
+#define RAX 32,1307
+#define RCX 33,1323
+#define RDX 34,1339
+#define RIP 35,1355
+void BX_CPP_AttrRegparmN(38,1379
+void BX_CPP_AttrRegparmN(44,1567
+void BX_CPP_AttrRegparmN(49,1653
+void BX_CPP_AttrRegparmN(56,1767
+void BX_CPU_C::shutdown(71,2337
+void BX_CPP_AttrRegparmN(97,2994
+void BX_CPP_AttrRegparmN(137,4132
+void BX_CPP_AttrRegparmN(152,4439
+void BX_CPP_AttrRegparmN(175,4963
+void BX_CPP_AttrRegparmN(194,5378
+void BX_CPP_AttrRegparmN(237,6507
+void BX_CPU_C::handleCpuModeChange(476,16734
+void BX_CPU_C::handleAlignmentCheck(531,18363
+void BX_CPP_AttrRegparmN(548,18847
+Bit64u BX_CPU_C::get_TSC(591,20094
+void BX_CPU_C::set_TSC(600,20276
+void BX_CPP_AttrRegparmN(611,20543
+void BX_CPP_AttrRegparmN(634,20990
+bx_bool BX_CPU_C::is_monitor(652,21429
+void BX_CPU_C::check_monitor(663,21745
+void BX_CPP_AttrRegparmN(675,22097
+void BX_CPP_AttrRegparmN(753,24192
+void BX_CPP_AttrRegparmN(819,26169
+void BX_CPP_AttrRegparmN(911,30118
+void BX_CPP_AttrRegparmN(1011,34815
+void BX_CPP_AttrRegparmN(1131,40711
+void BX_CPP_AttrRegparmN(1257,46698
+
+protect_ctrl.cc,670
+#define NEED_CPU_REG_SHORTCUTS 22,1089
+#define LOG_THIS 25,1158
+void BX_CPP_AttrRegparmN(27,1192
+void BX_CPP_AttrRegparmN(64,2065
+void BX_CPP_AttrRegparmN(175,5019
+void BX_CPP_AttrRegparmN(276,7696
+void BX_CPP_AttrRegparmN(305,8480
+void BX_CPP_AttrRegparmN(334,9260
+void BX_CPP_AttrRegparmN(430,12131
+void BX_CPP_AttrRegparmN(541,15625
+void BX_CPP_AttrRegparmN(631,18178
+void BX_CPP_AttrRegparmN(703,20107
+void BX_CPP_AttrRegparmN(722,20721
+void BX_CPP_AttrRegparmN(741,21335
+void BX_CPP_AttrRegparmN(772,22259
+void BX_CPP_AttrRegparmN(805,23206
+void BX_CPP_AttrRegparmN(824,23808
+void BX_CPP_AttrRegparmN(843,24410
+void BX_CPP_AttrRegparmN(871,25270
+
+resolver.cc,281
+#define NEED_CPU_REG_SHORTCUTS 24,1163
+#define LOG_THIS 27,1232
+  bx_address  BX_CPP_AttrRegparmN(33,1296
+  bx_address  BX_CPP_AttrRegparmN(43,1523
+  bx_address  BX_CPP_AttrRegparmN(48,1679
+  bx_address  BX_CPP_AttrRegparmN(59,1947
+  bx_address  BX_CPP_AttrRegparmN(64,2092
+
+ret_far.cc,144
+#define NEED_CPU_REG_SHORTCUTS 24,1161
+#define LOG_THIS 27,1230
+#define RIP 31,1335
+#define RSP 32,1351
+  void BX_CPP_AttrRegparmN(35,1375
+
+segment_ctrl.cc,516
+#define NEED_CPU_REG_SHORTCUTS 23,1091
+#define LOG_THIS 26,1160
+void BX_CPP_AttrRegparmN(29,1238
+void BX_CPP_AttrRegparmN(44,1693
+void BX_CPP_AttrRegparmN(59,2146
+void BX_CPP_AttrRegparmN(74,2601
+void BX_CPP_AttrRegparmN(88,3010
+void BX_CPP_AttrRegparmN(100,3360
+void BX_CPP_AttrRegparmN(113,3730
+void BX_CPP_AttrRegparmN(126,4090
+void BX_CPP_AttrRegparmN(138,4440
+void BX_CPP_AttrRegparmN(151,4810
+void BX_CPP_AttrRegparmN(164,5170
+void BX_CPP_AttrRegparmN(176,5520
+void BX_CPP_AttrRegparmN(189,5890
+
+segment_ctrl_pro.cc,753
+#define NEED_CPU_REG_SHORTCUTS 22,1093
+#define LOG_THIS 25,1162
+  void BX_CPP_AttrRegparmN(28,1220
+  void BX_CPP_AttrRegparmN(211,7822
+BX_CPP_INLINE void BX_CPU_C::validate_seg_reg(237,8562
+void BX_CPU_C::validate_seg_regs(265,9307
+void parse_selector(273,9491
+Bit8u get_ar_byte(281,9724
+void set_ar_byte(289,9870
+  Bit32u BX_CPP_AttrRegparmN(297,10078
+  Bit32u BX_CPP_AttrRegparmN(325,10732
+bx_bool BX_CPU_C::set_segment_ar_data(374,12081
+void parse_descriptor(422,13506
+  void BX_CPP_AttrRegparmN(506,16313
+  void BX_CPP_AttrRegparmN(523,16848
+void BX_CPU_C::fetch_raw_descriptor(538,17402
+  bx_bool BX_CPP_AttrRegparmN(572,18644
+void BX_CPU_C::fetch_raw_descriptor_64(603,19478
+bx_bool BX_CPU_C::fetch_raw_descriptor2_64(644,21046
+
+shift16.cc,452
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+void BX_CPP_AttrRegparmN(27,1186
+void BX_CPP_AttrRegparmN(73,2387
+void BX_CPP_AttrRegparmN(115,3477
+void BX_CPP_AttrRegparmN(160,4648
+void BX_CPP_AttrRegparmN(201,5708
+void BX_CPP_AttrRegparmN(250,6818
+void BX_CPP_AttrRegparmN(299,7956
+void BX_CPP_AttrRegparmN(348,9075
+void BX_CPP_AttrRegparmN(389,10061
+void BX_CPP_AttrRegparmN(435,11060
+void BX_CPP_AttrRegparmN(479,12090
+
+shift32.cc,697
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+void BX_CPP_AttrRegparmN(27,1186
+void BX_CPP_AttrRegparmN(59,1938
+void BX_CPP_AttrRegparmN(87,2578
+void BX_CPP_AttrRegparmN(119,3349
+void BX_CPP_AttrRegparmN(147,4008
+void BX_CPP_AttrRegparmN(175,4647
+void BX_CPP_AttrRegparmN(199,5179
+void BX_CPP_AttrRegparmN(228,5841
+void BX_CPP_AttrRegparmN(252,6390
+void BX_CPP_AttrRegparmN(286,7152
+void BX_CPP_AttrRegparmN(317,7803
+void BX_CPP_AttrRegparmN(351,8593
+void BX_CPP_AttrRegparmN(382,9272
+void BX_CPP_AttrRegparmN(412,9949
+void BX_CPP_AttrRegparmN(439,10515
+void BX_CPP_AttrRegparmN(471,11251
+void BX_CPP_AttrRegparmN(498,11874
+void BX_CPP_AttrRegparmN(531,12657
+
+shift64.cc,697
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+void BX_CPP_AttrRegparmN(29,1209
+void BX_CPP_AttrRegparmN(61,1964
+void BX_CPP_AttrRegparmN(89,2603
+void BX_CPP_AttrRegparmN(121,3377
+void BX_CPP_AttrRegparmN(149,4035
+void BX_CPP_AttrRegparmN(178,4683
+void BX_CPP_AttrRegparmN(202,5214
+void BX_CPP_AttrRegparmN(231,5879
+void BX_CPP_AttrRegparmN(255,6427
+void BX_CPP_AttrRegparmN(289,7192
+void BX_CPP_AttrRegparmN(320,7842
+void BX_CPP_AttrRegparmN(354,8618
+void BX_CPP_AttrRegparmN(385,9279
+void BX_CPP_AttrRegparmN(415,9959
+void BX_CPP_AttrRegparmN(440,10522
+void BX_CPP_AttrRegparmN(472,11261
+void BX_CPP_AttrRegparmN(499,11883
+void BX_CPP_AttrRegparmN(532,12709
+
+shift8.cc,309
+#define NEED_CPU_REG_SHORTCUTS 22,1082
+#define LOG_THIS 25,1151
+void BX_CPP_AttrRegparmN(27,1185
+void BX_CPP_AttrRegparmN(79,2326
+void BX_CPP_AttrRegparmN(132,3487
+void BX_CPP_AttrRegparmN(178,4537
+void BX_CPP_AttrRegparmN(219,5531
+void BX_CPP_AttrRegparmN(265,6504
+void BX_CPP_AttrRegparmN(309,7522
+
+smm.cc,630
+#define NEED_CPU_REG_SHORTCUTS 23,1156
+#define LOG_THIS 27,1242
+#define RIP 32,1324
+#define SMM_SAVE_STATE_MAP_SIZE 65,2597
+void BX_CPP_AttrRegparmN(67,2634
+void BX_CPU_C::enter_system_management_mode(116,4047
+#define SMRAM_TRANSLATE(242,9006
+static unsigned smram_map[smram_map245,9153
+void BX_CPU_C::init_SMRAM(249,9222
+void BX_CPU_C::init_SMRAM(359,15312
+#define SMRAM_FIELD(427,18979
+BX_CPP_INLINE Bit64u SMRAM_FIELD64(431,19063
+void BX_CPU_C::smram_save_state(438,19289
+bx_bool BX_CPU_C::smram_restore_state(498,22847
+void BX_CPU_C::smram_save_state(685,29605
+bx_bool BX_CPU_C::smram_restore_state(738,32522
+
+soft_int.cc,293
+#define NEED_CPU_REG_SHORTCUTS 22,1084
+#define LOG_THIS 25,1153
+#define RSP 29,1254
+void BX_CPP_AttrRegparmN(32,1278
+void BX_CPP_AttrRegparmN(47,1739
+void BX_CPP_AttrRegparmN(64,2291
+void BX_CPP_AttrRegparmN(86,2814
+void BX_CPP_AttrRegparmN(107,3294
+void BX_CPP_AttrRegparmN(143,4082
+
+sse.cc,4395
+#define NEED_CPU_REG_SHORTCUTS 24,1159
+#define LOG_THIS 27,1228
+void BX_CPP_AttrRegparmN(34,1440
+void BX_CPP_AttrRegparmN(65,2183
+void BX_CPP_AttrRegparmN(97,3154
+void BX_CPP_AttrRegparmN(124,3916
+void BX_CPP_AttrRegparmN(157,5245
+void BX_CPP_AttrRegparmN(188,6089
+void BX_CPP_AttrRegparmN(221,7418
+void BX_CPP_AttrRegparmN(253,8389
+void BX_CPP_AttrRegparmN(280,9151
+void BX_CPP_AttrRegparmN(307,9822
+void BX_CPP_AttrRegparmN(334,10486
+void BX_CPP_AttrRegparmN(361,11150
+void BX_CPP_AttrRegparmN(393,12300
+void BX_CPP_AttrRegparmN(432,13844
+void BX_CPP_AttrRegparmN(463,14772
+void BX_CPP_AttrRegparmN(490,15488
+void BX_CPP_AttrRegparmN(517,16224
+void BX_CPP_AttrRegparmN(546,17124
+void BX_CPP_AttrRegparmN(573,17892
+void BX_CPP_AttrRegparmN(602,18682
+void BX_CPP_AttrRegparmN(628,19417
+void BX_CPP_AttrRegparmN(657,20201
+void BX_CPP_AttrRegparmN(689,21274
+void BX_CPP_AttrRegparmN(718,22056
+void BX_CPP_AttrRegparmN(745,22758
+void BX_CPP_AttrRegparmN(773,23614
+void BX_CPP_AttrRegparmN(805,24738
+void BX_CPP_AttrRegparmN(833,25594
+void BX_CPP_AttrRegparmN(860,26296
+void BX_CPP_AttrRegparmN(888,27152
+void BX_CPP_AttrRegparmN(920,28276
+void BX_CPP_AttrRegparmN(948,29132
+void BX_CPP_AttrRegparmN(981,30193
+void BX_CPP_AttrRegparmN(1015,30981
+void BX_CPP_AttrRegparmN(1044,31792
+void BX_CPP_AttrRegparmN(1071,32505
+void BX_CPP_AttrRegparmN(1104,33520
+void BX_CPP_AttrRegparmN(1125,34062
+void BX_CPP_AttrRegparmN(1146,34601
+void BX_CPP_AttrRegparmN(1187,35632
+void BX_CPP_AttrRegparmN(1208,36174
+void BX_CPP_AttrRegparmN(1234,36831
+void BX_CPP_AttrRegparmN(1267,37700
+void BX_CPP_AttrRegparmN(1315,38790
+void BX_CPP_AttrRegparmN(1354,39809
+void BX_CPP_AttrRegparmN(1394,41080
+void BX_CPP_AttrRegparmN(1427,42004
+void BX_CPP_AttrRegparmN(1455,42746
+void BX_CPP_AttrRegparmN(1496,44337
+void BX_CPP_AttrRegparmN(1523,45030
+void BX_CPP_AttrRegparmN(1555,46128
+void BX_CPP_AttrRegparmN(1583,46986
+void BX_CPP_AttrRegparmN(1624,48577
+void BX_CPP_AttrRegparmN(1664,49880
+void BX_CPP_AttrRegparmN(1697,50804
+void BX_CPP_AttrRegparmN(1725,51546
+void BX_CPP_AttrRegparmN(1759,52656
+void BX_CPP_AttrRegparmN(1785,53317
+void BX_CPP_AttrRegparmN(1811,53989
+void BX_CPP_AttrRegparmN(1840,54783
+void BX_CPP_AttrRegparmN(1870,55637
+void BX_CPP_AttrRegparmN(1900,56467
+void BX_CPP_AttrRegparmN(1927,57161
+void BX_CPP_AttrRegparmN(1959,58267
+void BX_CPP_AttrRegparmN(1987,59129
+void BX_CPP_AttrRegparmN(2014,59767
+void BX_CPP_AttrRegparmN(2028,60090
+void BX_CPP_AttrRegparmN(2057,60925
+void BX_CPP_AttrRegparmN(2084,61654
+void BX_CPP_AttrRegparmN(2126,62635
+void BX_CPP_AttrRegparmN(2164,63500
+void BX_CPP_AttrRegparmN(2200,64307
+void BX_CPP_AttrRegparmN(2226,64959
+void BX_CPP_AttrRegparmN(2267,66377
+void BX_CPP_AttrRegparmN(2300,67183
+void BX_CPP_AttrRegparmN(2333,67979
+void BX_CPP_AttrRegparmN(2362,68729
+void BX_CPP_AttrRegparmN(2388,69381
+void BX_CPP_AttrRegparmN(2415,70099
+void BX_CPP_AttrRegparmN(2447,71389
+void BX_CPP_AttrRegparmN(2476,72142
+void BX_CPP_AttrRegparmN(2502,72831
+void BX_CPP_AttrRegparmN(2529,73520
+void BX_CPP_AttrRegparmN(2588,75757
+void BX_CPP_AttrRegparmN(2635,77306
+void BX_CPP_AttrRegparmN(2667,78370
+void BX_CPP_AttrRegparmN(2708,79845
+void BX_CPP_AttrRegparmN(2749,81319
+void BX_CPP_AttrRegparmN(2776,82036
+void BX_CPP_AttrRegparmN(2808,83325
+void BX_CPP_AttrRegparmN(2842,84494
+void BX_CPP_AttrRegparmN(2868,85145
+void BX_CPP_AttrRegparmN(2895,85862
+void BX_CPP_AttrRegparmN(2927,87151
+void BX_CPP_AttrRegparmN(2961,88323
+void BX_CPP_AttrRegparmN(2987,88975
+void BX_CPP_AttrRegparmN(3029,89956
+void BX_CPP_AttrRegparmN(3067,90821
+void BX_CPP_AttrRegparmN(3103,91628
+void BX_CPP_AttrRegparmN(3129,92361
+void BX_CPP_AttrRegparmN(3164,93279
+void BX_CPP_AttrRegparmN(3209,94843
+void BX_CPP_AttrRegparmN(3236,95504
+void BX_CPP_AttrRegparmN(3268,96360
+void BX_CPP_AttrRegparmN(3296,97080
+void BX_CPP_AttrRegparmN(3322,97732
+void BX_CPP_AttrRegparmN(3349,98393
+void BX_CPP_AttrRegparmN(3381,99249
+void BX_CPP_AttrRegparmN(3409,99979
+void BX_CPP_AttrRegparmN(3438,100600
+void BX_CPP_AttrRegparmN(3484,102459
+void BX_CPP_AttrRegparmN(3513,103083
+void BX_CPP_AttrRegparmN(3538,103592
+void BX_CPP_AttrRegparmN(3572,104775
+void BX_CPP_AttrRegparmN(3597,105287
+void BX_CPP_AttrRegparmN(3620,105743
+void BX_CPP_AttrRegparmN(3640,106208
+void BX_CPP_AttrRegparmN(3663,106664
+
+sse_move.cc,2208
+#define NEED_CPU_REG_SHORTCUTS 24,1165
+#define LOG_THIS 27,1234
+void BX_CPU_C::print_state_SSE(31,1291
+Bit8u BX_CPU_C::pack_FPU_TW(44,1629
+Bit16u BX_CPU_C::unpack_FPU_TW(60,2109
+void BX_CPP_AttrRegparmN(124,4942
+void BX_CPP_AttrRegparmN(140,5321
+void BX_CPP_AttrRegparmN(154,5638
+void BX_CPP_AttrRegparmN(274,9045
+void BX_CPP_AttrRegparmN(393,12405
+void BX_CPP_AttrRegparmN(410,12839
+void BX_CPP_AttrRegparmN(423,13221
+void BX_CPP_AttrRegparmN(431,13416
+void BX_CPP_AttrRegparmN(448,13858
+void BX_CPP_AttrRegparmN(456,14053
+void BX_CPP_AttrRegparmN(467,14389
+void BX_CPP_AttrRegparmN(478,14735
+void BX_CPP_AttrRegparmN(498,15279
+void BX_CPP_AttrRegparmN(508,15572
+void BX_CPP_AttrRegparmN(520,15941
+void BX_CPP_AttrRegparmN(530,16201
+void BX_CPP_AttrRegparmN(545,16602
+void BX_CPP_AttrRegparmN(571,17168
+void BX_CPP_AttrRegparmN(598,17868
+void BX_CPP_AttrRegparmN(626,18599
+void BX_CPP_AttrRegparmN(636,18894
+void BX_CPP_AttrRegparmN(646,19154
+void BX_CPP_AttrRegparmN(662,19586
+void BX_CPP_AttrRegparmN(672,19873
+void BX_CPP_AttrRegparmN(687,20251
+void BX_CPP_AttrRegparmN(725,21168
+void BX_CPP_AttrRegparmN(743,21623
+void BX_CPP_AttrRegparmN(759,21986
+void BX_CPP_AttrRegparmN(775,22296
+void BX_CPP_AttrRegparmN(791,22582
+void BX_CPP_AttrRegparmN(799,22785
+void BX_CPP_AttrRegparmN(811,23098
+void BX_CPP_AttrRegparmN(822,23323
+void BX_CPP_AttrRegparmN(836,23625
+void BX_CPP_AttrRegparmN(853,24053
+void BX_CPP_AttrRegparmN(865,24353
+void BX_CPP_AttrRegparmN(875,24643
+void BX_CPP_AttrRegparmN(890,25061
+void BX_CPP_AttrRegparmN(908,25532
+void BX_CPP_AttrRegparmN(943,26720
+void BX_CPP_AttrRegparmN(954,26992
+void BX_CPP_AttrRegparmN(967,27312
+void BX_CPP_AttrRegparmN(981,27721
+void BX_CPP_AttrRegparmN(1013,28659
+void BX_CPP_AttrRegparmN(1041,29385
+void BX_CPP_AttrRegparmN(1067,30001
+void BX_CPP_AttrRegparmN(1095,30737
+void BX_CPP_AttrRegparmN(1121,31360
+void BX_CPP_AttrRegparmN(1147,31987
+void BX_CPP_AttrRegparmN(1170,32541
+void BX_CPP_AttrRegparmN(1202,33398
+void BX_CPP_AttrRegparmN(1230,34084
+void BX_CPP_AttrRegparmN(1256,34680
+void BX_CPP_AttrRegparmN(1284,35372
+void BX_CPP_AttrRegparmN(1310,35973
+void BX_CPP_AttrRegparmN(1336,36578
+
+sse_pfp.cc,2990
+#define NEED_CPU_REG_SHORTCUTS 24,1163
+#define LOG_THIS 27,1232
+void BX_CPU_C::check_exceptionsSSE(33,1328
+BX_CPP_INLINE void mxcsr_to_softfloat_status_word(50,1816
+static float32_compare_method compare32[compare3262,2394
+static float64_compare_method compare64[compare6470,2563
+void BX_CPP_AttrRegparmN(86,2968
+void BX_CPP_AttrRegparmN(110,3685
+void BX_CPP_AttrRegparmN(138,4542
+void BX_CPP_AttrRegparmN(158,5071
+void BX_CPP_AttrRegparmN(182,5726
+void BX_CPP_AttrRegparmN(203,6289
+void BX_CPP_AttrRegparmN(239,7246
+void BX_CPP_AttrRegparmN(260,7822
+void BX_CPP_AttrRegparmN(295,8743
+void BX_CPP_AttrRegparmN(342,10081
+void BX_CPP_AttrRegparmN(386,11399
+void BX_CPP_AttrRegparmN(431,12610
+void BX_CPP_AttrRegparmN(477,13919
+void BX_CPP_AttrRegparmN(525,15309
+void BX_CPP_AttrRegparmN(570,16669
+void BX_CPP_AttrRegparmN(615,17922
+void BX_CPP_AttrRegparmN(658,19065
+void BX_CPP_AttrRegparmN(702,20291
+void BX_CPP_AttrRegparmN(744,21520
+void BX_CPP_AttrRegparmN(776,22411
+void BX_CPP_AttrRegparmN(810,23414
+void BX_CPP_AttrRegparmN(847,24552
+void BX_CPP_AttrRegparmN(890,25885
+void BX_CPP_AttrRegparmN(933,27280
+void BX_CPP_AttrRegparmN(974,28519
+void BX_CPP_AttrRegparmN(1013,29611
+void BX_CPP_AttrRegparmN(1046,30416
+void BX_CPP_AttrRegparmN(1083,31402
+void BX_CPP_AttrRegparmN(1120,32398
+void BX_CPP_AttrRegparmN(1157,33377
+void BX_CPP_AttrRegparmN(1194,34326
+void BX_CPP_AttrRegparmN(1237,35573
+void BX_CPP_AttrRegparmN(1276,36586
+void BX_CPP_AttrRegparmN(1307,37417
+void BX_CPP_AttrRegparmN(1338,38278
+void BX_CPP_AttrRegparmN(1385,39910
+void BX_CPP_AttrRegparmN(1426,41153
+void BX_CPP_AttrRegparmN(1463,42128
+void BX_CPP_AttrRegparmN(1500,43103
+void BX_CPP_AttrRegparmN(1547,44740
+void BX_CPP_AttrRegparmN(1588,45988
+void BX_CPP_AttrRegparmN(1625,46968
+void BX_CPP_AttrRegparmN(1662,47943
+void BX_CPP_AttrRegparmN(1709,49580
+void BX_CPP_AttrRegparmN(1750,50828
+void BX_CPP_AttrRegparmN(1787,51808
+void BX_CPP_AttrRegparmN(1824,52772
+void BX_CPP_AttrRegparmN(1876,54696
+void BX_CPP_AttrRegparmN(1920,56092
+void BX_CPP_AttrRegparmN(1958,57118
+void BX_CPP_AttrRegparmN(1996,58147
+void BX_CPP_AttrRegparmN(2043,59786
+void BX_CPP_AttrRegparmN(2084,61036
+void BX_CPP_AttrRegparmN(2121,62018
+void BX_CPP_AttrRegparmN(2158,62982
+void BX_CPP_AttrRegparmN(2210,64918
+void BX_CPP_AttrRegparmN(2254,66320
+void BX_CPP_AttrRegparmN(2292,67349
+void BX_CPP_AttrRegparmN(2330,68382
+void BX_CPP_AttrRegparmN(2371,69629
+void BX_CPP_AttrRegparmN(2418,71272
+void BX_CPP_AttrRegparmN(2459,72524
+void BX_CPP_AttrRegparmN(2506,74156
+void BX_CPP_AttrRegparmN(2580,76477
+void BX_CPP_AttrRegparmN(2642,78232
+void BX_CPP_AttrRegparmN(2699,79644
+void BX_CPP_AttrRegparmN(2756,81030
+void BX_CPP_AttrRegparmN(2797,82284
+void BX_CPP_AttrRegparmN(2840,83787
+void BX_CPP_AttrRegparmN(2887,85266
+void BX_CPP_AttrRegparmN(2930,86495
+void BX_CPP_AttrRegparmN(2969,87539
+void BX_CPP_AttrRegparmN(3012,88797
+void BX_CPP_AttrRegparmN(3077,91050
+
+sse_rcp.cc,474
+#define NEED_CPU_REG_SHORTCUTS 24,1163
+#define LOG_THIS 27,1232
+BX_CPP_INLINE float32 convert_to_QNaN(33,1328
+static Bit16u rcp_table[rcp_table38,1409
+static float32 approximate_rcp(298,18910
+void BX_CPP_AttrRegparmN(347,20001
+void BX_CPP_AttrRegparmN(377,20825
+Bit16u rsqrt_table0[rsqrt_table0400,21350
+Bit16u rsqrt_table1[rsqrt_table1532,30087
+static float32 approximate_rsqrt(666,38886
+void BX_CPP_AttrRegparmN(723,40147
+void BX_CPP_AttrRegparmN(750,40814
+
+sse_string.cc,459
+#define NEED_CPU_REG_SHORTCUTS 24,1166
+#define LOG_THIS 27,1235
+#define RCX 31,1336
+static void compare_strings(37,1440
+static unsigned find_eos32(129,4023
+static unsigned find_eos64(142,4325
+static unsigned find_eos(155,4612
+static bx_bool override_if_data_invalid(171,4904
+static Bit16u aggregate(207,5711
+void BX_CPP_AttrRegparmN(292,7621
+void BX_CPP_AttrRegparmN(359,9495
+void BX_CPP_AttrRegparmN(422,11261
+void BX_CPP_AttrRegparmN(480,12997
+
+stack16.cc,776
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+#define RSP 29,1253
+void BX_CPP_AttrRegparmN(32,1277
+void BX_CPP_AttrRegparmN(37,1394
+void BX_CPP_AttrRegparmN(42,1531
+void BX_CPP_AttrRegparmN(47,1668
+void BX_CPP_AttrRegparmN(52,1805
+void BX_CPP_AttrRegparmN(57,1942
+void BX_CPP_AttrRegparmN(62,2079
+void BX_CPP_AttrRegparmN(67,2216
+void BX_CPP_AttrRegparmN(77,2406
+void BX_CPP_AttrRegparmN(87,2596
+void BX_CPP_AttrRegparmN(97,2786
+void BX_CPP_AttrRegparmN(107,2976
+void BX_CPP_AttrRegparmN(124,3461
+void BX_CPP_AttrRegparmN(129,3579
+void BX_CPP_AttrRegparmN(145,4004
+void BX_CPP_AttrRegparmN(150,4095
+void BX_CPP_AttrRegparmN(159,4306
+void BX_CPP_AttrRegparmN(190,5682
+void BX_CPP_AttrRegparmN(230,7178
+void BX_CPP_AttrRegparmN(293,8633
+
+stack32.cc,777
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+#define RSP 29,1253
+void BX_CPP_AttrRegparmN(32,1277
+void BX_CPP_AttrRegparmN(48,1704
+void BX_CPP_AttrRegparmN(53,1822
+void BX_CPP_AttrRegparmN(58,1942
+void BX_CPP_AttrRegparmN(63,2079
+void BX_CPP_AttrRegparmN(68,2216
+void BX_CPP_AttrRegparmN(73,2353
+void BX_CPP_AttrRegparmN(78,2490
+void BX_CPP_AttrRegparmN(83,2627
+void BX_CPP_AttrRegparmN(88,2764
+void BX_CPP_AttrRegparmN(104,3183
+void BX_CPP_AttrRegparmN(120,3602
+void BX_CPP_AttrRegparmN(136,4021
+void BX_CPP_AttrRegparmN(152,4440
+void BX_CPP_AttrRegparmN(175,5154
+void BX_CPP_AttrRegparmN(180,5245
+void BX_CPP_AttrRegparmN(189,5465
+void BX_CPP_AttrRegparmN(220,6889
+void BX_CPP_AttrRegparmN(260,8452
+void BX_CPP_AttrRegparmN(321,9895
+
+stack64.cc,441
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+void BX_CPP_AttrRegparmN(29,1209
+void BX_CPP_AttrRegparmN(45,1640
+void BX_CPP_AttrRegparmN(50,1758
+void BX_CPP_AttrRegparmN(55,1877
+void BX_CPP_AttrRegparmN(60,2014
+void BX_CPP_AttrRegparmN(65,2151
+void BX_CPP_AttrRegparmN(73,2397
+void BX_CPP_AttrRegparmN(81,2643
+void BX_CPP_AttrRegparmN(87,2769
+void BX_CPP_AttrRegparmN(96,2984
+void BX_CPP_AttrRegparmN(133,3974
+
+string.cc,3142
+#define NEED_CPU_REG_SHORTCUTS 22,1082
+#define LOG_THIS 25,1151
+#define RSI 28,1210
+#define RDI 29,1226
+#define RAX 30,1242
+#define RCX 31,1258
+Bit32u BX_CPU_C::FastRepMOVSB(39,1345
+Bit32u BX_CPU_C::FastRepMOVSW(109,3538
+Bit32u BX_CPU_C::FastRepMOVSD(182,5899
+Bit32u BX_CPU_C::FastRepSTOSB(255,8273
+Bit32u BX_CPU_C::FastRepSTOSW(309,9840
+Bit32u BX_CPU_C::FastRepSTOSD(365,11536
+void BX_CPP_AttrRegparmN(426,13275
+void BX_CPP_AttrRegparmN(443,13736
+void BX_CPP_AttrRegparmN(460,14197
+void BX_CPP_AttrRegparmN(478,14680
+void BX_CPP_AttrRegparmN(496,15103
+void BX_CPP_AttrRegparmN(514,15451
+void BX_CPP_AttrRegparmN(563,16794
+void BX_CPP_AttrRegparmN(590,17260
+void BX_CPP_AttrRegparmN(614,17706
+void BX_CPP_AttrRegparmN(640,18170
+void BX_CPP_AttrRegparmN(665,18594
+void BX_CPP_AttrRegparmN(689,18999
+void BX_CPP_AttrRegparmN(747,20482
+void BX_CPP_AttrRegparmN(771,20901
+void BX_CPP_AttrRegparmN(796,21351
+void BX_CPP_AttrRegparmN(825,21759
+void BX_CPP_AttrRegparmN(843,22235
+void BX_CPP_AttrRegparmN(861,22711
+void BX_CPP_AttrRegparmN(880,23209
+void BX_CPP_AttrRegparmN(898,23641
+void BX_CPP_AttrRegparmN(926,24099
+void BX_CPP_AttrRegparmN(956,24618
+void BX_CPP_AttrRegparmN(985,25117
+void BX_CPP_AttrRegparmN(1013,25620
+void BX_CPP_AttrRegparmN(1043,26184
+void BX_CPP_AttrRegparmN(1072,26708
+void BX_CPP_AttrRegparmN(1100,27213
+void BX_CPP_AttrRegparmN(1131,27780
+void BX_CPP_AttrRegparmN(1159,28299
+void BX_CPP_AttrRegparmN(1188,28849
+void BX_CPP_AttrRegparmN(1221,29357
+void BX_CPP_AttrRegparmN(1238,29786
+void BX_CPP_AttrRegparmN(1255,30215
+void BX_CPP_AttrRegparmN(1273,30670
+void BX_CPP_AttrRegparmN(1290,31058
+void BX_CPP_AttrRegparmN(1313,31426
+void BX_CPP_AttrRegparmN(1337,31846
+void BX_CPP_AttrRegparmN(1361,32248
+void BX_CPP_AttrRegparmN(1383,32653
+void BX_CPP_AttrRegparmN(1407,33111
+void BX_CPP_AttrRegparmN(1431,33531
+void BX_CPP_AttrRegparmN(1453,33939
+void BX_CPP_AttrRegparmN(1478,34401
+void BX_CPP_AttrRegparmN(1501,34817
+void BX_CPP_AttrRegparmN(1525,35260
+void BX_CPP_AttrRegparmN(1553,35665
+void BX_CPP_AttrRegparmN(1569,36079
+void BX_CPP_AttrRegparmN(1585,36491
+void BX_CPP_AttrRegparmN(1602,36931
+void BX_CPP_AttrRegparmN(1619,37310
+void BX_CPP_AttrRegparmN(1636,37560
+void BX_CPP_AttrRegparmN(1684,38788
+void BX_CPP_AttrRegparmN(1702,39075
+void BX_CPP_AttrRegparmN(1719,39354
+void BX_CPP_AttrRegparmN(1738,39686
+void BX_CPP_AttrRegparmN(1756,39979
+void BX_CPP_AttrRegparmN(1773,40261
+void BX_CPP_AttrRegparmN(1793,40597
+void BX_CPP_AttrRegparmN(1810,40886
+void BX_CPP_AttrRegparmN(1828,41202
+void BX_CPP_AttrRegparmN(1850,41480
+void BX_CPP_AttrRegparmN(1866,41894
+void BX_CPP_AttrRegparmN(1882,42308
+void BX_CPP_AttrRegparmN(1899,42748
+void BX_CPP_AttrRegparmN(1916,43130
+void BX_CPP_AttrRegparmN(1933,43378
+void BX_CPP_AttrRegparmN(1952,43679
+void BX_CPP_AttrRegparmN(1970,43961
+void BX_CPP_AttrRegparmN(1987,44235
+void BX_CPP_AttrRegparmN(2006,44562
+void BX_CPP_AttrRegparmN(2024,44850
+void BX_CPP_AttrRegparmN(2041,45127
+void BX_CPP_AttrRegparmN(2061,45458
+void BX_CPP_AttrRegparmN(2078,45742
+void BX_CPP_AttrRegparmN(2096,46053
+
+tasking.cc,246
+#define NEED_CPU_REG_SHORTCUTS 22,1083
+#define LOG_THIS 25,1152
+void BX_CPU_C::task_switch(108,5137
+void BX_CPU_C::task_switch_load_selector(691,27972
+void BX_CPU_C::get_SS_ESP_from_TSS(739,29672
+Bit64u BX_CPU_C::get_RSP_from_TSS(774,31228
+
+vm8086.cc,382
+#define NEED_CPU_REG_SHORTCUTS 22,1082
+#define LOG_THIS 25,1151
+void BX_CPU_C::stack_return_to_v86(43,1637
+  #define BX_CR4_VME_ENABLED 96,3579
+  #define BX_CR4_VME_ENABLED 98,3646
+void BX_CPU_C::iret16_stack_return_from_v86(101,3687
+void BX_CPU_C::iret32_stack_return_from_v86(144,4941
+int BX_CPU_C::v86_redirect_interrupt(172,5775
+void BX_CPU_C::init_v8086_mode(238,7729
+
+vmexit.cc,1576
+#define NEED_CPU_REG_SHORTCUTS 24,1162
+#define LOG_THIS 27,1231
+#define RIP 31,1344
+#define RDI 32,1360
+#define RSI 33,1376
+Bit32u gen_instruction_info(38,1420
+void BX_CPP_AttrRegparmN(101,3056
+void BX_CPP_AttrRegparmN(146,4237
+void BX_CPP_AttrRegparmN(156,4473
+void BX_CPP_AttrRegparmN(166,4717
+Bit64s BX_CPU_C::VMX_TSC_Offset(176,5007
+void BX_CPP_AttrRegparmN(187,5218
+void BX_CPP_AttrRegparmN(197,5462
+void BX_CPP_AttrRegparmN(208,5735
+void BX_CPP_AttrRegparmN(218,5987
+void BX_CPU_C::VMexit_ExtInterrupt(229,6266
+void BX_CPU_C::VMexit_Event(243,6742
+void BX_CPU_C::VMexit_TripleFault(336,9746
+void BX_CPP_AttrRegparmN(349,10089
+void BX_CPP_AttrRegparmN(358,10361
+void BX_CPP_AttrRegparmN(363,10495
+#define VMX_VMEXIT_IO_PORTIN 403,11815
+#define VMX_VMEXIT_IO_INSTR_STRING 404,11860
+#define VMX_VMEXIT_IO_INSTR_REP 405,11905
+#define VMX_VMEXIT_IO_INSTR_IMM 406,11950
+void BX_CPP_AttrRegparmN(408,11996
+bx_bool BX_CPP_AttrRegparmN(516,15588
+Bit32u BX_CPP_AttrRegparmN(538,16148
+bx_address BX_CPP_AttrRegparmN(569,17114
+void BX_CPP_AttrRegparmN(586,17660
+void BX_CPP_AttrRegparmN(600,18036
+bx_address BX_CPP_AttrRegparmN(617,18531
+void BX_CPP_AttrRegparmN(634,19083
+void BX_CPP_AttrRegparmN(648,19459
+void BX_CPP_AttrRegparmN(670,20150
+Bit32u BX_CPU_C::VMX_Read_VTPR(686,20584
+void BX_CPU_C::VMX_Write_VTPR(695,20880
+bx_bool BX_CPP_AttrRegparmN(713,21474
+void BX_CPU_C::VMX_Virtual_Apic_Read(724,21803
+void BX_CPU_C::VMX_Virtual_Apic_Write(750,22705
+void BX_CPP_AttrRegparmN(767,23270
+Bit16u BX_CPU_C::VMX_Get_Current_VPID(777,23562
+
+vmx.cc,2414
+#define NEED_CPU_REG_SHORTCUTS 24,1159
+#define LOG_THIS 27,1228
+#define RIP 31,1311
+#define RSP 32,1327
+#define VMCSPTR_VALID(37,1371
+static unsigned vmcs_map[vmcs_map45,1630
+void BX_CPU_C::init_VMCS(47,1690
+void BX_CPU_C::set_VMCSPTR(80,2640
+Bit16u BX_CPU_C::VMread16(90,2888
+void BX_CPU_C::VMwrite16(115,3676
+Bit32u BX_CPU_C::VMread32(136,4449
+void BX_CPU_C::VMwrite32(159,5162
+Bit64u BX_CPU_C::VMread64(178,5868
+void BX_CPU_C::VMwrite64(203,6624
+BX_CPP_INLINE void BX_CPU_C::VMsucceed(228,7516
+BX_CPP_INLINE void BX_CPU_C::VMfailInvalid(233,7588
+BX_CPP_INLINE void BX_CPU_C::VMfail(238,7675
+void BX_CPU_C::VMabort(249,7951
+unsigned BX_CPU_C::VMXReadRevisionID(258,8266
+BX_CPP_INLINE bx_bool is_eptptr_valid(269,8604
+#define BX_EPTPTR_RESERVED_BITS 281,9007
+#define VMENTRY_INJECTING_EVENT(295,9373
+#define VMX_CHECKS_USE_MSR_VMX_PINBASED_CTRLS_LO 297,9462
+#define VMX_CHECKS_USE_MSR_VMX_PINBASED_CTRLS_HI 299,9608
+#define VMX_CHECKS_USE_MSR_VMX_PROCBASED_CTRLS_LO 302,9755
+#define VMX_CHECKS_USE_MSR_VMX_PROCBASED_CTRLS_HI 304,9904
+#define VMX_CHECKS_USE_MSR_VMX_VMEXIT_CTRLS_LO 307,10054
+#define VMX_CHECKS_USE_MSR_VMX_VMEXIT_CTRLS_HI 309,10194
+#define VMX_CHECKS_USE_MSR_VMX_VMENTRY_CTRLS_LO 312,10335
+#define VMX_CHECKS_USE_MSR_VMX_VMENTRY_CTRLS_HI 314,10478
+VMX_error_code BX_CPU_C::VMenterLoadCheckVmControls(317,10622
+VMX_error_code BX_CPU_C::VMenterLoadCheckHostState(645,23842
+BX_CPP_INLINE bx_bool IsLimitAccessRightsConsistent(836,30535
+Bit32u BX_CPU_C::VMenterLoadCheckGuestState(857,30995
+#define VMX_KEEP_CR0_BITS 1472,53037
+void BX_CPU_C::VMenterInjectEvents(1605,57185
+Bit32u BX_CPU_C::LoadMSRs(1678,59163
+Bit32u BX_CPU_C::StoreMSRs(1712,60005
+void BX_CPU_C::VMexitSaveGuestState(1746,60877
+void BX_CPU_C::VMexitLoadHostState(1862,65800
+void BX_CPU_C::VMexit(2047,72515
+void BX_CPP_AttrRegparmN(2137,75095
+void BX_CPP_AttrRegparmN(2202,77237
+void BX_CPP_AttrRegparmN(2239,78288
+void BX_CPP_AttrRegparmN(2318,81333
+void BX_CPP_AttrRegparmN(2477,88184
+void BX_CPP_AttrRegparmN(2522,89632
+BX_CPP_INLINE Bit32u rotate_r(2547,90401
+BX_CPP_INLINE Bit32u rotate_l(2552,90492
+void BX_CPP_AttrRegparmN(2557,90583
+void BX_CPP_AttrRegparmN(2876,100577
+void BX_CPP_AttrRegparmN(3203,110961
+void BX_CPP_AttrRegparmN(3254,112667
+void BX_CPP_AttrRegparmN(3315,114223
+void BX_CPU_C::register_vmx_state(3399,116605
+#undef NEED_CPU_REG_SHORTCUTS3503,122825
+
+xsave.cc,248
+#define NEED_CPU_REG_SHORTCUTS 24,1161
+#define LOG_THIS 27,1230
+#define RAX 31,1331
+#define RDX 32,1347
+void BX_CPP_AttrRegparmN(36,1386
+void BX_CPP_AttrRegparmN(157,5225
+void BX_CPP_AttrRegparmN(305,9781
+void BX_CPP_AttrRegparmN(326,10323
+
+apic.h,1176
+#define BX_CPU_APIC_H 24,1124
+#define APIC_LEVEL_TRIGGERED	28,1170
+#define APIC_EDGE_TRIGGERED	29,1201
+#define BX_LAPIC_BASE_ADDR 31,1232
+#define BX_NUM_LOCAL_APICS 32,1302
+#define BX_LAPIC_MAX_INTS 33,1348
+#define BX_APIC_GLOBALLY_DISABLED 35,1381
+#define BX_APIC_STATE_INVALID 36,1417
+#define BX_APIC_XAPIC_MODE 37,1453
+#define BX_APIC_X2APIC_MODE 38,1489
+typedef Bit32u apic_dest_t;40,1526
+#define APIC_ERR_ILLEGAL_ADDR 71,2715
+#define APIC_ERR_RX_ILLEGAL_VEC 72,2753
+#define APIC_ERR_TX_ILLEGAL_VEC 73,2791
+#define X2APIC_ERR_REDIRECTIBLE_IPI 74,2829
+#define APIC_ERR_RX_ACCEPT_ERR 75,2870
+#define APIC_ERR_TX_ACCEPT_ERR 76,2908
+#define APIC_ERR_RX_CHECKSUM 77,2946
+#define APIC_ERR_TX_CHECKSUM 78,2984
+#define APIC_LVT_ENTRIES 86,3187
+#define APIC_LVT_TIMER 88,3246
+#define APIC_LVT_THERMAL 89,3273
+#define APIC_LVT_PERFMON 90,3300
+#define APIC_LVT_LINT0 91,3327
+#define APIC_LVT_LINT1 92,3354
+#define APIC_LVT_ERROR 93,3381
+#define APIC_DM_FIXED	107,3767
+#define APIC_DM_LOWPRI	108,3791
+#define APIC_DM_SMI	109,3816
+#define APIC_DM_NMI	111,3856
+#define APIC_DM_INIT	112,3878
+#define APIC_DM_SIPI	113,3901
+#define APIC_DM_EXTINT	114,3924
+
+cpu.h,20748
+#  define BX_CPU_H 23,1096
+#define BX_SEG_REG_ES 29,1198
+#define BX_SEG_REG_CS 30,1225
+#define BX_SEG_REG_SS 31,1252
+#define BX_SEG_REG_DS 32,1279
+#define BX_SEG_REG_FS 33,1306
+#define BX_SEG_REG_GS 34,1333
+#define BX_SEG_REG_NULL 36,1394
+#define BX_NULL_SEG_REG(37,1421
+#define BX_16BIT_REG_AX 40,1506
+#define BX_16BIT_REG_CX 41,1532
+#define BX_16BIT_REG_DX 42,1558
+#define BX_16BIT_REG_BX 43,1584
+#define BX_16BIT_REG_SP 44,1610
+#define BX_16BIT_REG_BP 45,1636
+#define BX_16BIT_REG_SI 46,1662
+#define BX_16BIT_REG_DI 47,1688
+#define BX_32BIT_REG_EAX 49,1715
+#define BX_32BIT_REG_ECX 50,1742
+#define BX_32BIT_REG_EDX 51,1769
+#define BX_32BIT_REG_EBX 52,1796
+#define BX_32BIT_REG_ESP 53,1823
+#define BX_32BIT_REG_EBP 54,1850
+#define BX_32BIT_REG_ESI 55,1877
+#define BX_32BIT_REG_EDI 56,1904
+#define BX_64BIT_REG_RAX 58,1932
+#define BX_64BIT_REG_RCX 59,1959
+#define BX_64BIT_REG_RDX 60,1986
+#define BX_64BIT_REG_RBX 61,2013
+#define BX_64BIT_REG_RSP 62,2040
+#define BX_64BIT_REG_RBP 63,2067
+#define BX_64BIT_REG_RSI 64,2094
+#define BX_64BIT_REG_RDI 65,2121
+#define BX_64BIT_REG_R8 67,2149
+#define BX_64BIT_REG_R9 68,2176
+#define BX_64BIT_REG_R10 69,2203
+#define BX_64BIT_REG_R11 70,2231
+#define BX_64BIT_REG_R12 71,2259
+#define BX_64BIT_REG_R13 72,2287
+#define BX_64BIT_REG_R14 73,2315
+#define BX_64BIT_REG_R15 74,2343
+# define BX_GENERAL_REGISTERS 77,2394
+# define BX_GENERAL_REGISTERS 79,2433
+#define BX_16BIT_REG_IP 82,2473
+#define BX_32BIT_REG_EIP 83,2519
+#define BX_64BIT_REG_RIP 84,2565
+#define BX_NIL_REGISTER 86,2612
+#define BX_TMP_REGISTER 88,2662
+#define AL 100,3026
+#define CL 101,3079
+#define DL 102,3132
+#define BL 103,3185
+#define AH 104,3238
+#define CH 105,3291
+#define DH 106,3344
+#define BH 107,3397
+#define TMP8L 109,3451
+#define AX 112,3560
+#define CX 113,3608
+#define DX 114,3656
+#define BX 115,3704
+#define SP 116,3752
+#define BP 117,3800
+#define SI 118,3848
+#define DI 119,3896
+#define IP 122,3985
+#define TMP16 124,4048
+#define EAX 127,4153
+#define ECX 128,4204
+#define EDX 129,4255
+#define EBX 130,4306
+#define ESP 131,4357
+#define EBP 132,4408
+#define ESI 133,4459
+#define EDI 134,4510
+#define EFLAGS 135,4561
+#define EIP 138,4642
+#define TMP32 140,4709
+#define RAX 144,4838
+#define RCX 145,4883
+#define RDX 146,4928
+#define RBX 147,4973
+#define RSP 148,5018
+#define RBP 149,5063
+#define RSI 150,5108
+#define RDI 151,5153
+#define R8 152,5198
+#define R9 153,5243
+#define R10 154,5288
+#define R11 155,5334
+#define R12 156,5380
+#define R13 157,5426
+#define R14 158,5472
+#define R15 159,5518
+#define RIP 162,5605
+#define TMP64 164,5666
+#define MSR_FSBASE 167,5762
+#define MSR_GSBASE 168,5842
+#define MSR_STAR 169,5922
+#define MSR_LSTAR 170,5969
+#define MSR_CSTAR 171,6017
+#define MSR_FMASK 172,6065
+#define MSR_KERNELGSBASE 173,6113
+#define MSR_TSC_AUX 174,6175
+#define BX_READ_8BIT_REGx(178,6255
+#define BX_READ_64BIT_REG(181,6443
+#define BX_READ_8BIT_REG(183,6519
+#define BX_READ_8BIT_REGx(186,6676
+#define BX_READ_8BIT_REGH(189,6745
+#define BX_READ_16BIT_REG(190,6824
+#define BX_READ_32BIT_REG(191,6898
+#define BX_WRITE_8BIT_REGH(193,6975
+#define BX_WRITE_16BIT_REG(197,7075
+#define BX_WRITE_8BIT_REGx(209,7296
+#define BX_WRITE_32BIT_REGZ(216,7520
+#define BX_WRITE_64BIT_REG(220,7621
+#define BX_CLEAR_64BIT_HIGH(223,7711
+#define BX_WRITE_8BIT_REG(229,7809
+#define BX_WRITE_8BIT_REGx(235,8000
+#define BX_WRITE_32BIT_REGZ(239,8170
+#define BX_CLEAR_64BIT_HIGH(243,8277
+#define CPL 247,8321
+#define USER_PL 249,8392
+#define BX_CPU_ID 252,8471
+#define BX_CPU_ID 254,8522
+struct BxExceptionInfo 259,8596
+  unsigned exception_type;260,8621
+  unsigned exception_class;261,8648
+  bx_bool push_error;262,8676
+#define BX_DE_EXCEPTION 265,8702
+#define BX_DB_EXCEPTION 266,8754
+#define BX_BP_EXCEPTION 267,8804
+#define BX_OF_EXCEPTION 268,8853
+#define BX_BR_EXCEPTION 269,8900
+#define BX_UD_EXCEPTION 270,8945
+#define BX_NM_EXCEPTION 271,8973
+#define BX_DF_EXCEPTION 272,9001
+#define BX_TS_EXCEPTION 273,9029
+#define BX_NP_EXCEPTION 274,9057
+#define BX_SS_EXCEPTION 275,9085
+#define BX_GP_EXCEPTION 276,9113
+#define BX_PF_EXCEPTION 277,9141
+#define BX_MF_EXCEPTION 278,9169
+#define BX_AC_EXCEPTION 279,9197
+#define BX_MC_EXCEPTION 280,9225
+#define BX_XM_EXCEPTION 281,9253
+#define BX_CPU_HANDLED_EXCEPTIONS 283,9282
+#define BX_MSR_TSC 286,9341
+#define BX_MSR_APICBASE 287,9382
+  #define BX_MSR_SYSENTER_CS 290,9446
+  #define BX_MSR_SYSENTER_ESP 291,9487
+  #define BX_MSR_SYSENTER_EIP 292,9528
+#define BX_MSR_DEBUGCTLMSR 295,9577
+#define BX_MSR_LASTBRANCHFROMIP 296,9618
+#define BX_MSR_LASTBRANCHTOIP 297,9659
+#define BX_MSR_LASTINTOIP 298,9700
+  #define BX_MSR_MTRRCAP 301,9764
+  #define BX_MSR_MTRRPHYSBASE0 302,9805
+  #define BX_MSR_MTRRPHYSMASK0 303,9846
+  #define BX_MSR_MTRRPHYSBASE1 304,9887
+  #define BX_MSR_MTRRPHYSMASK1 305,9928
+  #define BX_MSR_MTRRPHYSBASE2 306,9969
+  #define BX_MSR_MTRRPHYSMASK2 307,10010
+  #define BX_MSR_MTRRPHYSBASE3 308,10051
+  #define BX_MSR_MTRRPHYSMASK3 309,10092
+  #define BX_MSR_MTRRPHYSBASE4 310,10133
+  #define BX_MSR_MTRRPHYSMASK4 311,10174
+  #define BX_MSR_MTRRPHYSBASE5 312,10215
+  #define BX_MSR_MTRRPHYSMASK5 313,10256
+  #define BX_MSR_MTRRPHYSBASE6 314,10297
+  #define BX_MSR_MTRRPHYSMASK6 315,10338
+  #define BX_MSR_MTRRPHYSBASE7 316,10379
+  #define BX_MSR_MTRRPHYSMASK7 317,10420
+  #define BX_MSR_MTRRFIX64K_00000 318,10461
+  #define BX_MSR_MTRRFIX16K_80000 319,10502
+  #define BX_MSR_MTRRFIX16K_A0000 320,10543
+  #define BX_MSR_MTRRFIX4K_C0000 321,10584
+  #define BX_MSR_MTRRFIX4K_C8000 322,10625
+  #define BX_MSR_MTRRFIX4K_D0000 323,10666
+  #define BX_MSR_MTRRFIX4K_D8000 324,10707
+  #define BX_MSR_MTRRFIX4K_E0000 325,10748
+  #define BX_MSR_MTRRFIX4K_E8000 326,10789
+  #define BX_MSR_MTRRFIX4K_F0000 327,10830
+  #define BX_MSR_MTRRFIX4K_F8000 328,10871
+  #define BX_MSR_PAT 329,10912
+  #define BX_MSR_MTRR_DEFTYPE 330,10953
+#define BX_MSR_MAX_INDEX 333,11002
+  BX_MEMTYPE_UC 336,11051
+  BX_MEMTYPE_WC,337,11072
+  BX_MEMTYPE_RESERVED2,338,11089
+  BX_MEMTYPE_RESERVED3,339,11113
+  BX_MEMTYPE_WT,340,11137
+  BX_MEMTYPE_WP,341,11154
+  BX_MEMTYPE_WB342,11171
+  #define BX_MSR_VMX_BASIC 346,11210
+  #define BX_MSR_VMX_PINBASED_CTRLS 347,11258
+  #define BX_MSR_VMX_PROCBASED_CTRLS 348,11306
+  #define BX_MSR_VMX_VMEXIT_CTRLS 349,11354
+  #define BX_MSR_VMX_VMENTRY_CTRLS 350,11402
+  #define BX_MSR_VMX_MISC 351,11450
+  #define BX_MSR_VMX_CR0_FIXED0 352,11498
+  #define BX_MSR_VMX_CR0_FIXED1 353,11546
+  #define BX_MSR_VMX_CR4_FIXED0 354,11594
+  #define BX_MSR_VMX_CR4_FIXED1 355,11642
+  #define BX_MSR_VMX_VMCS_ENUM 356,11690
+  #define BX_MSR_VMX_PROCBASED_CTRLS2 357,11738
+  #define BX_MSR_VMX_MSR_VMX_EPT_VPID_CAP 358,11786
+  #define BX_MSR_VMX_TRUE_PINBASED_CTRLS 359,11834
+  #define BX_MSR_VMX_TRUE_PROCBASED_CTRLS 360,11882
+  #define BX_MSR_VMX_TRUE_VMEXIT_CTRLS 361,11930
+  #define BX_MSR_VMX_TRUE_VMENTRY_CTRLS 362,11978
+  #define BX_MSR_IA32_FEATURE_CONTROL 363,12026
+  #define BX_MSR_IA32_SMM_MONITOR_CTL 364,12074
+#define BX_MSR_EFER 368,12152
+#define BX_MSR_STAR 369,12195
+#define BX_MSR_LSTAR 370,12238
+#define BX_MSR_CSTAR 371,12281
+#define BX_MSR_FMASK 372,12324
+#define BX_MSR_FSBASE 373,12367
+#define BX_MSR_GSBASE 374,12410
+#define BX_MSR_KERNELGSBASE 375,12453
+#define BX_MSR_TSC_AUX 376,12496
+#define BX_MODE_IA32_REAL 379,12547
+#define BX_MODE_IA32_V8086 380,12614
+#define BX_MODE_IA32_PROTECTED 381,12692
+#define BX_MODE_LONG_COMPAT 382,12759
+#define BX_MODE_LONG_64 383,12831
+#define IsCanonical(388,12982
+#define IsValidPhyAddr(391,13087
+  #define BX_CPU_INTR 394,13182
+  #define BX_CPU_INTR 396,13264
+#define CACHE_LINE_SIZE 399,13318
+#  define BX_CPU_THIS_PTR 408,13565
+#  define BX_CPU_THIS 409,13599
+#  define BX_SMF410,13631
+#  define BX_CPU_C_PREFIX 411,13648
+#  define BX_CPU_CALL_METHOD(415,13860
+#  define BX_CPU_CALL_METHODR(417,13956
+#  define BX_CPU_THIS_PTR 421,14135
+#  define BX_CPU_THIS 422,14174
+#  define BX_SMF 423,14211
+#  define BX_CPU_C_PREFIX424,14245
+#  define BX_CPU_CALL_METHOD(425,14271
+#  define BX_CPU_CALL_METHODR(427,14358
+#define DECLARE_EFLAG_ACCESSOR(442,14819
+#define IMPLEMENT_EFLAG_ACCESSOR(449,15204
+#define IMPLEMENT_EFLAG_SET_ACCESSOR(457,15605
+#define IMPLEMENT_EFLAG_SET_ACCESSOR_AC(471,16323
+#define IMPLEMENT_EFLAG_SET_ACCESSOR_VM(488,17194
+#define IMPLEMENT_EFLAG_SET_ACCESSOR_IF_RF_TF(504,18104
+#define DECLARE_EFLAG_ACCESSOR_IOPL(518,18901
+#define IMPLEMENT_EFLAG_ACCESSOR_IOPL(522,19099
+#define EFlagsCFMask 531,19566
+#define EFlagsPFMask 532,19599
+#define EFlagsAFMask 533,19632
+#define EFlagsZFMask 534,19665
+#define EFlagsSFMask 535,19698
+#define EFlagsTFMask 536,19731
+#define EFlagsIFMask 537,19764
+#define EFlagsDFMask 538,19797
+#define EFlagsOFMask 539,19830
+#define EFlagsIOPLMask 540,19863
+#define EFlagsNTMask 541,19896
+#define EFlagsRFMask 542,19929
+#define EFlagsVMMask 543,19962
+#define EFlagsACMask 544,19995
+#define EFlagsVIFMask 545,20028
+#define EFlagsVIPMask 546,20061
+#define EFlagsIDMask 547,20094
+#define EFlagsOSZAPCMask 549,20128
+#define EFlagsOSZAPMask 552,20250
+#define EFlagsValidMask 555,20357
+  bx_phy_address apicbase;::apicbase561,20487
+  Bit64u star;::star565,20544
+  Bit64u lstar;::lstar566,20559
+  Bit64u cstar;::cstar567,20575
+  Bit32u fmask;::fmask568,20591
+  Bit64u kernelgsbase;::kernelgsbase569,20607
+  Bit32u tsc_aux;::tsc_aux570,20630
+  Bit64u tsc_last_reset;::tsc_last_reset578,20984
+  Bit32u sysenter_cs_msr;::sysenter_cs_msr582,21072
+  bx_address sysenter_esp_msr;::sysenter_esp_msr583,21098
+  bx_address sysenter_eip_msr;::sysenter_eip_msr584,21129
+  Bit64u mtrrphys[::mtrrphys588,21190
+  Bit64u mtrrfix64k_00000;::mtrrfix64k_00000589,21213
+  Bit64u mtrrfix16k[::mtrrfix16k590,21240
+  Bit64u mtrrfix4k[::mtrrfix4k591,21264
+  Bit16u mtrr_deftype;::mtrr_deftype592,21287
+  Bit64u pat;::pat593,21310
+  Bit32u ia32_feature_ctrl;::ia32_feature_ctrl597,21351
+} bx_regs_msr_t;601,21421
+#define MAX_STD_CPUID_FUNCTION 604,21446
+#define MAX_EXT_CPUID_FUNCTION 605,21480
+#define BX_CPU_X87 608,21557
+#define BX_CPU_486 609,21635
+#define BX_CPU_PENTIUM 610,21711
+#define BX_CPU_P6 611,21791
+#define BX_CPU_MMX 612,21866
+#define BX_CPU_3DNOW 613,21938
+#define BX_CPU_FXSAVE_FXRSTOR 614,22013
+#define BX_CPU_SYSENTER_SYSEXIT 615,22096
+#define BX_CPU_CLFLUSH 616,22181
+#define BX_CPU_SSE 617,22257
+#define BX_CPU_SSE2 618,22330
+#define BX_CPU_SSE3 619,22403
+#define BX_CPU_SSSE3 620,22476
+#define BX_CPU_SSE4_1 621,22550
+#define BX_CPU_SSE4_2 622,22625
+#define BX_CPU_SSE4A 623,22700
+#define BX_CPU_MONITOR_MWAIT 624,22774
+#define BX_CPU_VMX 625,22856
+#define BX_CPU_SMX 626,22928
+#define BX_CPU_SVM 627,23000
+#define BX_CPU_XSAVE 628,23072
+#define BX_CPU_AES_PCLMULQDQ 629,23164
+#define BX_CPU_MOVBE 630,23247
+#define BX_CPU_AVX 631,23335
+#define BX_CPU_AVX_FMA 632,23407
+#define BX_CPU_X86_64 633,23483
+struct cpuid_function_t 635,23559
+  Bit32u eax;cpuid_function_t::eax636,23585
+  Bit32u ebx;cpuid_function_t::ebx637,23599
+  Bit32u ecx;cpuid_function_t::ecx638,23613
+  Bit32u edx;cpuid_function_t::edx639,23627
+#define BX_TLB_SIZE 656,24158
+#define BX_TLB_MASK 657,24183
+#define BX_TLB_INDEX_OF(658,24227
+typedef bx_ptr_equiv_t bx_hostpageaddr_t;660,24312
+  bx_address lpf;::lpf663,24372
+  bx_phy_address ppf;::ppf664,24417
+  bx_hostpageaddr_t hostPageAddr;::hostPageAddr665,24464
+  Bit32u accessBits;::accessBits666,24498
+  Bit32u lpf_mask;::lpf_mask667,24519
+} bx_TLB_entry;668,24583
+      Bit32u dword_filler;::dword_filler677,24712
+      Bit16u  word_filler;::word_filler678,24739
+        Bit16u rx;::rx680,24780
+          Bit8u rh;::rh682,24816
+          Bit8u rl;::rl683,24836
+        } byte;::byte684,24856
+    } word;::word686,24881
+    Bit64u rrx;::rrx687,24893
+      Bit32u hrx;::hrx689,24922
+      Bit32u erx;::erx690,24955
+    } dword;::dword691,24988
+} bx_gen_reg_t;693,25006
+        Bit16u rx;::rx699,25082
+          Bit8u rl;::rl701,25118
+          Bit8u rh;::rh702,25138
+        } byte;::byte703,25158
+      Bit16u  word_filler;::word_filler705,25183
+      Bit32u dword_filler;::dword_filler706,25210
+    } word;::word707,25237
+    Bit64u rrx;::rrx708,25249
+      Bit32u erx;::erx710,25278
+      Bit32u hrx;::hrx711,25311
+    } dword;::dword712,25344
+} bx_gen_reg_t;714,25362
+      Bit32u erx;::erx724,25481
+    } dword;::dword725,25499
+      Bit16u word_filler;::word_filler727,25525
+        Bit16u rx;::rx729,25565
+          Bit8u rh;::rh731,25601
+          Bit8u rl;::rl732,25621
+        } byte;::byte733,25641
+    } word;::word735,25666
+} bx_gen_reg_t;737,25683
+      Bit32u erx;::erx742,25745
+    } dword;::dword743,25763
+        Bit16u rx;::rx746,25803
+          Bit8u rl;::rl748,25839
+          Bit8u rh;::rh749,25859
+        } byte;::byte750,25879
+      Bit16u word_filler;::word_filler752,25904
+    } word;::word753,25930
+} bx_gen_reg_t;755,25947
+struct monitor_addr_t 774,26194
+    bx_phy_address monitor_begin;monitor_addr_t::monitor_begin776,26219
+    bx_phy_address monitor_end;monitor_addr_t::monitor_end777,26253
+    bx_bool armed;monitor_addr_t::armed778,26285
+    monitor_addr_t(monitor_addr_t::monitor_addr_t780,26305
+    BX_CPP_INLINE void arm(monitor_addr_t::arm783,26398
+    BX_CPP_INLINE void reset_monitor(monitor_addr_t::reset_monitor789,26548
+#define BX_CPU_SUPPORT_ISA_EXTENSION(809,26941
+#define BX_INHIBIT_INTERRUPTS 848,28150
+#define BX_INHIBIT_DEBUG 849,28192
+#define BX_INHIBIT_INTERRUPTS_SHADOW 850,28234
+#define BX_INHIBIT_DEBUG_SHADOW 851,28276
+#define BX_INHIBIT_INTERRUPTS_BY_MOVSS 853,28319
+#define BX_INHIBIT_INTERRUPTS_BY_MOVSS_SHADOW 855,28414
+#define BX_ACTIVITY_STATE_ACTIVE 944,30510
+#define BX_ACTIVITY_STATE_HLT 945,30554
+#define BX_ACTIVITY_STATE_SHUTDOWN 946,30598
+#define BX_ACTIVITY_STATE_WAIT_FOR_SIPI 947,30642
+#define BX_ACTIVITY_STATE_MWAIT 948,30686
+#define BX_ACTIVITY_STATE_MWAIT_IF 949,30730
+#define BX_DEBUG_DR_ACCESS_BIT 952,30802
+#define BX_DEBUG_SINGLE_STEP_BIT 953,30852
+#define BX_DEBUG_TRAP_TASK_SWITCH_BIT 954,30902
+  #define BX_ASYNC_EVENT_STOP_TRACE 960,31081
+    bx_bool split_large;::split_large1011,32229
+    bx_bool valid;::valid1017,32304
+    Bit64u entry[::entry1018,32323
+  #define LPF_MASK 1023,32391
+  #define LPF_MASK 1025,32447
+#define LPFOf(1028,32487
+#define AlignedAccessLPFOf(1029,32543
+#define PAGE_OFFSET(1031,32672
+    bx_address rm_addr;::rm_addr1041,33018
+    bx_phy_address paddress1;::paddress11042,33087
+    bx_phy_address paddress2;::paddress21043,33181
+    Bit32u len1;::len11044,33275
+    Bit32u len2;::len21045,33334
+    bx_ptr_equiv_t pages;::pages1046,33393
+#define ArithmeticalFlag(1058,34095
+#undef FSCALE 1884,79954
+#define readVirtualDQwordAligned(2901,141348
+#define readVirtualDQwordAligned(2911,141795
+#define write_virtual_byte(2930,142656
+#define write_virtual_word(2935,142877
+#define write_virtual_dword(2940,143098
+#define write_virtual_qword(2945,143321
+#define write_virtual_dqword(2950,143544
+#define write_virtual_dqword_aligned(2955,143829
+#define read_virtual_byte(2961,144144
+#define read_virtual_word(2966,144353
+#define read_virtual_dword(2971,144562
+#define read_virtual_qword(2976,144775
+#define read_virtual_dqword(2981,144988
+#define read_virtual_dqword_aligned(2986,145259
+#define read_RMW_virtual_byte(2992,145558
+#define read_RMW_virtual_word(2997,145773
+#define read_RMW_virtual_dword(3002,145988
+#define read_RMW_virtual_qword(3007,146205
+#define write_virtual_byte(3015,146438
+#define write_virtual_word(3017,146530
+#define write_virtual_dword(3019,146622
+#define write_virtual_qword(3021,146715
+#define write_virtual_dqword(3023,146808
+#define write_virtual_dqword_aligned(3025,146933
+#define read_virtual_byte(3029,147083
+#define read_virtual_word(3031,147161
+#define read_virtual_dword(3033,147239
+#define read_virtual_qword(3035,147318
+#define read_virtual_dqword(3037,147397
+#define read_virtual_dqword_aligned(3039,147514
+#define read_RMW_virtual_byte(3043,147655
+#define read_RMW_virtual_word(3045,147741
+#define read_RMW_virtual_dword(3047,147827
+#define read_RMW_virtual_qword(3049,147914
+#define StackAddrSize64(3344,162310
+BX_CPP_INLINE void BX_CPU_C::prepareMMX(3467,167754
+BX_CPP_INLINE void BX_CPU_C::prepareSSE(3481,168080
+BX_CPP_INLINE void BX_CPU_C::prepareXSAVE(3492,168338
+#define RMAddr(3503,168576
+#define RSP_SPECULATIVE 3509,168695
+#define RSP_COMMIT 3514,168821
+BX_CPP_INLINE void BX_CPU_C::updateFetchModeMask(3520,168949
+#define BX_HWDebugInstruction 3533,169318
+#define BX_HWDebugMemW 3534,169355
+#define BX_HWDebugIO 3535,169392
+#define BX_HWDebugMemRW 3536,169429
+BX_CPP_INLINE bx_address BX_CPU_C::get_segment_base(3539,169474
+BX_CPP_INLINE Bit32u BX_CPU_C::get_laddr32(3549,169728
+BX_CPP_INLINE Bit64u BX_CPU_C::get_laddr64(3555,169903
+BX_CPP_INLINE bx_address BX_CPU_C::get_laddr(3564,170109
+BX_CPP_INLINE Bit8u BX_CPU_C::get_reg8l(3574,170359
+BX_CPP_INLINE void BX_CPU_C::set_reg8l(3580,170510
+BX_CPP_INLINE Bit8u BX_CPU_C::get_reg8h(3586,170668
+BX_CPP_INLINE void BX_CPU_C::set_reg8h(3592,170819
+BX_CPP_INLINE bx_address BX_CPU_C::get_instruction_pointer(3599,170999
+BX_CPP_INLINE bx_address BX_CPU_C::get_instruction_pointer(3604,171110
+BX_CPP_INLINE Bit16u BX_CPU_C::get_reg16(3610,171223
+BX_CPP_INLINE void BX_CPU_C::set_reg16(3616,171370
+BX_CPP_INLINE Bit32u BX_CPU_C::get_reg32(3622,171524
+BX_CPP_INLINE void BX_CPU_C::set_reg32(3628,171673
+BX_CPP_INLINE Bit64u BX_CPU_C::get_reg64(3635,171853
+BX_CPP_INLINE void BX_CPU_C::set_reg64(3641,171998
+BX_CPP_INLINE bx_bool BX_CPU_C::real_mode(3648,172157
+BX_CPP_INLINE bx_bool BX_CPU_C::smm_mode(3653,172268
+BX_CPP_INLINE bx_bool BX_CPU_C::v8086_mode(3658,172355
+BX_CPP_INLINE bx_bool BX_CPU_C::protected_mode(3663,172468
+BX_CPP_INLINE bx_bool BX_CPU_C::long_mode(3668,172589
+BX_CPP_INLINE bx_bool BX_CPU_C::long64_mode(3677,172730
+BX_CPP_INLINE unsigned BX_CPU_C::get_cpu_mode(3686,172888
+BX_CPP_INLINE bx_bool BX_CPU_C::alignment_check(3692,173034
+BX_CPP_INLINE int BX_CPU_C::bx_cpuid_support_1g_paging(3698,173147
+BX_CPP_INLINE void BX_CPU_C::set_PF_base(3709,173378
+BX_CPP_INLINE bx_bool BX_CPU_C::get_ZFLazy(3720,173674
+BX_CPP_INLINE bx_bool BX_CPU_C::get_SFLazy(3725,173775
+BX_CPP_INLINE bx_bool BX_CPU_C::get_PFLazy(3730,173889
+#define BX_TASK_FROM_CALL 3762,175031
+#define BX_TASK_FROM_IRET 3763,175065
+#define BX_TASK_FROM_JUMP 3764,175099
+#define BX_TASK_FROM_INT 3765,175133
+IMPLEMENT_EFLAG_ACCESSOR BX_TASK_FROM_INT3735,174009
+  BX_EXTERNAL_INTERRUPT ::BX_EXTERNAL_INTERRUPT3769,175215
+  BX_NMI ::BX_NMI3770,175244
+  BX_HARDWARE_EXCEPTION ::BX_HARDWARE_EXCEPTION3771,175258
+  BX_SOFTWARE_INTERRUPT ::BX_SOFTWARE_INTERRUPT3772,175325
+  BX_PRIVILEGED_SOFTWARE_INTERRUPT ::BX_PRIVILEGED_SOFTWARE_INTERRUPT3773,175354
+  BX_SOFTWARE_EXCEPTION ::BX_SOFTWARE_EXCEPTION3774,175394
+#define BxImmediate 3786,175656
+#define BxImmediate_I1 3787,175719
+#define BxImmediate_Ib 3788,175766
+#define BxImmediate_Ib_SE 3789,175810
+#define BxImmediate_Iw 3790,175871
+#define BxImmediate_IbIb 3791,175916
+#define BxImmediate_IwIb 3792,175960
+#define BxImmediate_IwIw 3793,176009
+#define BxImmediate_IdIw 3794,176085
+#define BxImmediate_Id 3795,176161
+#define BxImmediate_O 3796,176206
+#define BxImmediate_BrOff8 3797,176285
+#define BxImmediate_Iq 3799,176373
+#define BxImmediate_BrOff16 3802,176435
+#define BxImmediate_BrOff32 3803,176539
+#define BxGroupX 3807,176714
+#define BxGroupN 3808,176788
+#define BxPrefixSSE 3809,176847
+#define BxPrefixSSE66 3810,176906
+#define BxPrefixSSEF2 3811,176965
+#define BxPrefixSSEF3 3812,177024
+#define BxFPEscape 3813,177083
+#define Bx3ByteOp 3814,177142
+#define BxOSizeGrp 3815,177201
+#define BxLockable 3817,177261
+#define BxArithDstRM 3818,177305
+  #define BxTraceEnd 3821,177377
+  #define BxTraceEnd 3823,177428
+  #define BxTraceJCC 3827,177511
+  #define BxTraceJCC 3829,177554
+#define BxGroup1 3832,177590
+#define BxGroup1A 3833,177625
+#define BxGroup2 3834,177660
+#define BxGroup3 3835,177695
+#define BxGroup4 3836,177730
+#define BxGroup5 3837,177765
+#define BxGroup6 3838,177800
+#define BxGroup7 3839,177835
+#define BxGroup8 3840,177870
+#define BxGroup9 3841,177905
+#define BxGroup11 3843,177941
+#define BxGroup12 3844,177976
+#define BxGroup13 3845,178011
+#define BxGroup14 3846,178046
+#define BxGroup15 3847,178081
+#define BxGroup16 3848,178116
+#define BxGroupFP 3850,178152
+#define setEFlagsOSZAPC(3854,178217
+#define ASSERT_FLAGS_OxxxxC(3860,178516
+#define SET_FLAGS_OxxxxC(3865,178741
+
+crregs.h,2527
+#define BX_CRREGS25,1179
+struct bx_cr0_t 27,1198
+  Bit32u  val32;28,1216
+#define IMPLEMENT_CRREG_ACCESSORS(31,1299
+  IMPLEMENT_CRREG_ACCESSORS(58,2528
+  IMPLEMENT_CRREG_ACCESSORS(59,2564
+  IMPLEMENT_CRREG_ACCESSORS(60,2600
+  IMPLEMENT_CRREG_ACCESSORS(61,2636
+  IMPLEMENT_CRREG_ACCESSORS(63,2694
+  IMPLEMENT_CRREG_ACCESSORS(64,2730
+  IMPLEMENT_CRREG_ACCESSORS(65,2766
+  IMPLEMENT_CRREG_ACCESSORS(66,2803
+  IMPLEMENT_CRREG_ACCESSORS(67,2840
+  IMPLEMENT_CRREG_ACCESSORS(68,2877
+  IMPLEMENT_CRREG_ACCESSORS(70,2921
+  BX_CPP_INLINE Bit32u get32(72,2959
+  BX_CPP_INLINE void set32(74,3040
+struct bx_cr4_t 78,3129
+  Bit32u  val32;79,3147
+  IMPLEMENT_CRREG_ACCESSORS(82,3214
+  IMPLEMENT_CRREG_ACCESSORS(83,3251
+  IMPLEMENT_CRREG_ACCESSORS(85,3295
+  IMPLEMENT_CRREG_ACCESSORS(86,3332
+  IMPLEMENT_CRREG_ACCESSORS(87,3369
+  IMPLEMENT_CRREG_ACCESSORS(88,3406
+  IMPLEMENT_CRREG_ACCESSORS(89,3443
+  IMPLEMENT_CRREG_ACCESSORS(90,3480
+  IMPLEMENT_CRREG_ACCESSORS(91,3517
+  IMPLEMENT_CRREG_ACCESSORS(92,3554
+  IMPLEMENT_CRREG_ACCESSORS(93,3594
+  IMPLEMENT_CRREG_ACCESSORS(95,3658
+  IMPLEMENT_CRREG_ACCESSORS(98,3726
+  IMPLEMENT_CRREG_ACCESSORS(99,3766
+  BX_CPP_INLINE Bit32u get32(102,3816
+  BX_CPP_INLINE void set32(103,3865
+struct bx_efer_t 112,4029
+  Bit32u val32;113,4048
+  IMPLEMENT_CRREG_ACCESSORS(115,4092
+  IMPLEMENT_CRREG_ACCESSORS(116,4132
+  IMPLEMENT_CRREG_ACCESSORS(117,4172
+  IMPLEMENT_CRREG_ACCESSORS(118,4212
+  IMPLEMENT_CRREG_ACCESSORS(119,4252
+  BX_CPP_INLINE Bit32u get32(121,4293
+  BX_CPP_INLINE void set32(122,4342
+#define BX_EFER_LME_MASK 125,4402
+#define BX_EFER_LMA_MASK 126,4443
+#define BX_EFER_SUPPORTED_BITS 127,4484
+struct xcr0_t 132,4569
+  Bit32u  val32;133,4585
+#define BX_XCR0_SUPPORTED_BITS 135,4630
+#define BX_XCR0_FPU_BIT 137,4666
+#define BX_XCR0_FPU_MASK 138,4694
+#define BX_XCR0_SSE_BIT 139,4740
+#define BX_XCR0_SSE_MASK 140,4768
+  IMPLEMENT_CRREG_ACCESSORS(142,4815
+  IMPLEMENT_CRREG_ACCESSORS(143,4866
+  BX_CPP_INLINE Bit32u get32(145,4918
+  BX_CPP_INLINE void set32(146,4967
+#undef IMPLEMENT_CRREG_ACCESSORS150,5034
+typedef struct msr 152,5068
+  unsigned index;153,5089
+  unsigned type;154,5129
+#define BX_LIN_ADDRESS_MSR 155,5202
+#define BX_PHY_ADDRESS_MSR 156,5231
+  Bit64u val64;157,5260
+  Bit64u reset_value;158,5308
+  Bit64u reserved;159,5350
+  Bit64u ignored;160,5406
+  msr(162,5471
+  msr(166,5683
+  BX_CPP_INLINE void reset(170,5865
+  BX_CPP_INLINE Bit64u get64(171,5919
+  BX_CPP_INLINE bx_bool set64(173,5969
+} MSR;191,6449
+
+descriptor.h,2973
+#define BX_DESCRIPTOR_H24,1186
+  Bit16u value;42,1867
+  Bit16u index;46,2079
+  Bit8u  ti;47,2154
+  Bit8u  rpl;48,2219
+} bx_selector_t;50,2275
+#define BX_SELECTOR_RPL(52,2293
+#define BX_SELECTOR_RPL_MASK 53,2347
+#define SegValidCache 59,2432
+#define SegAccessROK 60,2462
+#define SegAccessWOK 61,2492
+  unsigned valid;63,2523
+  bx_bool p;66,2642
+  Bit8u   dpl;67,2681
+  bx_bool segment;68,2744
+  Bit8u   type;69,2814
+#define BX_GATE_TYPE_NONE 89,3726
+#define BX_SYS_SEGMENT_AVAIL_286_TSS 90,3780
+#define BX_SYS_SEGMENT_LDT 91,3834
+#define BX_SYS_SEGMENT_BUSY_286_TSS 92,3888
+#define BX_286_CALL_GATE 93,3942
+#define BX_TASK_GATE 94,3996
+#define BX_286_INTERRUPT_GATE 95,4050
+#define BX_286_TRAP_GATE 96,4104
+#define BX_SYS_SEGMENT_AVAIL_386_TSS 98,4223
+#define BX_SYS_SEGMENT_BUSY_386_TSS 100,4342
+#define BX_386_CALL_GATE 101,4396
+#define BX_386_INTERRUPT_GATE 103,4515
+#define BX_386_TRAP_GATE 104,4569
+#define BX_DATA_READ_ONLY 108,4655
+#define BX_DATA_READ_ONLY_ACCESSED 109,4709
+#define BX_DATA_READ_WRITE 110,4763
+#define BX_DATA_READ_WRITE_ACCESSED 111,4817
+#define BX_DATA_READ_ONLY_EXPAND_DOWN 112,4871
+#define BX_DATA_READ_ONLY_EXPAND_DOWN_ACCESSED 113,4925
+#define BX_DATA_READ_WRITE_EXPAND_DOWN 114,4979
+#define BX_DATA_READ_WRITE_EXPAND_DOWN_ACCESSED 115,5033
+#define BX_CODE_EXEC_ONLY 116,5087
+#define BX_CODE_EXEC_ONLY_ACCESSED 117,5141
+#define BX_CODE_EXEC_READ 118,5195
+#define BX_CODE_EXEC_READ_ACCESSED 119,5249
+#define BX_CODE_EXEC_ONLY_CONFORMING 120,5303
+#define BX_CODE_EXEC_ONLY_CONFORMING_ACCESSED 121,5357
+#define BX_CODE_EXEC_READ_CONFORMING 122,5411
+#define BX_CODE_EXEC_READ_CONFORMING_ACCESSED 123,5465
+    bx_address base;127,5539
+    Bit32u  limit_scaled;128,5618
+    bx_bool g;133,5883
+    bx_bool d_b;134,5949
+    bx_bool l;136,6035
+    bx_bool avl;138,6105
+  } segment;140,6173
+    Bit8u   param_count;142,6197
+    Bit16u  dest_selector;144,6344
+    Bit32u  dest_offset;145,6371
+  } gate;146,6396
+    Bit16u  tss_selector;148,6468
+  } taskgate;149,6522
+} u;150,6536
+} bx_descriptor_t;152,6542
+#define IS_PRESENT(154,6562
+  #define IS_LONG64_SEGMENT(157,6631
+  #define IS_LONG64_SEGMENT(159,6704
+#define IS_CODE_SEGMENT(162,6758
+#define IS_CODE_SEGMENT_CONFORMING(163,6822
+#define IS_DATA_SEGMENT_EXPAND_DOWN(164,6886
+#define IS_CODE_SEGMENT_READABLE(165,6950
+#define IS_DATA_SEGMENT_WRITEABLE(166,7014
+#define IS_SEGMENT_ACCESSED(168,7079
+#define BX_SEGMENT_CODE 170,7137
+#define BX_SEGMENT_DATA_EXPAND_DOWN 171,7185
+#define BX_SEGMENT_CODE_CONFORMING 172,7233
+#define BX_SEGMENT_DATA_WRITE 173,7281
+#define BX_SEGMENT_CODE_READ 174,7329
+#define BX_SEGMENT_ACCESSED 175,7377
+#define IS_DATA_SEGMENT(177,7426
+#define IS_CODE_SEGMENT_NON_CONFORMING(178,7482
+  bx_selector_t    selector;182,7596
+  bx_descriptor_t  cache;183,7625
+} bx_segment_reg_t;184,7651
+  bx_address       base;187,7689
+  Bit16u           limit;188,7772
+} bx_global_segment_reg_t;189,7819
+
+fetchdecode.h,5367
+#define BX_COMMON_FETCHDECODE_TABLES_H25,1206
+typedef struct BxOpcodeInfo_t 27,1246
+  Bit16u Attr;28,1278
+  Bit16u IA;29,1293
+  const BxOpcodeInfo_t *AnotherArray;AnotherArray30,1306
+} BxOpcodeInfo_t;31,1344
+BX_CPP_INLINE Bit16u FetchWORD(39,1551
+BX_CPP_INLINE Bit32u FetchDWORD(46,1683
+BX_CPP_INLINE Bit64u FetchQWORD(54,1839
+struct bxIAOpcodeTable 62,1980
+  BxExecutePtr_tR execute1;63,2005
+  BxExecutePtr_tR execute2;64,2033
+static const BxOpcodeInfo_t BxOpcodeInfoG1EbIbM[BxOpcodeInfoG1EbIbM81,2310
+static const BxOpcodeInfo_t BxOpcodeInfoG1EbIbR[BxOpcodeInfoG1EbIbR93,2749
+static const BxOpcodeInfo_t BxOpcodeInfoG1EwM[BxOpcodeInfoG1EwM105,3116
+static const BxOpcodeInfo_t BxOpcodeInfoG1EwR[BxOpcodeInfoG1EwR117,3552
+static const BxOpcodeInfo_t BxOpcodeInfoG1EdM[BxOpcodeInfoG1EdM129,3916
+static const BxOpcodeInfo_t BxOpcodeInfoG1EdR[BxOpcodeInfoG1EdR141,4352
+static const BxOpcodeInfo_t BxOpcodeInfo64G1EqM[BxOpcodeInfo64G1EqM154,4738
+static const BxOpcodeInfo_t BxOpcodeInfo64G1EqR[BxOpcodeInfo64G1EqR166,5176
+static const BxOpcodeInfo_t BxOpcodeInfoG1AEwR[BxOpcodeInfoG1AEwR183,5595
+static const BxOpcodeInfo_t BxOpcodeInfoG1AEwM[BxOpcodeInfoG1AEwM194,5894
+static const BxOpcodeInfo_t BxOpcodeInfoG1AEdR[BxOpcodeInfoG1AEdR205,6193
+static const BxOpcodeInfo_t BxOpcodeInfoG1AEdM[BxOpcodeInfoG1AEdM216,6492
+static const BxOpcodeInfo_t BxOpcodeInfo64G1AEqR[BxOpcodeInfo64G1AEqR228,6813
+static const BxOpcodeInfo_t BxOpcodeInfo64G1AEqM[BxOpcodeInfo64G1AEqM239,7114
+static const BxOpcodeInfo_t BxOpcodeInfoG2Eb[BxOpcodeInfoG2Eb255,7465
+static const BxOpcodeInfo_t BxOpcodeInfoG2Ew[BxOpcodeInfoG2Ew267,7805
+static const BxOpcodeInfo_t BxOpcodeInfoG2EdM[BxOpcodeInfoG2EdM279,8145
+static const BxOpcodeInfo_t BxOpcodeInfoG2EdR[BxOpcodeInfoG2EdR291,8494
+static const BxOpcodeInfo_t BxOpcodeInfo64G2EqM[BxOpcodeInfo64G2EqM304,8865
+static const BxOpcodeInfo_t BxOpcodeInfo64G2EqR[BxOpcodeInfo64G2EqR316,9216
+static const BxOpcodeInfo_t BxOpcodeInfoG3EbM[BxOpcodeInfoG3EbM333,9617
+static const BxOpcodeInfo_t BxOpcodeInfoG3EbR[BxOpcodeInfoG3EbR344,10049
+static const BxOpcodeInfo_t BxOpcodeInfoG3EwM[BxOpcodeInfoG3EwM355,10403
+static const BxOpcodeInfo_t BxOpcodeInfoG3EwR[BxOpcodeInfoG3EwR366,10835
+static const BxOpcodeInfo_t BxOpcodeInfoG3EdM[BxOpcodeInfoG3EdM377,11189
+static const BxOpcodeInfo_t BxOpcodeInfoG3EdR[BxOpcodeInfoG3EdR388,11625
+static const BxOpcodeInfo_t BxOpcodeInfo64G3EqM[BxOpcodeInfo64G3EqM400,12005
+static const BxOpcodeInfo_t BxOpcodeInfo64G3EqR[BxOpcodeInfo64G3EqR411,12443
+static const BxOpcodeInfo_t BxOpcodeInfoG4M[BxOpcodeInfoG4M427,12853
+static const BxOpcodeInfo_t BxOpcodeInfoG4R[BxOpcodeInfoG4R438,13169
+static const BxOpcodeInfo_t BxOpcodeInfoG5wM[BxOpcodeInfoG5wM453,13510
+static const BxOpcodeInfo_t BxOpcodeInfoG5wR[BxOpcodeInfoG5wR465,13915
+static const BxOpcodeInfo_t BxOpcodeInfoG5dM[BxOpcodeInfoG5dM477,14303
+static const BxOpcodeInfo_t BxOpcodeInfoG5dR[BxOpcodeInfoG5dR489,14708
+static const BxOpcodeInfo_t BxOpcodeInfo64G5wM[BxOpcodeInfo64G5wM502,15120
+static const BxOpcodeInfo_t BxOpcodeInfo64G5wR[BxOpcodeInfo64G5wR513,15490
+static const BxOpcodeInfo_t BxOpcodeInfo64G5dM[BxOpcodeInfo64G5dM524,15843
+static const BxOpcodeInfo_t BxOpcodeInfo64G5dR[BxOpcodeInfo64G5dR535,16213
+static const BxOpcodeInfo_t BxOpcodeInfo64G5qM[BxOpcodeInfo64G5qM546,16568
+static const BxOpcodeInfo_t BxOpcodeInfo64G5qR[BxOpcodeInfo64G5qR557,17005
+static const BxOpcodeInfo_t BxOpcodeInfoG6[BxOpcodeInfoG6573,17410
+static const BxOpcodeInfo_t BxOpcodeInfoG7R[BxOpcodeInfoG7R588,17756
+static const BxOpcodeInfo_t BxOpcodeInfoG7M[BxOpcodeInfoG7M660,20735
+static const BxOpcodeInfo_t BxOpcodeInfo64G7M[BxOpcodeInfo64G7M673,21120
+static const BxOpcodeInfo_t BxOpcodeInfoG8EwIbM[BxOpcodeInfoG8EwIbM689,21507
+static const BxOpcodeInfo_t BxOpcodeInfoG8EwIbR[BxOpcodeInfoG8EwIbR700,21925
+static const BxOpcodeInfo_t BxOpcodeInfoG8EdIbM[BxOpcodeInfoG8EdIbM711,22291
+static const BxOpcodeInfo_t BxOpcodeInfoG8EdIbR[BxOpcodeInfoG8EdIbR722,22709
+static const BxOpcodeInfo_t BxOpcodeInfo64G8EqIbM[BxOpcodeInfo64G8EqIbM734,23097
+static const BxOpcodeInfo_t BxOpcodeInfo64G8EqIbR[BxOpcodeInfo64G8EqIbR745,23517
+static const BxOpcodeInfo_t BxOpcodeInfoG9M[BxOpcodeInfoG9M761,23935
+static const BxOpcodeInfo_t BxOpcodeInfo64G9qM[BxOpcodeInfo64G9qM773,24341
+static const BxOpcodeInfo_t BxOpcodeInfoG11EbR[BxOpcodeInfoG11EbR789,24782
+static const BxOpcodeInfo_t BxOpcodeInfoG11EbM[BxOpcodeInfoG11EbM800,25096
+static const BxOpcodeInfo_t BxOpcodeInfoG11EwR[BxOpcodeInfoG11EwR811,25410
+static const BxOpcodeInfo_t BxOpcodeInfoG11EwM[BxOpcodeInfoG11EwM822,25724
+static const BxOpcodeInfo_t BxOpcodeInfoG11EdR[BxOpcodeInfoG11EdR833,26038
+static const BxOpcodeInfo_t BxOpcodeInfoG11EdM[BxOpcodeInfoG11EdM844,26352
+static const BxOpcodeInfo_t BxOpcodeInfo64G11EqR[BxOpcodeInfo64G11EqR856,26688
+static const BxOpcodeInfo_t BxOpcodeInfo64G11EqM[BxOpcodeInfo64G11EqM867,27004
+static const BxOpcodeInfo_t BxOpcodeInfoG12R[BxOpcodeInfoG12R883,27373
+static const BxOpcodeInfo_t BxOpcodeInfoG13R[BxOpcodeInfoG13R898,27882
+static const BxOpcodeInfo_t BxOpcodeInfoG14R[BxOpcodeInfoG14R913,28391
+static const BxOpcodeInfo_t BxOpcodeInfoG15M[BxOpcodeInfoG15M928,28916
+static const BxOpcodeInfo_t BxOpcodeInfoG15R[BxOpcodeInfoG15R939,29449
+
+fetchdecode_sse.h,12959
+#define BX_SSE_FETCHDECODE_TABLES_H25,1206
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_ERR[BxOpcodeGroupSSE_ERR31,1295
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_PAUSE[BxOpcodeGroupSSE_PAUSE37,1447
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f10R[BxOpcodeGroupSSE_0f10R43,1597
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f10M[BxOpcodeGroupSSE_0f10M49,1776
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f11R[BxOpcodeGroupSSE_0f11R55,1955
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f11M[BxOpcodeGroupSSE_0f11M61,2156
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f12R[BxOpcodeGroupSSE_0f12R67,2335
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f12M[BxOpcodeGroupSSE_0f12M73,2523
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f13M[BxOpcodeGroupSSE_0f13M79,2718
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f14[BxOpcodeGroupSSE_0f1485,2879
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f15[BxOpcodeGroupSSE_0f1591,3042
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f16R[BxOpcodeGroupSSE_0f16R97,3205
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f16M[BxOpcodeGroupSSE_0f16M103,3377
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f17M[BxOpcodeGroupSSE_0f17M109,3556
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f28R[BxOpcodeGroupSSE_0f28R115,3717
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f28M[BxOpcodeGroupSSE_0f28M121,3880
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f29R[BxOpcodeGroupSSE_0f29R127,4043
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f29M[BxOpcodeGroupSSE_0f29M133,4206
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f2aR[BxOpcodeGroupSSE_0f2aR139,4369
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f2aM[BxOpcodeGroupSSE_0f2aM145,4553
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f2bM[BxOpcodeGroupSSE_0f2bM151,4737
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f2c[BxOpcodeGroupSSE_0f2c157,4900
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f2d[BxOpcodeGroupSSE_0f2d163,5083
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f2e[BxOpcodeGroupSSE_0f2e169,5263
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f2f[BxOpcodeGroupSSE_0f2f175,5438
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f50[BxOpcodeGroupSSE_0f50181,5599
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f51[BxOpcodeGroupSSE_0f51187,5762
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f52[BxOpcodeGroupSSE_0f52193,5939
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f53[BxOpcodeGroupSSE_0f53199,6101
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f54[BxOpcodeGroupSSE_0f54205,6261
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f55[BxOpcodeGroupSSE_0f55211,6421
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f56[BxOpcodeGroupSSE_0f56217,6582
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f57[BxOpcodeGroupSSE_0f57223,6741
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f58[BxOpcodeGroupSSE_0f58229,6901
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f59[BxOpcodeGroupSSE_0f59235,7075
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f5a[BxOpcodeGroupSSE_0f5a241,7249
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f5b[BxOpcodeGroupSSE_0f5b247,7432
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f5c[BxOpcodeGroupSSE_0f5c253,7606
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f5d[BxOpcodeGroupSSE_0f5d259,7780
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f5e[BxOpcodeGroupSSE_0f5e265,7954
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f5f[BxOpcodeGroupSSE_0f5f271,8128
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f60[BxOpcodeGroupSSE_0f60277,8302
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f61[BxOpcodeGroupSSE_0f61283,8466
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f62[BxOpcodeGroupSSE_0f62289,8630
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f63[BxOpcodeGroupSSE_0f63295,8794
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f64[BxOpcodeGroupSSE_0f64301,8957
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f65[BxOpcodeGroupSSE_0f65307,9119
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f66[BxOpcodeGroupSSE_0f66313,9281
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f67[BxOpcodeGroupSSE_0f67319,9443
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f68[BxOpcodeGroupSSE_0f68325,9606
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f69[BxOpcodeGroupSSE_0f69331,9770
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6a[BxOpcodeGroupSSE_0f6a337,9934
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6b[BxOpcodeGroupSSE_0f6b343,10098
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6eR[BxOpcodeGroupSSE_0f6eR349,10261
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6eM[BxOpcodeGroupSSE_0f6eM355,10421
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6eQR[BxOpcodeGroupSSE_0f6eQR362,10603
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6eQM[BxOpcodeGroupSSE_0f6eQM368,10764
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6fR[BxOpcodeGroupSSE_0f6fR375,10932
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f6fM[BxOpcodeGroupSSE_0f6fM381,11104
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f70[BxOpcodeGroupSSE_0f70387,11276
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f74[BxOpcodeGroupSSE_0f74393,11462
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f75[BxOpcodeGroupSSE_0f75399,11624
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f76[BxOpcodeGroupSSE_0f76405,11786
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7c[BxOpcodeGroupSSE_0f7c411,11948
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7d[BxOpcodeGroupSSE_0f7d417,12141
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7eR[BxOpcodeGroupSSE_0f7eR423,12334
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7eM[BxOpcodeGroupSSE_0f7eM429,12498
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7eQR[BxOpcodeGroupSSE_0f7eQR436,12684
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7eQM[BxOpcodeGroupSSE_0f7eQM442,12849
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7fR[BxOpcodeGroupSSE_0f7fR449,13021
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f7fM[BxOpcodeGroupSSE_0f7fM455,13193
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fc2[BxOpcodeGroupSSE_0fc2461,13365
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fc4[BxOpcodeGroupSSE_0fc4467,13545
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fc5R[BxOpcodeGroupSSE_0fc5R473,13707
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fc6[BxOpcodeGroupSSE_0fc6479,13870
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd0[BxOpcodeGroupSSE_0fd0485,14033
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd1[BxOpcodeGroupSSE_0fd1491,14222
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd2[BxOpcodeGroupSSE_0fd2497,14382
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd3[BxOpcodeGroupSSE_0fd3503,14542
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd4[BxOpcodeGroupSSE_0fd4509,14702
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd5[BxOpcodeGroupSSE_0fd5515,14862
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd6R[BxOpcodeGroupSSE_0fd6R521,15023
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd7[BxOpcodeGroupSSE_0fd7527,15201
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd8[BxOpcodeGroupSSE_0fd8533,15363
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fd9[BxOpcodeGroupSSE_0fd9539,15525
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fda[BxOpcodeGroupSSE_0fda545,15687
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fdb[BxOpcodeGroupSSE_0fdb551,15848
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fdc[BxOpcodeGroupSSE_0fdc557,16007
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fdd[BxOpcodeGroupSSE_0fdd563,16169
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fde[BxOpcodeGroupSSE_0fde569,16331
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fdf[BxOpcodeGroupSSE_0fdf575,16492
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe0[BxOpcodeGroupSSE_0fe0581,16652
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe1[BxOpcodeGroupSSE_0fe1587,16812
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe2[BxOpcodeGroupSSE_0fe2593,16972
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe3[BxOpcodeGroupSSE_0fe3599,17132
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe4[BxOpcodeGroupSSE_0fe4605,17292
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe5[BxOpcodeGroupSSE_0fe5611,17454
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe6[BxOpcodeGroupSSE_0fe6617,17615
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe7M[BxOpcodeGroupSSE_0fe7M623,17798
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe8[BxOpcodeGroupSSE_0fe8629,17961
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fe9[BxOpcodeGroupSSE_0fe9635,18122
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fea[BxOpcodeGroupSSE_0fea641,18283
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0feb[BxOpcodeGroupSSE_0feb647,18444
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fec[BxOpcodeGroupSSE_0fec653,18602
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fed[BxOpcodeGroupSSE_0fed659,18763
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fee[BxOpcodeGroupSSE_0fee665,18924
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0fef[BxOpcodeGroupSSE_0fef671,19085
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff1[BxOpcodeGroupSSE_0ff1677,19244
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff2[BxOpcodeGroupSSE_0ff2683,19404
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff3[BxOpcodeGroupSSE_0ff3689,19564
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff4[BxOpcodeGroupSSE_0ff4695,19724
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff5[BxOpcodeGroupSSE_0ff5701,19886
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff6[BxOpcodeGroupSSE_0ff6707,20048
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff7R[BxOpcodeGroupSSE_0ff7R713,20209
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff8[BxOpcodeGroupSSE_0ff8719,20375
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ff9[BxOpcodeGroupSSE_0ff9725,20535
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ffa[BxOpcodeGroupSSE_0ffa731,20695
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ffb[BxOpcodeGroupSSE_0ffb737,20855
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ffc[BxOpcodeGroupSSE_0ffc743,21015
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ffd[BxOpcodeGroupSSE_0ffd749,21175
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0ffe[BxOpcodeGroupSSE_0ffe755,21335
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1202[BxOpcodeGroupSSE_G1202761,21495
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1204[BxOpcodeGroupSSE_G1204767,21655
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1206[BxOpcodeGroupSSE_G1206773,21815
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1302[BxOpcodeGroupSSE_G1302779,21975
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1304[BxOpcodeGroupSSE_G1304785,22135
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1306[BxOpcodeGroupSSE_G1306791,22295
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1402[BxOpcodeGroupSSE_G1402797,22455
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G1406[BxOpcodeGroupSSE_G1406803,22615
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_G9VMX6[BxOpcodeGroupSSE_G9VMX6809,22775
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3800[BxOpcodeGroupSSE_0f3800815,22938
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3801[BxOpcodeGroupSSE_0f3801821,23101
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3802[BxOpcodeGroupSSE_0f3802827,23264
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3803[BxOpcodeGroupSSE_0f3803833,23427
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3804[BxOpcodeGroupSSE_0f3804839,23591
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3805[BxOpcodeGroupSSE_0f3805845,23757
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3806[BxOpcodeGroupSSE_0f3806851,23920
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3807[BxOpcodeGroupSSE_0f3807857,24083
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3808[BxOpcodeGroupSSE_0f3808863,24247
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3809[BxOpcodeGroupSSE_0f3809869,24410
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f380a[BxOpcodeGroupSSE_0f380a875,24573
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f380b[BxOpcodeGroupSSE_0f380b881,24736
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f381c[BxOpcodeGroupSSE_0f381c887,24901
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f381d[BxOpcodeGroupSSE_0f381d893,25063
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f381e[BxOpcodeGroupSSE_0f381e899,25225
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f38f0[BxOpcodeGroupSSE_0f38f0905,25387
+static const BxOpcodeInfo_t BxOpcodeGroupOsize0f38f0[BxOpcodeGroupOsize0f38f0911,25547
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f38f1w[BxOpcodeGroupSSE_0f38f1w919,25873
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f38f1d[BxOpcodeGroupSSE_0f38f1d925,26034
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f38f1q[BxOpcodeGroupSSE_0f38f1q932,26217
+static const BxOpcodeInfo_t BxOpcodeGroupOsize0f38f1[BxOpcodeGroupOsize0f38f1939,26385
+static const BxOpcodeInfo_t BxOpcodeGroupSSE_0f3a0f[BxOpcodeGroupSSE_0f3a0f947,26714
+static const BxOpcodeInfo_t BxOpcode3ByteTable0f38[BxOpcode3ByteTable0f38956,27005
+static const BxOpcodeInfo_t BxOpcode3ByteTable0f3a[BxOpcode3ByteTable0f3a1218,36678
+
+fetchdecode_x87.h,1541
+#define BX_X87_FETCHDECODE_TABLES_H25,1205
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupD8[BxOpcodeInfo_FPGroupD837,1467
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointD8[BxOpcodeInfo_FloatingPointD849,1911
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupD9[BxOpcodeInfo_FPGroupD961,2329
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointD9[BxOpcodeInfo_FloatingPointD973,2712
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupDA[BxOpcodeInfo_FPGroupDA141,5262
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointDA[BxOpcodeInfo_FloatingPointDA153,5730
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupDB[BxOpcodeInfo_FPGroupDB221,8279
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointDB[BxOpcodeInfo_FloatingPointDB233,8695
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupDC[BxOpcodeInfo_FPGroupDC301,11486
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointDC[BxOpcodeInfo_FloatingPointDC313,11930
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupDD[BxOpcodeInfo_FPGroupDD325,12400
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointDD[BxOpcodeInfo_FloatingPointDD337,12785
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupDE[BxOpcodeInfo_FPGroupDE349,13190
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointDE[BxOpcodeInfo_FloatingPointDE361,13650
+static const BxOpcodeInfo_t BxOpcodeInfo_FPGroupDF[BxOpcodeInfo_FPGroupDF430,16801
+static const BxOpcodeInfo_t BxOpcodeInfo_FloatingPointDF[BxOpcodeInfo_FloatingPointDF442,17261
+static Bit16u Bx3DNowOpcode[Bx3DNowOpcode516,20552
+
+i387.h,2570
+#define _BX_I387_RELATED_EXTENSIONS_H_25,1198
+#define BX_FPU_REG(31,1286
+#define FPU_PARTIAL_STATUS 35,1398
+#define FPU_CONTROL_WORD 36,1460
+#define FPU_TAG_WORD 37,1522
+#define FPU_TOS 38,1584
+struct BOCHSAPI_MSVCONLY i387_t50,1807
+#define IS_TAG_EMPTY(95,3000
+#define BX_READ_FPU_REG(98,3124
+#define BX_WRITE_FPU_REG(101,3233
+#define BX_WRITE_FPU_REGISTER_AND_TAG(104,3366
+BX_CPP_INLINE int i387_t::FPU_gettagi(107,3506
+BX_CPP_INLINE void i387_t::FPU_settagi_valid(112,3603
+BX_CPP_INLINE void i387_t::FPU_settagi(118,3751
+BX_CPP_INLINE void i387_t::FPU_push(125,3907
+BX_CPP_INLINE void i387_t::FPU_pop(130,3977
+BX_CPP_INLINE void i387_t::FPU_save_regi(139,4212
+BX_CPP_INLINE void i387_t::FPU_save_regi(145,4343
+BX_CPP_INLINE void i387_t::init(153,4503
+BX_CPP_INLINE void i387_t::reset(166,4651
+typedef union bx_packed_mmx_reg_t 181,4844
+   Bit8s   _sbyte[bx_packed_mmx_reg_t::_sbyte182,4880
+   Bit16s  _s16[bx_packed_mmx_reg_t::_s16183,4902
+   Bit32s  _s32[bx_packed_mmx_reg_t::_s32184,4922
+   Bit64s  _s64;bx_packed_mmx_reg_t::_s64185,4942
+   Bit8u   _ubyte[bx_packed_mmx_reg_t::_ubyte186,4959
+   Bit16u  _u16[bx_packed_mmx_reg_t::_u16187,4981
+   Bit32u  _u32[bx_packed_mmx_reg_t::_u32188,5001
+   Bit64u  _u64;bx_packed_mmx_reg_t::_u64189,5021
+} BxPackedMmxRegister;190,5038
+#define mmx64s(193,5083
+#define mmx32s(194,5108
+#define mmx16s(195,5142
+#define mmxsbyte(196,5176
+#define mmxubyte(197,5212
+#define mmx16u(198,5248
+#define mmx32u(199,5282
+#define mmx64u 200,5316
+#define mmx64s(202,5347
+#define mmx32s(203,5372
+#define mmx16s(204,5402
+#define mmxsbyte(205,5432
+#define mmxubyte(206,5464
+#define mmx16u(207,5496
+#define mmx32u(208,5526
+#define mmx64u 209,5556
+#define MMXSB0(213,5639
+#define MMXSB1(214,5677
+#define MMXSB2(215,5715
+#define MMXSB3(216,5753
+#define MMXSB4(217,5791
+#define MMXSB5(218,5829
+#define MMXSB6(219,5867
+#define MMXSB7(220,5905
+#define MMXSW0(222,5944
+#define MMXSW1(223,5980
+#define MMXSW2(224,6016
+#define MMXSW3(225,6052
+#define MMXSD0(227,6089
+#define MMXSD1(228,6125
+#define MMXSQ(230,6162
+#define MMXUQ(231,6195
+#define MMXUD0(233,6229
+#define MMXUD1(234,6265
+#define MMXUW0(236,6302
+#define MMXUW1(237,6338
+#define MMXUW2(238,6374
+#define MMXUW3(239,6410
+#define MMXUB0(241,6447
+#define MMXUB1(242,6485
+#define MMXUB2(243,6523
+#define MMXUB3(244,6561
+#define MMXUB4(245,6599
+#define MMXUB5(246,6637
+#define MMXUB6(247,6675
+#define MMXUB7(248,6713
+#define BX_MMX_REG(250,6752
+#define BX_READ_MMX_REG(252,6808
+#define BX_WRITE_MMX_REG(255,6908
+
+ia_opcodes.h,26
+bx_define_opcode(24,1165
+
+icache.h,1568
+#define BX_ICACHE_H25,1181
+const Bit32u ICacheWriteStampInvalid 28,1232
+const Bit32u ICacheWriteStampStart 29,1284
+const Bit32u ICacheWriteStampFetchModeMask 30,1336
+class bxPageWriteStampTable36,1470
+  Bit32u *pageWriteStampTable;bxPageWriteStampTable::pageWriteStampTable42,1760
+#define PHY_MEM_PAGES 44,1792
+  bxPageWriteStampTable(bxPageWriteStampTable::bxPageWriteStampTable47,1835
+ ~bxPageWriteStampTable(bxPageWriteStampTable::~bxPageWriteStampTable51,1944
+  BX_CPP_INLINE Bit32u hash(bxPageWriteStampTable::hash53,2006
+  BX_CPP_INLINE Bit32u getPageWriteStamp(bxPageWriteStampTable::getPageWriteStamp62,2250
+  BX_CPP_INLINE const Bit32u *getPageWriteStampPtr(bxPageWriteStampTable::getPageWriteStampPtr67,2373
+  BX_CPP_INLINE void setPageWriteStamp(bxPageWriteStampTable::setPageWriteStamp72,2507
+  BX_CPP_INLINE void markICache(bxPageWriteStampTable::markICache77,2655
+  BX_CPP_INLINE void decWriteStamp(bxPageWriteStampTable::decWriteStamp82,2789
+BX_CPP_INLINE void bxPageWriteStampTable::resetWriteStamps(98,3335
+#define BxICacheEntries 109,3572
+#define BxICacheMemPool 110,3634
+  #define BX_MAX_TRACE_LENGTH 113,3699
+struct bxICacheEntry_c116,3740
+  bx_phy_address pAddr;bxICacheEntry_c::pAddr118,3765
+  Bit32u writeStamp;bxICacheEntry_c::writeStamp119,3828
+  Bit32u tlen;bxICacheEntry_c::tlen122,3976
+  bxInstruction_c *i;bxICacheEntry_c::i123,4032
+  bxInstruction_c i[bxICacheEntry_c::i126,4130
+BX_CPP_INLINE void bxICache_c::flushICacheEntries(170,5178
+BX_CPP_INLINE void bxICache_c::purgeICacheEntries(183,5563
+
+instr.h,5143
+#define BX_INSTR_H25,1179
+typedef void (BX_CPP_AttrRegparmN(31,1273
+typedef bx_address (BX_CPP_AttrRegparmN(32,1348
+typedef void (BX_CPU_C::*BxExecutePtr_tR)BxExecutePtr_tR34,1435
+typedef bx_address (BX_CPU_C::*BxResolvePtr_tR)BxResolvePtr_tR35,1520
+class bxInstruction_c 40,1681
+  BxExecutePtr_tR execute;bxInstruction_c::execute46,1940
+  BxExecutePtr_tR execute2;bxInstruction_c::execute247,1967
+  BxResolvePtr_tR ResolveModrm;bxInstruction_c::ResolveModrm48,1995
+    Bit16u ia_opcode;bxInstruction_c::ia_opcode52,2060
+    Bit8u metaInfo2;bxInstruction_c::metaInfo256,2133
+    Bit8u metaInfo1;bxInstruction_c::metaInfo165,2333
+  } metaInfo;bxInstruction_c::metaInfo66,2354
+#define BX_INSTR_METADATA_SEG 68,2369
+#define BX_INSTR_METADATA_B1 69,2403
+#define BX_INSTR_METADATA_NNN 70,2437
+#define BX_INSTR_METADATA_RM 71,2471
+#define BX_INSTR_METADATA_BASE 72,2505
+#define BX_INSTR_METADATA_INDEX 73,2539
+#define BX_INSTR_METADATA_SCALE 74,2573
+#define BX_INSTR_METADATA_MODRM 75,2607
+  Bit8u metaData[bxInstruction_c::metaData78,2709
+        Bit32u Id;bxInstruction_c::Id84,2842
+        Bit16u Iw;bxInstruction_c::Iw85,2861
+        Bit8u  Ib;bxInstruction_c::Ib86,2880
+        Bit16u displ16u;bxInstruction_c::displ16u89,2922
+        Bit32u displ32u;bxInstruction_c::displ32u90,2973
+    } modRMForm;bxInstruction_c::modRMForm92,3033
+        Bit32u Id;bxInstruction_c::Id96,3078
+        Bit16u Iw;bxInstruction_c::Iw97,3097
+        Bit8u  Ib;bxInstruction_c::Ib98,3116
+        Bit32u Id2;bxInstruction_c::Id2101,3158
+        Bit16u Iw2;bxInstruction_c::Iw2102,3206
+        Bit8u  Ib2;bxInstruction_c::Ib2103,3226
+    } IxIxForm;bxInstruction_c::IxIxForm105,3255
+      Bit64u   Iq;bxInstruction_c::Iq109,3307
+    } IqForm;bxInstruction_c::IqForm110,3347
+  BX_CPP_INLINE unsigned seg(bxInstruction_c::seg114,3374
+  BX_CPP_INLINE void setSeg(bxInstruction_c::setSeg117,3465
+  BX_CPP_INLINE unsigned b1(bxInstruction_c::b1121,3557
+  BX_CPP_INLINE void setB1(bxInstruction_c::setB1124,3646
+  BX_CPP_INLINE void setOpcodeReg(bxInstruction_c::setOpcodeReg127,3740
+  BX_CPP_INLINE unsigned opcodeReg(bxInstruction_c::opcodeReg132,3970
+  BX_CPP_INLINE void setModRM(bxInstruction_c::setModRM135,4062
+  BX_CPP_INLINE unsigned modrm(bxInstruction_c::modrm138,4161
+  BX_CPP_INLINE void setNnn(bxInstruction_c::setNnn141,4252
+  BX_CPP_INLINE unsigned nnn(bxInstruction_c::nnn144,4343
+  BX_CPP_INLINE void setRm(bxInstruction_c::setRm147,4430
+  BX_CPP_INLINE unsigned rm(bxInstruction_c::rm150,4517
+  BX_CPP_INLINE void setSibScale(bxInstruction_c::setSibScale153,4602
+  BX_CPP_INLINE unsigned sibScale(bxInstruction_c::sibScale156,4704
+  BX_CPP_INLINE void setSibIndex(bxInstruction_c::setSibIndex159,4798
+  BX_CPP_INLINE unsigned sibIndex(bxInstruction_c::sibIndex162,4900
+  BX_CPP_INLINE void setSibBase(bxInstruction_c::setSibBase165,4994
+  BX_CPP_INLINE unsigned sibBase(bxInstruction_c::sibBase168,5092
+  BX_CPP_INLINE Bit32s displ32s(bxInstruction_c::displ32s171,5184
+  BX_CPP_INLINE Bit16s displ16s(bxInstruction_c::displ16s172,5264
+  BX_CPP_INLINE Bit32u Id(bxInstruction_c::Id173,5344
+  BX_CPP_INLINE Bit16u Iw(bxInstruction_c::Iw174,5404
+  BX_CPP_INLINE Bit8u  Ib(bxInstruction_c::Ib175,5464
+  BX_CPP_INLINE Bit16u Iw2(bxInstruction_c::Iw2176,5524
+  BX_CPP_INLINE Bit8u  Ib2(bxInstruction_c::Ib2177,5594
+  BX_CPP_INLINE Bit64u Iq(bxInstruction_c::Iq179,5686
+  BX_CPP_INLINE void init(bxInstruction_c::init187,6050
+  BX_CPP_INLINE unsigned os32L(bxInstruction_c::os32L192,6217
+  BX_CPP_INLINE void setOs32B(bxInstruction_c::setOs32B195,6306
+  BX_CPP_INLINE void assertOs32(bxInstruction_c::assertOs32198,6424
+  BX_CPP_INLINE unsigned as32L(bxInstruction_c::as32L202,6503
+  BX_CPP_INLINE void setAs32B(bxInstruction_c::setAs32B205,6592
+  BX_CPP_INLINE unsigned os64L(bxInstruction_c::os64L210,6733
+  BX_CPP_INLINE void assertOs64(bxInstruction_c::assertOs64213,6822
+  BX_CPP_INLINE unsigned os64L(bxInstruction_c::os64L217,6906
+  BX_CPP_INLINE unsigned as64L(bxInstruction_c::as64L221,6993
+  BX_CPP_INLINE void setAs64B(bxInstruction_c::setAs64B224,7082
+  BX_CPP_INLINE unsigned as64L(bxInstruction_c::as64L228,7206
+  BX_CPP_INLINE unsigned extend8bitL(bxInstruction_c::extend8bitL232,7293
+  BX_CPP_INLINE void assertExtend8bit(bxInstruction_c::assertExtend8bit235,7388
+  BX_CPP_INLINE unsigned ilen(bxInstruction_c::ilen240,7480
+  BX_CPP_INLINE void setILen(bxInstruction_c::setILen243,7559
+  BX_CPP_INLINE unsigned getIaOpcode(bxInstruction_c::getIaOpcode247,7641
+  BX_CPP_INLINE void setIaOpcode(bxInstruction_c::setIaOpcode250,7727
+  BX_CPP_INLINE unsigned repUsedL(bxInstruction_c::repUsedL254,7807
+  BX_CPP_INLINE unsigned repUsedValue(bxInstruction_c::repUsedValue257,7894
+  BX_CPP_INLINE void setRepUsed(bxInstruction_c::setRepUsed260,7985
+  BX_CPP_INLINE unsigned modC0(bxInstruction_c::modC0264,8102
+  BX_CPP_INLINE unsigned assertModC0(bxInstruction_c::assertModC0271,8369
+#define bx_define_opcode(281,8550
+   BX_IA_LAST::BX_IA_LAST283,8614
+#undef  bx_define_opcode285,8631
+
+lazy_flags.h,3560
+#define BX_LAZY_FLAGS_DEF24,1114
+#define BX_LF_INSTR_ADD8 26,1141
+#define BX_LF_INSTR_ADC8 27,1178
+#define BX_LF_INSTR_ADD16 29,1216
+#define BX_LF_INSTR_ADC16 30,1253
+#define BX_LF_INSTR_ADD32 32,1291
+#define BX_LF_INSTR_ADC32 33,1328
+#define BX_LF_INSTR_ADD64 35,1366
+#define BX_LF_INSTR_ADC64 36,1403
+#define BX_LF_INSTR_ADD_ADC8(38,1441
+#define BX_LF_INSTR_ADD_ADC16(39,1486
+#define BX_LF_INSTR_ADD_ADC32(40,1531
+#define BX_LF_INSTR_ADD_ADC64(41,1576
+#define BX_LF_INSTR_SUB8 43,1622
+#define BX_LF_INSTR_SBB8 44,1659
+#define BX_LF_INSTR_SUB16 46,1698
+#define BX_LF_INSTR_SBB16 47,1736
+#define BX_LF_INSTR_SUB32 49,1775
+#define BX_LF_INSTR_SBB32 50,1813
+#define BX_LF_INSTR_SUB64 52,1852
+#define BX_LF_INSTR_SBB64 53,1890
+#define BX_LF_INSTR_SUB_SBB8(55,1929
+#define BX_LF_INSTR_SUB_SBB16(56,1975
+#define BX_LF_INSTR_SUB_SBB32(57,2021
+#define BX_LF_INSTR_SUB_SBB64(58,2067
+#define BX_LF_INSTR_INC8 60,2114
+#define BX_LF_INSTR_INC16 61,2152
+#define BX_LF_INSTR_INC32 62,2190
+#define BX_LF_INSTR_INC64 63,2228
+#define BX_LF_INSTR_DEC8 65,2267
+#define BX_LF_INSTR_DEC16 66,2305
+#define BX_LF_INSTR_DEC32 67,2343
+#define BX_LF_INSTR_DEC64 68,2381
+#define BX_LF_INSTR_NEG8 70,2420
+#define BX_LF_INSTR_NEG16 71,2458
+#define BX_LF_INSTR_NEG32 72,2496
+#define BX_LF_INSTR_NEG64 73,2534
+#define BX_LF_INSTR_LOGIC8 75,2573
+#define BX_LF_INSTR_LOGIC16 76,2611
+#define BX_LF_INSTR_LOGIC32 77,2649
+#define BX_LF_INSTR_LOGIC64 78,2687
+  #define BX_LF_SIGN_BIT 81,2748
+  #define BX_LF_SIGN_BIT 83,2783
+  bx_address op1;87,2837
+  bx_address op2;88,2855
+  bx_address result;89,2873
+  unsigned instr;90,2894
+} bx_lf_flags_entry;91,2912
+#define SET_FLAGS_OSZAPC_SIZE(98,3014
+#define SET_FLAGS_OSZAPC_8(106,3406
+#define SET_FLAGS_OSZAPC_16(108,3508
+#define SET_FLAGS_OSZAPC_32(110,3612
+#define SET_FLAGS_OSZAPC_64(113,3738
+#define SET_FLAGS_OSZAPC_S1_SIZE(118,3876
+#define SET_FLAGS_OSZAPC_S1_8(125,4179
+#define SET_FLAGS_OSZAPC_S1_16(127,4277
+#define SET_FLAGS_OSZAPC_S1_32(129,4377
+#define SET_FLAGS_OSZAPC_S1_64(132,4499
+#define SET_FLAGS_OSZAPC_S2_SIZE(137,4633
+#define SET_FLAGS_OSZAPC_S2_8(144,4936
+#define SET_FLAGS_OSZAPC_S2_16(146,5034
+#define SET_FLAGS_OSZAPC_S2_32(148,5134
+#define SET_FLAGS_OSZAPC_S2_64(151,5256
+#define SET_FLAGS_OSZAPC_RESULT_SIZE(156,5382
+#define SET_FLAGS_OSZAPC_RESULT_8(162,5609
+#define SET_FLAGS_OSZAPC_RESULT_16(164,5705
+#define SET_FLAGS_OSZAPC_RESULT_32(166,5803
+#define SET_FLAGS_OSZAPC_RESULT_64(169,5923
+#define SET_FLAGS_OSZAP_RESULT_SIZE(178,6103
+#define SET_FLAGS_OSZAP_RESULT_8(185,6344
+#define SET_FLAGS_OSZAP_RESULT_16(187,6438
+#define SET_FLAGS_OSZAP_RESULT_32(189,6534
+#define SET_FLAGS_OSZAP_RESULT_64(192,6652
+#define SET_FLAGS_OSZAPC_LOGIC_8(197,6793
+#define SET_FLAGS_OSZAPC_LOGIC_16(199,6899
+#define SET_FLAGS_OSZAPC_LOGIC_32(201,7010
+#define SET_FLAGS_OSZAPC_LOGIC_64(204,7143
+#define SET_FLAGS_OSZAPC_ADD_8(208,7262
+#define SET_FLAGS_OSZAPC_ADD_16(210,7382
+#define SET_FLAGS_OSZAPC_ADD_32(212,7511
+#define SET_FLAGS_OSZAPC_ADD_64(215,7662
+#define SET_FLAGS_OSZAPC_SUB_8(219,7799
+#define SET_FLAGS_OSZAPC_SUB_16(221,7921
+#define SET_FLAGS_OSZAPC_SUB_32(223,8052
+#define SET_FLAGS_OSZAPC_SUB_64(226,8205
+#define SET_FLAGS_OSZAPC_INC_8(230,8344
+#define SET_FLAGS_OSZAPC_INC_16(232,8446
+#define SET_FLAGS_OSZAPC_INC_32(234,8551
+#define SET_FLAGS_OSZAPC_INC_64(237,8678
+#define SET_FLAGS_OSZAPC_DEC_8(241,8791
+#define SET_FLAGS_OSZAPC_DEC_16(243,8893
+#define SET_FLAGS_OSZAPC_DEC_32(245,8998
+#define SET_FLAGS_OSZAPC_DEC_64(248,9125
+
+smm.h,5147
+#define BX_SMM_H24,1171
+#define SMM_IO_INSTRUCTION_RESTART 27,1213
+#define SMM_SMBASE_RELOCATION 28,1262
+#define SMM_SAVE_STATE_MAP_SIZE 30,1312
+#define SMM_REVISION_ID 39,1556
+enum SMMRAM_Fields 44,1673
+  SMRAM_FIELD_SMBASE_OFFSET 45,1694
+  SMRAM_FIELD_SMM_REVISION_ID,46,1727
+  SMRAM_FIELD_RAX_HI32,47,1758
+  SMRAM_FIELD_EAX,48,1782
+  SMRAM_FIELD_RCX_HI32,49,1801
+  SMRAM_FIELD_ECX,50,1825
+  SMRAM_FIELD_RDX_HI32,51,1844
+  SMRAM_FIELD_EDX,52,1868
+  SMRAM_FIELD_RBX_HI32,53,1887
+  SMRAM_FIELD_EBX,54,1911
+  SMRAM_FIELD_RSP_HI32,55,1930
+  SMRAM_FIELD_ESP,56,1954
+  SMRAM_FIELD_RBP_HI32,57,1973
+  SMRAM_FIELD_EBP,58,1997
+  SMRAM_FIELD_RSI_HI32,59,2016
+  SMRAM_FIELD_ESI,60,2040
+  SMRAM_FIELD_RDI_HI32,61,2059
+  SMRAM_FIELD_EDI,62,2083
+  SMRAM_FIELD_R8_HI32,63,2102
+  SMRAM_FIELD_R8,64,2125
+  SMRAM_FIELD_R9_HI32,65,2143
+  SMRAM_FIELD_R9,66,2166
+  SMRAM_FIELD_R10_HI32,67,2184
+  SMRAM_FIELD_R10,68,2208
+  SMRAM_FIELD_R11_HI32,69,2227
+  SMRAM_FIELD_R11,70,2251
+  SMRAM_FIELD_R12_HI32,71,2270
+  SMRAM_FIELD_R12,72,2294
+  SMRAM_FIELD_R13_HI32,73,2313
+  SMRAM_FIELD_R13,74,2337
+  SMRAM_FIELD_R14_HI32,75,2356
+  SMRAM_FIELD_R14,76,2380
+  SMRAM_FIELD_R15_HI32,77,2399
+  SMRAM_FIELD_R15,78,2423
+  SMRAM_FIELD_RIP_HI32,79,2442
+  SMRAM_FIELD_EIP,80,2466
+  SMRAM_FIELD_RFLAGS_HI32,81,2485
+  SMRAM_FIELD_EFLAGS,82,2528
+  SMRAM_FIELD_DR6_HI32,83,2550
+  SMRAM_FIELD_DR6,84,2593
+  SMRAM_FIELD_DR7_HI32,85,2612
+  SMRAM_FIELD_DR7,86,2655
+  SMRAM_FIELD_CR0_HI32,87,2674
+  SMRAM_FIELD_CR0,88,2717
+  SMRAM_FIELD_CR3_HI32,89,2736
+  SMRAM_FIELD_CR3,90,2806
+  SMRAM_FIELD_CR4_HI32,91,2825
+  SMRAM_FIELD_CR4,92,2868
+  SMRAM_FIELD_EFER_HI32,93,2887
+  SMRAM_FIELD_EFER,94,2930
+  SMRAM_FIELD_IO_INSTRUCTION_RESTART,95,2950
+  SMRAM_FIELD_AUTOHALT_RESTART,96,2988
+  SMRAM_FIELD_NMI_MASK,97,3020
+  SMRAM_FIELD_TR_BASE_HI32,98,3044
+  SMRAM_FIELD_TR_BASE,99,3072
+  SMRAM_FIELD_TR_LIMIT,100,3095
+  SMRAM_FIELD_TR_SELECTOR_AR,101,3119
+  SMRAM_FIELD_LDTR_BASE_HI32,102,3149
+  SMRAM_FIELD_LDTR_BASE,103,3179
+  SMRAM_FIELD_LDTR_LIMIT,104,3204
+  SMRAM_FIELD_LDTR_SELECTOR_AR,105,3230
+  SMRAM_FIELD_IDTR_BASE_HI32,106,3262
+  SMRAM_FIELD_IDTR_BASE,107,3292
+  SMRAM_FIELD_IDTR_LIMIT,108,3317
+  SMRAM_FIELD_GDTR_BASE_HI32,109,3343
+  SMRAM_FIELD_GDTR_BASE,110,3373
+  SMRAM_FIELD_GDTR_LIMIT,111,3398
+  SMRAM_FIELD_ES_BASE_HI32,112,3424
+  SMRAM_FIELD_ES_BASE,113,3452
+  SMRAM_FIELD_ES_LIMIT,114,3475
+  SMRAM_FIELD_ES_SELECTOR_AR,115,3499
+  SMRAM_FIELD_CS_BASE_HI32,116,3529
+  SMRAM_FIELD_CS_BASE,117,3557
+  SMRAM_FIELD_CS_LIMIT,118,3580
+  SMRAM_FIELD_CS_SELECTOR_AR,119,3604
+  SMRAM_FIELD_SS_BASE_HI32,120,3634
+  SMRAM_FIELD_SS_BASE,121,3662
+  SMRAM_FIELD_SS_LIMIT,122,3685
+  SMRAM_FIELD_SS_SELECTOR_AR,123,3709
+  SMRAM_FIELD_DS_BASE_HI32,124,3739
+  SMRAM_FIELD_DS_BASE,125,3767
+  SMRAM_FIELD_DS_LIMIT,126,3790
+  SMRAM_FIELD_DS_SELECTOR_AR,127,3814
+  SMRAM_FIELD_FS_BASE_HI32,128,3844
+  SMRAM_FIELD_FS_BASE,129,3872
+  SMRAM_FIELD_FS_LIMIT,130,3895
+  SMRAM_FIELD_FS_SELECTOR_AR,131,3919
+  SMRAM_FIELD_GS_BASE_HI32,132,3949
+  SMRAM_FIELD_GS_BASE,133,3977
+  SMRAM_FIELD_GS_LIMIT,134,4000
+  SMRAM_FIELD_GS_SELECTOR_AR,135,4024
+  SMRAM_FIELD_LAST136,4054
+enum SMMRAM_Fields 141,4084
+  SMRAM_FIELD_SMBASE_OFFSET 142,4105
+  SMRAM_FIELD_SMM_REVISION_ID,143,4138
+  SMRAM_FIELD_EAX,144,4169
+  SMRAM_FIELD_ECX,145,4188
+  SMRAM_FIELD_EDX,146,4207
+  SMRAM_FIELD_EBX,147,4226
+  SMRAM_FIELD_ESP,148,4245
+  SMRAM_FIELD_EBP,149,4264
+  SMRAM_FIELD_ESI,150,4283
+  SMRAM_FIELD_EDI,151,4302
+  SMRAM_FIELD_EIP,152,4321
+  SMRAM_FIELD_EFLAGS,153,4340
+  SMRAM_FIELD_DR6,154,4362
+  SMRAM_FIELD_DR7,155,4381
+  SMRAM_FIELD_CR0,156,4400
+  SMRAM_FIELD_CR3,157,4419
+  SMRAM_FIELD_CR4,158,4438
+  SMRAM_FIELD_IO_INSTRUCTION_RESTART,159,4457
+  SMRAM_FIELD_AUTOHALT_RESTART,160,4495
+  SMRAM_FIELD_NMI_MASK,161,4527
+  SMRAM_FIELD_TR_SELECTOR,162,4551
+  SMRAM_FIELD_TR_BASE,163,4578
+  SMRAM_FIELD_TR_LIMIT,164,4601
+  SMRAM_FIELD_TR_SELECTOR_AR,165,4625
+  SMRAM_FIELD_LDTR_SELECTOR,166,4655
+  SMRAM_FIELD_LDTR_BASE,167,4684
+  SMRAM_FIELD_LDTR_LIMIT,168,4709
+  SMRAM_FIELD_LDTR_SELECTOR_AR,169,4735
+  SMRAM_FIELD_IDTR_BASE,170,4767
+  SMRAM_FIELD_IDTR_LIMIT,171,4792
+  SMRAM_FIELD_GDTR_BASE,172,4818
+  SMRAM_FIELD_GDTR_LIMIT,173,4843
+  SMRAM_FIELD_ES_SELECTOR,174,4869
+  SMRAM_FIELD_ES_BASE,175,4896
+  SMRAM_FIELD_ES_LIMIT,176,4919
+  SMRAM_FIELD_ES_SELECTOR_AR,177,4943
+  SMRAM_FIELD_CS_SELECTOR,178,4973
+  SMRAM_FIELD_CS_BASE,179,5000
+  SMRAM_FIELD_CS_LIMIT,180,5023
+  SMRAM_FIELD_CS_SELECTOR_AR,181,5047
+  SMRAM_FIELD_SS_SELECTOR,182,5077
+  SMRAM_FIELD_SS_BASE,183,5104
+  SMRAM_FIELD_SS_LIMIT,184,5127
+  SMRAM_FIELD_SS_SELECTOR_AR,185,5151
+  SMRAM_FIELD_DS_SELECTOR,186,5181
+  SMRAM_FIELD_DS_BASE,187,5208
+  SMRAM_FIELD_DS_LIMIT,188,5231
+  SMRAM_FIELD_DS_SELECTOR_AR,189,5255
+  SMRAM_FIELD_FS_SELECTOR,190,5285
+  SMRAM_FIELD_FS_BASE,191,5312
+  SMRAM_FIELD_FS_LIMIT,192,5335
+  SMRAM_FIELD_FS_SELECTOR_AR,193,5359
+  SMRAM_FIELD_GS_SELECTOR,194,5389
+  SMRAM_FIELD_GS_BASE,195,5416
+  SMRAM_FIELD_GS_LIMIT,196,5439
+  SMRAM_FIELD_GS_SELECTOR_AR,197,5463
+  SMRAM_FIELD_LAST198,5493
+
+stack.h,322
+#define BX_PUSHPOP_H25,1180
+  BX_CPP_INLINE void BX_CPP_AttrRegparmN(27,1202
+  BX_CPP_INLINE void BX_CPP_AttrRegparmN(49,1768
+  BX_CPP_INLINE void BX_CPP_AttrRegparmN(73,2385
+BX_CPP_INLINE Bit16u BX_CPU_C::pop_16(82,2584
+BX_CPP_INLINE Bit32u BX_CPU_C::pop_32(106,3069
+BX_CPP_INLINE Bit64u BX_CPU_C::pop_64(131,3579
+
+vmx.h,22459
+#define _BX_VMX_INTEL_H_25,1178
+#define VMX_VMCS_AREA_SIZE 27,1204
+#define VMX_VMCS_REVISION_ID 28,1238
+#define BX_INVALID_VMCSPTR 31,1315
+#define BX_IA32_FEATURE_CONTROL_LOCK_BIT 34,1420
+#define BX_IA32_FEATURE_CONTROL_VMX_ENABLE_BIT 35,1471
+#define BX_IA32_FEATURE_CONTROL_BITS 37,1523
+enum VMX_error_code 41,1661
+    VMXERR_NO_ERROR 42,1683
+    VMXERR_VMCALL_IN_VMX_ROOT_OPERATION 43,1708
+    VMXERR_VMCLEAR_WITH_INVALID_ADDR 44,1753
+    VMXERR_VMCLEAR_WITH_VMXON_VMCS_PTR 45,1795
+    VMXERR_VMLAUNCH_NON_CLEAR_VMCS 46,1839
+    VMXERR_VMRESUME_NON_LAUNCHED_VMCS 47,1879
+    VMXERR_VMRESUME_VMCS_CORRUPTED 48,1922
+    VMXERR_VMENTRY_INVALID_VM_CONTROL_FIELD 49,1962
+    VMXERR_VMENTRY_INVALID_VM_HOST_STATE_FIELD 50,2011
+    VMXERR_VMPTRLD_INVALID_PHYSICAL_ADDRESS 51,2063
+    VMXERR_VMPTRLD_WITH_VMXON_PTR 52,2112
+    VMXERR_VMPTRLD_INCORRECT_VMCS_REVISION_ID 53,2152
+    VMXERR_UNSUPPORTED_VMCS_COMPONENT_ACCESS 54,2204
+    VMXERR_VMWRITE_READ_ONLY_VMCS_COMPONENT 55,2255
+    VMXERR_RESERVED14 56,2305
+    VMXERR_VMXON_IN_VMX_ROOT_OPERATION 57,2333
+    VMXERR_VMENTRY_INVALID_EXECUTIVE_VMCS 58,2378
+    VMXERR_VMENTRY_NON_LAUNCHED_EXECUTIVE_VMCS 59,2426
+    VMXERR_VMENTRY_NOT_VMXON_EXECUTIVE_VMCS 60,2479
+    VMXERR_VMCALL_NON_CLEAR_VMCS 61,2529
+    VMXERR_VMCALL_INVALID_VMEXIT_FIELD 62,2568
+    VMXERR_RESERVED21 63,2613
+    VMXERR_VMCALL_INVALID_MSEG_REVISION_ID 64,2641
+    VMXERR_VMXOFF_WITH_CONFIGURED_SMM_MONITOR 65,2690
+    VMXERR_VMCALL_WITH_INVALID_SMM_MONITOR_FEATURES 66,2742
+    VMXERR_VMENTRY_INVALID_VM_CONTROL_FIELD_IN_EXECUTIVE_VMCS 67,2800
+    VMXERR_VMENTRY_MOV_SS_BLOCKING 68,2868
+    VMXERR_RESERVED27 69,2909
+    VMXERR_INVALID_INVEPT_INVVPID 70,2937
+enum VMX_vmexit_reason 73,2980
+   VMX_VMEXIT_EXCEPTION_NMI 74,3005
+   VMX_VMEXIT_EXTERNAL_INTERRUPT 75,3038
+   VMX_VMEXIT_TRIPLE_FAULT 76,3076
+   VMX_VMEXIT_INIT 77,3108
+   VMX_VMEXIT_SIPI 78,3132
+   VMX_VMEXIT_IO_SMI 79,3156
+   VMX_VMEXIT_SMI 80,3182
+   VMX_VMEXIT_INTERRUPT_WINDOW 81,3205
+   VMX_VMEXIT_NMI_WINDOW 82,3241
+   VMX_VMEXIT_TASK_SWITCH 83,3271
+   VMX_VMEXIT_CPUID 84,3302
+   VMX_VMEXIT_RESERVED11 85,3328
+   VMX_VMEXIT_HLT 86,3359
+   VMX_VMEXIT_INVD 87,3383
+   VMX_VMEXIT_INVLPG 88,3408
+   VMX_VMEXIT_RDPMC 89,3435
+   VMX_VMEXIT_RDTSC 90,3461
+   VMX_VMEXIT_RSM 91,3487
+   VMX_VMEXIT_VMCALL 92,3511
+   VMX_VMEXIT_VMCLEAR 93,3538
+   VMX_VMEXIT_VMLAUNCH 94,3566
+   VMX_VMEXIT_VMPTRLD 95,3595
+   VMX_VMEXIT_VMPTRST 96,3623
+   VMX_VMEXIT_VMREAD 97,3651
+   VMX_VMEXIT_VMRESUME 98,3678
+   VMX_VMEXIT_VMWRITE 99,3707
+   VMX_VMEXIT_VMXOFF 100,3735
+   VMX_VMEXIT_VMXON 101,3762
+   VMX_VMEXIT_CR_ACCESS 102,3788
+   VMX_VMEXIT_DR_ACCESS 103,3818
+   VMX_VMEXIT_IO_INSTRUCTION 104,3848
+   VMX_VMEXIT_RDMSR 105,3883
+   VMX_VMEXIT_WRMSR 106,3909
+   VMX_VMEXIT_VMENTRY_FAILURE_GUEST_STATE 107,3935
+   VMX_VMEXIT_VMENTRY_FAILURE_MSR 108,3983
+   VMX_VMEXIT_RESERVED35 109,4023
+   VMX_VMEXIT_MWAIT 110,4054
+   VMX_VMEXIT_MONITOR_TRAP_FLAG 111,4080
+   VMX_VMEXIT_RESERVED38 112,4118
+   VMX_VMEXIT_MONITOR 113,4149
+   VMX_VMEXIT_PAUSE 114,4177
+   VMX_VMEXIT_VMENTRY_FAILURE_MCA 115,4203
+   VMX_VMEXIT_RESERVED42 116,4273
+   VMX_VMEXIT_TPR_THRESHOLD 117,4304
+   VMX_VMEXIT_APIC_ACCESS 118,4338
+   VMX_VMEXIT_RESERVED45 119,4370
+   VMX_VMEXIT_GDTR_IDTR_ACCESS 120,4401
+   VMX_VMEXIT_LDTR_TR_ACCESS 121,4438
+   VMX_VMEXIT_EPT_VIOLATION 122,4473
+   VMX_VMEXIT_EPT_MISCONFIGURATION 123,4507
+   VMX_VMEXIT_INVEPT 124,4548
+   VMX_VMEXIT_RDTSCP 125,4575
+   VMX_VMEXIT_VMX_PREEMTION_TIMER_FIRED 126,4602
+   VMX_VMEXIT_INVVPID 127,4648
+   VMX_VMEXIT_WBINVD 128,4676
+   VMX_VMEXIT_XSETBV 129,4703
+   VMX_VMEXIT_CR_ACCESS_CR_WRITE 134,4772
+   VMX_VMEXIT_CR_ACCESS_CR_READ,135,4810
+   VMX_VMEXIT_CR_ACCESS_CLTS,136,4843
+   VMX_VMEXIT_CR_ACCESS_LMSW137,4873
+enum VMX_vmentry_error 141,4960
+   VMENTER_ERR_NO_ERROR 142,4985
+   VMENTER_ERR_GUEST_STATE_PDPTR_LOADING 143,5014
+   VMENTER_ERR_GUEST_STATE_INJECT_NMI_BLOCKING_EVENTS 144,5060
+   VMENTER_ERR_GUEST_STATE_LINK_POINTER 145,5119
+enum VMX_vmabort_code 149,5189
+   VMABORT_SAVING_GUEST_MSRS_FAILURE,150,5213
+   VMABORT_HOST_PDPTR_CORRUPTED,151,5251
+   VMABORT_VMEXIT_VMCS_CORRUPTED,152,5284
+   VMABORT_LOADING_HOST_MSRS,153,5318
+   VMABORT_VMEXIT_MACHINE_CHECK_ERROR154,5348
+#define VMX_APIC_READ_INSTRUCTION_EXECUTION 158,5430
+#define VMX_APIC_WRITE_INSTRUCTION_EXECUTION 159,5483
+#define VMX_APIC_INSTRUCTION_FETCH 160,5536
+#define VMX_APIC_ACCESS_DURING_EVENT_DELIVERY 161,5641
+#define VMCS_16BIT_CONTROL_VPID 169,5812
+#define VMCS_16BIT_GUEST_ES_SELECTOR 173,5953
+#define VMCS_16BIT_GUEST_CS_SELECTOR 174,6023
+#define VMCS_16BIT_GUEST_SS_SELECTOR 175,6093
+#define VMCS_16BIT_GUEST_DS_SELECTOR 176,6163
+#define VMCS_16BIT_GUEST_FS_SELECTOR 177,6233
+#define VMCS_16BIT_GUEST_GS_SELECTOR 178,6303
+#define VMCS_16BIT_GUEST_LDTR_SELECTOR 179,6373
+#define VMCS_16BIT_GUEST_TR_SELECTOR 180,6443
+#define VMCS_16BIT_HOST_ES_SELECTOR 184,6583
+#define VMCS_16BIT_HOST_CS_SELECTOR 185,6653
+#define VMCS_16BIT_HOST_SS_SELECTOR 186,6723
+#define VMCS_16BIT_HOST_DS_SELECTOR 187,6793
+#define VMCS_16BIT_HOST_FS_SELECTOR 188,6863
+#define VMCS_16BIT_HOST_GS_SELECTOR 189,6933
+#define VMCS_16BIT_HOST_TR_SELECTOR 190,7003
+#define VMCS_64BIT_CONTROL_IO_BITMAP_A 194,7140
+#define VMCS_64BIT_CONTROL_IO_BITMAP_A_HI 195,7210
+#define VMCS_64BIT_CONTROL_IO_BITMAP_B 196,7280
+#define VMCS_64BIT_CONTROL_IO_BITMAP_B_HI 197,7350
+#define VMCS_64BIT_CONTROL_MSR_BITMAPS 198,7420
+#define VMCS_64BIT_CONTROL_MSR_BITMAPS_HI 199,7490
+#define VMCS_64BIT_CONTROL_VMEXIT_MSR_STORE_ADDR 200,7560
+#define VMCS_64BIT_CONTROL_VMEXIT_MSR_STORE_ADDR_HI 201,7630
+#define VMCS_64BIT_CONTROL_VMEXIT_MSR_LOAD_ADDR 202,7700
+#define VMCS_64BIT_CONTROL_VMEXIT_MSR_LOAD_ADDR_HI 203,7770
+#define VMCS_64BIT_CONTROL_VMENTRY_MSR_LOAD_ADDR 204,7840
+#define VMCS_64BIT_CONTROL_VMENTRY_MSR_LOAD_ADDR_HI 205,7910
+#define VMCS_64BIT_CONTROL_EXECUTIVE_VMCS_PTR 206,7980
+#define VMCS_64BIT_CONTROL_EXECUTIVE_VMCS_PTR_HI 207,8050
+#define VMCS_64BIT_CONTROL_TSC_OFFSET 208,8120
+#define VMCS_64BIT_CONTROL_TSC_OFFSET_HI 209,8190
+#define VMCS_64BIT_CONTROL_VIRTUAL_APIC_PAGE_ADDR 210,8260
+#define VMCS_64BIT_CONTROL_VIRTUAL_APIC_PAGE_ADDR_HI 211,8330
+#define VMCS_64BIT_CONTROL_APIC_ACCESS_ADDR 212,8400
+#define VMCS_64BIT_CONTROL_APIC_ACCESS_ADDR_HI 213,8470
+#define VMCS_64BIT_CONTROL_EPTPTR 214,8540
+#define VMCS_64BIT_CONTROL_EPTPTR_HI 215,8610
+#define VMCS_64BIT_GUEST_PHYSICAL_ADDR 219,8754
+#define VMCS_64BIT_GUEST_PHYSICAL_ADDR_HI 220,8824
+#define VMCS_64BIT_GUEST_LINK_POINTER 224,8965
+#define VMCS_64BIT_GUEST_LINK_POINTER_HI 225,9035
+#define VMCS_64BIT_GUEST_IA32_DEBUGCTL 226,9105
+#define VMCS_64BIT_GUEST_IA32_DEBUGCTL_HI 227,9175
+#define VMCS_64BIT_GUEST_IA32_PAT 228,9245
+#define VMCS_64BIT_GUEST_IA32_PAT_HI 229,9315
+#define VMCS_64BIT_GUEST_IA32_EFER 230,9385
+#define VMCS_64BIT_GUEST_IA32_EFER_HI 231,9455
+#define VMCS_64BIT_GUEST_IA32_PERF_GLOBAL_CTRL 232,9525
+#define VMCS_64BIT_GUEST_IA32_PERF_GLOBAL_CTRL_HI 233,9595
+#define VMCS_64BIT_GUEST_IA32_PDPTE0 234,9665
+#define VMCS_64BIT_GUEST_IA32_PDPTE0_HI 235,9735
+#define VMCS_64BIT_GUEST_IA32_PDPTE1 236,9805
+#define VMCS_64BIT_GUEST_IA32_PDPTE1_HI 237,9875
+#define VMCS_64BIT_GUEST_IA32_PDPTE2 238,9945
+#define VMCS_64BIT_GUEST_IA32_PDPTE2_HI 239,10015
+#define VMCS_64BIT_GUEST_IA32_PDPTE3 240,10085
+#define VMCS_64BIT_GUEST_IA32_PDPTE3_HI 241,10155
+#define VMCS_64BIT_HOST_IA32_PAT 245,10295
+#define VMCS_64BIT_HOST_IA32_PAT_HI 246,10365
+#define VMCS_64BIT_HOST_IA32_EFER 247,10435
+#define VMCS_64BIT_HOST_IA32_EFER_HI 248,10505
+#define VMCS_64BIT_HOST_IA32_PERF_GLOBAL_CTRL 249,10575
+#define VMCS_64BIT_HOST_IA32_PERF_GLOBAL_CTRL_HI 250,10645
+#define VMCS_32BIT_CONTROL_PIN_BASED_EXEC_CONTROLS 254,10782
+#define VMCS_32BIT_CONTROL_PROCESSOR_BASED_VMEXEC_CONTROLS 255,10852
+#define VMCS_32BIT_CONTROL_EXECUTION_BITMAP 256,10922
+#define VMCS_32BIT_CONTROL_PAGE_FAULT_ERR_CODE_MASK 257,10992
+#define VMCS_32BIT_CONTROL_PAGE_FAULT_ERR_CODE_MATCH 258,11062
+#define VMCS_32BIT_CONTROL_CR3_TARGET_COUNT 259,11132
+#define VMCS_32BIT_CONTROL_VMEXIT_CONTROLS 260,11202
+#define VMCS_32BIT_CONTROL_VMEXIT_MSR_STORE_COUNT 261,11272
+#define VMCS_32BIT_CONTROL_VMEXIT_MSR_LOAD_COUNT 262,11342
+#define VMCS_32BIT_CONTROL_VMENTRY_CONTROLS 263,11412
+#define VMCS_32BIT_CONTROL_VMENTRY_MSR_LOAD_COUNT 264,11482
+#define VMCS_32BIT_CONTROL_VMENTRY_INTERRUPTION_INFO 265,11552
+#define VMCS_32BIT_CONTROL_VMENTRY_EXCEPTION_ERR_CODE 266,11622
+#define VMCS_32BIT_CONTROL_VMENTRY_INSTRUCTION_LENGTH 267,11692
+#define VMCS_32BIT_CONTROL_TPR_THRESHOLD 268,11762
+#define VMCS_32BIT_CONTROL_SECONDARY_VMEXEC_CONTROLS 269,11832
+#define VMCS_32BIT_INSTRUCTION_ERROR 273,11976
+#define VMCS_32BIT_VMEXIT_REASON 274,12046
+#define VMCS_32BIT_VMEXIT_INTERRUPTION_INFO 275,12116
+#define VMCS_32BIT_VMEXIT_INTERRUPTION_ERR_CODE 276,12186
+#define VMCS_32BIT_IDT_VECTORING_INFO 277,12256
+#define VMCS_32BIT_IDT_VECTORING_ERR_CODE 278,12326
+#define VMCS_32BIT_VMEXIT_INSTRUCTION_LENGTH 279,12396
+#define VMCS_32BIT_VMEXIT_INSTRUCTION_INFO 280,12466
+#define VMCS_32BIT_GUEST_ES_LIMIT 284,12607
+#define VMCS_32BIT_GUEST_CS_LIMIT 285,12677
+#define VMCS_32BIT_GUEST_SS_LIMIT 286,12747
+#define VMCS_32BIT_GUEST_DS_LIMIT 287,12817
+#define VMCS_32BIT_GUEST_FS_LIMIT 288,12887
+#define VMCS_32BIT_GUEST_GS_LIMIT 289,12957
+#define VMCS_32BIT_GUEST_LDTR_LIMIT 290,13027
+#define VMCS_32BIT_GUEST_TR_LIMIT 291,13097
+#define VMCS_32BIT_GUEST_GDTR_LIMIT 292,13167
+#define VMCS_32BIT_GUEST_IDTR_LIMIT 293,13237
+#define VMCS_32BIT_GUEST_ES_ACCESS_RIGHTS 294,13307
+#define VMCS_32BIT_GUEST_CS_ACCESS_RIGHTS 295,13377
+#define VMCS_32BIT_GUEST_SS_ACCESS_RIGHTS 296,13447
+#define VMCS_32BIT_GUEST_DS_ACCESS_RIGHTS 297,13517
+#define VMCS_32BIT_GUEST_FS_ACCESS_RIGHTS 298,13587
+#define VMCS_32BIT_GUEST_GS_ACCESS_RIGHTS 299,13657
+#define VMCS_32BIT_GUEST_LDTR_ACCESS_RIGHTS 300,13727
+#define VMCS_32BIT_GUEST_TR_ACCESS_RIGHTS 301,13797
+#define VMCS_32BIT_GUEST_INTERRUPTIBILITY_STATE 302,13867
+#define VMCS_32BIT_GUEST_ACTIVITY_STATE 303,13937
+#define VMCS_32BIT_GUEST_SMBASE 304,14007
+#define VMCS_32BIT_GUEST_IA32_SYSENTER_CS_MSR 305,14077
+#define VMCS_32BIT_HOST_IA32_SYSENTER_CS_MSR 309,14217
+#define VMCS_CONTROL_CR0_GUEST_HOST_MASK 313,14361
+#define VMCS_CONTROL_CR4_GUEST_HOST_MASK 314,14431
+#define VMCS_CONTROL_CR0_READ_SHADOW 315,14501
+#define VMCS_CONTROL_CR4_READ_SHADOW 316,14571
+#define VMCS_CR3_TARGET0 317,14641
+#define VMCS_CR3_TARGET1 318,14711
+#define VMCS_CR3_TARGET2 319,14781
+#define VMCS_CR3_TARGET3 320,14851
+#define VMCS_VMEXIT_QUALIFICATION 324,15061
+#define VMCS_IO_RCX 325,15131
+#define VMCS_IO_RSI 326,15201
+#define VMCS_IO_RDI 327,15271
+#define VMCS_IO_RIP 328,15341
+#define VMCS_GUEST_LINEAR_ADDR 329,15411
+#define VMCS_GUEST_CR0 333,15559
+#define VMCS_GUEST_CR3 334,15629
+#define VMCS_GUEST_CR4 335,15699
+#define VMCS_GUEST_ES_BASE 336,15769
+#define VMCS_GUEST_CS_BASE 337,15839
+#define VMCS_GUEST_SS_BASE 338,15909
+#define VMCS_GUEST_DS_BASE 339,15979
+#define VMCS_GUEST_FS_BASE 340,16049
+#define VMCS_GUEST_GS_BASE 341,16119
+#define VMCS_GUEST_LDTR_BASE 342,16189
+#define VMCS_GUEST_TR_BASE 343,16259
+#define VMCS_GUEST_GDTR_BASE 344,16329
+#define VMCS_GUEST_IDTR_BASE 345,16399
+#define VMCS_GUEST_DR7 346,16469
+#define VMCS_GUEST_RSP 347,16539
+#define VMCS_GUEST_RIP 348,16609
+#define VMCS_GUEST_RFLAGS 349,16679
+#define VMCS_GUEST_PENDING_DBG_EXCEPTIONS 350,16749
+#define VMCS_GUEST_IA32_SYSENTER_ESP_MSR 351,16819
+#define VMCS_GUEST_IA32_SYSENTER_EIP_MSR 352,16889
+#define VMCS_HOST_CR0 356,17036
+#define VMCS_HOST_CR3 357,17106
+#define VMCS_HOST_CR4 358,17176
+#define VMCS_HOST_FS_BASE 359,17246
+#define VMCS_HOST_GS_BASE 360,17316
+#define VMCS_HOST_TR_BASE 361,17386
+#define VMCS_HOST_GDTR_BASE 362,17456
+#define VMCS_HOST_IDTR_BASE 363,17526
+#define VMCS_HOST_IA32_SYSENTER_ESP_MSR 364,17596
+#define VMCS_HOST_IA32_SYSENTER_EIP_MSR 365,17666
+#define VMCS_HOST_RSP 366,17736
+#define VMCS_HOST_RIP 367,17806
+#define VMCS_FIELD(374,18023
+#define IS_VMCS_FIELD_HI(377,18158
+#define VMCS_FIELD_TYPE(380,18271
+#define VMCS_FIELD_TYPE_CONTROL 382,18333
+#define VMCS_FIELD_TYPE_READ_ONLY 383,18376
+#define VMCS_FIELD_TYPE_GUEST_STATE 384,18419
+#define VMCS_FIELD_TYPE_HOST_STATE 385,18462
+#define VMCS_FIELD_WIDTH(388,18566
+#define VMCS_FIELD_WIDTH_16BIT 390,18628
+#define VMCS_FIELD_WIDTH_64BIT 391,18671
+#define VMCS_FIELD_WIDTH_32BIT 392,18714
+#define VMCS_FIELD_WIDTH_NATURAL_WIDTH 393,18757
+#define VMCS_FIELD_INDEX(395,18801
+#define VMCS_REVISION_ID_FIELD_ADDR 402,18958
+#define VMCS_VMX_ABORT_FIELD_ADDR 403,19016
+#define VMCS_LAUNCH_STATE_FIELD_ADDR 404,19074
+#define VMCS_DATA_OFFSET 407,19199
+enum VMX_state 417,19409
+   VMCS_STATE_CLEAR 418,19426
+   VMCS_STATE_LAUNCHED419,19451
+typedef struct bx_VMCS_GUEST_STATE 426,19538
+   bx_address cr0;428,19576
+   bx_address cr3;429,19595
+   bx_address cr4;430,19614
+   bx_address dr7;431,19633
+   bx_address rip;433,19653
+   bx_address rsp;434,19672
+   bx_address rflags;435,19691
+   bx_segment_reg_t sregs[sregs437,19714
+   bx_global_segment_reg_t gdtr;439,19745
+   bx_global_segment_reg_t idtr;440,19778
+   bx_segment_reg_t        ldtr;441,19811
+   bx_segment_reg_t        tr;442,19844
+   Bit64u ia32_debugctl_msr;444,19876
+   bx_address sysenter_esp_msr;445,19905
+   bx_address sysenter_eip_msr;446,19937
+   Bit32u sysenter_cs_msr;447,19969
+   Bit32u smbase;449,19997
+   Bit32u activity_state;450,20015
+   Bit32u interruptibility_state;451,20041
+   Bit32u tmpDR6;452,20075
+   Bit64u link_pointer;454,20094
+   Bit64u efer_msr;458,20165
+   Bit64u pat_msr;460,20192
+   Bit64u pdptr[pdptr461,20211
+} VMCS_GUEST_STATE;463,20238
+typedef struct bx_VMCS_HOST_STATE465,20259
+   bx_address cr0;467,20295
+   bx_address cr3;468,20314
+   bx_address cr4;469,20333
+   Bit16u segreg_selector[segreg_selector471,20353
+   bx_address fs_base;473,20384
+   bx_address gs_base;474,20407
+   bx_address gdtr_base;476,20431
+   bx_address idtr_base;477,20456
+   Bit32u tr_selector;479,20482
+   bx_address tr_base;480,20505
+   bx_address rsp;482,20529
+   bx_address rip;483,20548
+   bx_address sysenter_esp_msr;485,20568
+   bx_address sysenter_eip_msr;486,20600
+   Bit32u sysenter_cs_msr;487,20632
+   Bit64u efer_msr;491,20706
+   Bit64u pat_msr;493,20733
+} VMCS_HOST_STATE;495,20759
+typedef struct bx_VMCS497,20779
+#define VMX_VM_EXEC_CTRL1_EXTERNAL_INTERRUPT_VMEXIT 503,20848
+#define VMX_VM_EXEC_CTRL1_NMI_VMEXIT 504,20909
+#define VMX_VM_EXEC_CTRL1_VIRTUAL_NMI 505,20970
+#define VMX_VM_EXEC_CTRL1_VMX_PREEMPTION_TIMER 506,21031
+#define VMX_VM_EXEC_CTRL1_SUPPORTED_BITS 510,21119
+#define VMX_VM_EXEC_CTRL1_SUPPORTED_BITS 514,21215
+   Bit32u vmexec_ctrls1;520,21351
+#define VMX_VM_EXEC_CTRL2_INTERRUPT_WINDOW_VMEXIT 522,21377
+#define VMX_VM_EXEC_CTRL2_TSC_OFFSET 523,21438
+#define VMX_VM_EXEC_CTRL2_HLT_VMEXIT 524,21499
+#define VMX_VM_EXEC_CTRL2_INVLPG_VMEXIT 525,21560
+#define VMX_VM_EXEC_CTRL2_MWAIT_VMEXIT 526,21621
+#define VMX_VM_EXEC_CTRL2_RDPMC_VMEXIT 527,21683
+#define VMX_VM_EXEC_CTRL2_RDTSC_VMEXIT 528,21745
+#define VMX_VM_EXEC_CTRL2_CR3_WRITE_VMEXIT 529,21807
+#define VMX_VM_EXEC_CTRL2_CR3_READ_VMEXIT 530,21893
+#define VMX_VM_EXEC_CTRL2_CR8_WRITE_VMEXIT 531,21979
+#define VMX_VM_EXEC_CTRL2_CR8_READ_VMEXIT 532,22041
+#define VMX_VM_EXEC_CTRL2_TPR_SHADOW 533,22103
+#define VMX_VM_EXEC_CTRL2_NMI_WINDOW_VMEXIT 534,22165
+#define VMX_VM_EXEC_CTRL2_DRx_ACCESS_VMEXIT 535,22227
+#define VMX_VM_EXEC_CTRL2_IO_VMEXIT 536,22289
+#define VMX_VM_EXEC_CTRL2_IO_BITMAPS 537,22351
+#define VMX_VM_EXEC_CTRL2_MONITOR_TRAP_FLAG 538,22413
+#define VMX_VM_EXEC_CTRL2_MSR_BITMAPS 539,22475
+#define VMX_VM_EXEC_CTRL2_MONITOR_VMEXIT 540,22537
+#define VMX_VM_EXEC_CTRL2_PAUSE_VMEXIT 541,22599
+#define VMX_VM_EXEC_CTRL2_SECONDARY_CONTROLS 542,22661
+#define VMX_VM_EXEC_CTRL2_SUPPORTED_BITS 546,22750
+#define VMX_VM_EXEC_CTRL2_SUPPORTED_BITS 550,22846
+   Bit32u vmexec_ctrls2;574,23811
+#define VMX_VM_EXEC_CTRL3_VIRTUALIZE_APIC_ACCESSES 576,23837
+#define VMX_VM_EXEC_CTRL3_EPT_ENABLE 577,23898
+#define VMX_VM_EXEC_CTRL3_DESCRIPTOR_TABLE_VMEXIT 578,23959
+#define VMX_VM_EXEC_CTRL3_RDTSCP 579,24020
+#define VMX_VM_EXEC_CTRL3_VIRTUALIZE_X2APIC_MODE 580,24081
+#define VMX_VM_EXEC_CTRL3_VPID_ENABLE 581,24142
+#define VMX_VM_EXEC_CTRL3_WBINVD_VMEXIT 582,24203
+#define VMX_VM_EXEC_CTRL3_UNRESTRICTED_GUEST 583,24264
+#define VMX_VM_EXEC_CTRL3_PAUSE_LOOP_VMEXIT 584,24325
+#define VMX_VM_EXEC_CTRL3_SUPPORTED_BITS 588,24414
+#define VMX_VM_EXEC_CTRL3_SUPPORTED_BITS 592,24510
+   Bit32u vmexec_ctrls3;604,24902
+   Bit32u vm_exceptions_bitmap;606,24928
+   Bit32u vm_pf_mask;607,24960
+   Bit32u vm_pf_match;608,24982
+   Bit64u io_bitmap_addr[io_bitmap_addr609,25005
+   Bit64u tsc_offset;610,25034
+   bx_phy_address msr_bitmap_addr;611,25056
+   bx_address vm_cr0_mask;613,25092
+   bx_address vm_cr0_read_shadow;614,25119
+   bx_address vm_cr4_mask;615,25153
+   bx_address vm_cr4_read_shadow;616,25180
+#define VMX_CR3_TARGET_MAX_CNT 618,25215
+   Bit32u vm_cr3_target_cnt;620,25249
+   bx_address vm_cr3_target_value[vm_cr3_target_value621,25278
+   bx_phy_address virtual_apic_page_addr;623,25338
+   Bit32u vm_tpr_threshold;624,25380
+   bx_phy_address apic_access_page;626,25432
+   Bit64u eptptr;627,25468
+   Bit16u vpid;628,25486
+   Bit64u executive_vmcsptr;631,25510
+#define VMX_VMEXIT_CTRL1_SAVE_DBG_CTRLS 637,25582
+#define VMX_VMEXIT_CTRL1_HOST_ADDR_SPACE_SIZE 638,25668
+#define VMX_VMEXIT_CTRL1_LOAD_PERF_GLOBAL_CTRL_MSR 639,25730
+#define VMX_VMEXIT_CTRL1_INTA_ON_VMEXIT 640,25792
+#define VMX_VMEXIT_CTRL1_STORE_PAT_MSR 641,25854
+#define VMX_VMEXIT_CTRL1_LOAD_PAT_MSR 642,25916
+#define VMX_VMEXIT_CTRL1_STORE_EFER_MSR 643,25978
+#define VMX_VMEXIT_CTRL1_LOAD_EFER_MSR 644,26040
+#define VMX_VMEXIT_CTRL1_STORE_VMX_PREEMPTION_TIMER 645,26102
+#define VMX_VMEXIT_CTRL1_SUPPORTED_BITS 649,26191
+#define VMX_VMEXIT_CTRL1_SUPPORTED_BITS 653,26286
+   Bit32u vmexit_ctrls;664,26757
+   Bit32u vmexit_msr_store_cnt;666,26782
+   bx_phy_address vmexit_msr_store_addr;667,26814
+   Bit32u vmexit_msr_load_cnt;668,26855
+   bx_phy_address vmexit_msr_load_addr;669,26886
+#define VMX_VMENTRY_CTRL1_LOAD_DBG_CTRLS 675,26973
+#define VMX_VMENTRY_CTRL1_X86_64_GUEST 676,27067
+#define VMX_VMENTRY_CTRL1_SMM_ENTER 677,27137
+#define VMX_VMENTRY_CTRL1_DEACTIVATE_DUAL_MONITOR_TREATMENT 678,27207
+#define VMX_VMENTRY_CTRL1_LOAD_PERF_GLOBAL_CTRL_MSR 679,27277
+#define VMX_VMENTRY_CTRL1_LOAD_PAT_MSR 680,27347
+#define VMX_VMENTRY_CTRL1_LOAD_EFER_MSR 681,27417
+#define VMX_VMENTRY_CTRL1_SUPPORTED_BITS 685,27514
+#define VMX_VMENTRY_CTRL1_SUPPORTED_BITS 689,27610
+   Bit32u vmentry_ctrls;699,28000
+   Bit32u vmentry_msr_load_cnt;701,28026
+   bx_phy_address vmentry_msr_load_addr;702,28058
+   Bit32u vmentry_interr_info;704,28100
+   Bit32u vmentry_excep_err_code;705,28131
+   Bit32u vmentry_instr_length;706,28165
+   Bit32u idt_vector_info;730,28687
+   Bit32u idt_vector_error_code;731,28714
+   VMCS_HOST_STATE host_state;737,28783
+} VMCS_CACHE;739,28815
+enum VMX_Activity_State 741,28830
+   BX_VMX_ACTIVE_STATE 742,28856
+   BX_VMX_STATE_HLT,743,28884
+   BX_VMX_STATE_SHUTDOWN,744,28905
+   BX_VMX_STATE_WAIT_FOR_SIPI,745,28931
+   BX_VMX_LAST_ACTIVITY_STATE746,28962
+#define PIN_VMEXIT(749,28996
+#define     VMEXIT(750,29067
+#define SECONDARY_VMEXEC_CONTROL(752,29139
+#define BX_VMX_INTERRUPTS_BLOCKED_BY_STI 754,29225
+#define BX_VMX_INTERRUPTS_BLOCKED_BY_MOV_SS 755,29280
+#define BX_VMX_INTERRUPTS_BLOCKED_SMI_BLOCKED 756,29335
+#define BX_VMX_INTERRUPTS_BLOCKED_NMI_BLOCKED 757,29390
+#define BX_VMX_INTERRUPTIBILITY_STATE_MASK 759,29446
+#define VMX_MSR_VMX_BASIC_LO 782,30229
+#define VMX_MSR_VMX_BASIC_HI 783,30281
+#define VMX_MSR_VMX_BASIC 787,30451
+#define VMX_MSR_VMX_PINBASED_CTRLS_LO 812,31498
+#define VMX_MSR_VMX_PINBASED_CTRLS_HI 815,31659
+#define VMX_MSR_VMX_PINBASED_CTRLS 818,31774
+#define VMX_MSR_VMX_TRUE_PINBASED_CTRLS_LO 825,32039
+#define VMX_MSR_VMX_TRUE_PINBASED_CTRLS_HI 826,32114
+#define VMX_MSR_VMX_TRUE_PINBASED_CTRLS 828,32190
+#define VMX_MSR_VMX_PROCBASED_CTRLS_LO 840,32576
+#define VMX_MSR_VMX_PROCBASED_CTRLS_HI 842,32650
+#define VMX_MSR_VMX_PROCBASED_CTRLS 845,32767
+#define VMX_MSR_VMX_TRUE_PROCBASED_CTRLS_LO 852,33020
+#define VMX_MSR_VMX_TRUE_PROCBASED_CTRLS_HI 853,33077
+#define VMX_MSR_VMX_TRUE_PROCBASED_CTRLS 855,33155
+#define VMX_MSR_VMX_VMEXIT_CTRLS_LO 865,33457
+#define VMX_MSR_VMX_VMEXIT_CTRLS_HI 867,33528
+#define VMX_MSR_VMX_VMEXIT_CTRLS 870,33638
+#define VMX_MSR_VMX_TRUE_VMEXIT_CTRLS_LO 877,33867
+#define VMX_MSR_VMX_TRUE_VMEXIT_CTRLS_HI 878,33921
+#define VMX_MSR_VMX_TRUE_VMEXIT_CTRLS 880,33993
+#define VMX_MSR_VMX_VMENTRY_CTRLS_LO 890,34268
+#define VMX_MSR_VMX_VMENTRY_CTRLS_HI 892,34340
+#define VMX_MSR_VMX_VMENTRY_CTRLS 895,34453
+#define VMX_MSR_VMX_TRUE_VMENTRY_CTRLS_LO 902,34687
+#define VMX_MSR_VMX_TRUE_VMENTRY_CTRLS_HI 903,34742
+#define VMX_MSR_VMX_TRUE_VMENTRY_CTRLS 905,34816
+  #define VMX_MISC_STORE_LMA_TO_X86_64_GUEST_VMENTRY_CONTROL 923,35541
+  #define VMX_MISC_STORE_LMA_TO_X86_64_GUEST_VMENTRY_CONTROL 925,35615
+#define VMX_MSR_MISC 928,35688
+#define VMX_MSR_CR0_FIXED0_LO 937,36056
+#define VMX_MSR_CR0_FIXED0_HI 938,36099
+#define VMX_MSR_CR0_FIXED0 940,36143
+#define VMX_MSR_CR0_FIXED1_LO 944,36283
+#define VMX_MSR_CR0_FIXED1_HI 945,36326
+#define VMX_MSR_CR0_FIXED1 947,36370
+#define VMX_MSR_CR4_FIXED0_LO 956,36700
+#define VMX_MSR_CR4_FIXED0_HI 957,36743
+#define VMX_MSR_CR4_FIXED0 959,36787
+#define VMX_MSR_CR4_FIXED1_LO 963,36927
+#define VMX_MSR_CR4_FIXED1_HI 964,37024
+#define VMX_MSR_CR4_FIXED1 966,37122
+#define VMX_HIGHEST_VMCS_ENCODING 979,37378
+#define VMX_MSR_VMCS_ENUM_LO 981,37418
+#define VMX_MSR_VMCS_ENUM_HI 982,37475
+#define VMX_MSR_VMCS_ENUM 984,37518
+#define VMX_MSR_VMX_PROCBASED_CTRLS2_LO 994,37760
+#define VMX_MSR_VMX_PROCBASED_CTRLS2_HI 996,37835
+#define VMX_MSR_VMX_PROCBASED_CTRLS2 999,37954
+enum VMX_INVEPT_INVVPID_type 1006,38148
+  BX_INVEPT_INVVPID_INDIVIDUAL_ADDRESS_INVALIDATION 1007,38179
+  BX_INVEPT_INVVPID_SINGLE_CONTEXT_INVALIDATION,1008,38236
+  BX_INVEPT_INVVPID_ALL_CONTEXT_INVALIDATION,1009,38285
+  BX_INVEPT_INVVPID_SINGLE_CONTEXT_NON_GLOBAL_INVALIDATION1010,38331
+#define VMX_MSR_VMX_EPT_VPID_CAP_LO 1023,38787
+#define VMX_MSR_VMX_EPT_VPID_CAP_HI 1031,39120
+#define VMX_MSR_VMX_EPT_VPID_CAP 1033,39170
+
+xmm.h,2227
+#define BX_SSE_EXTENSIONS_H25,1186
+typedef union bx_xmm_reg_t 29,1235
+   Bit8s   _sbyte[_sbyte30,1264
+   Bit16s  _s16[_s1631,1287
+   Bit32s  _s32[_s3232,1307
+   Bit64s  _s64[_s6433,1327
+   Bit8u   _ubyte[_ubyte34,1347
+   Bit16u  _u16[_u1635,1370
+   Bit32u  _u32[_u3236,1390
+   Bit64u  _u64[_u6437,1410
+} BxPackedXmmRegister;38,1430
+#define xmm64s(41,1475
+#define xmm32s(42,1509
+#define xmm16s(43,1543
+#define xmmsbyte(44,1577
+#define xmmubyte(45,1614
+#define xmm16u(46,1651
+#define xmm32u(47,1685
+#define xmm64u(48,1719
+#define xmm64s(50,1759
+#define xmm32s(51,1789
+#define xmm16s(52,1819
+#define xmmsbyte(53,1849
+#define xmmubyte(54,1881
+#define xmm16u(55,1913
+#define xmm32u(56,1943
+#define xmm64u(57,1973
+#  define BX_XMM_REGISTERS 61,2033
+#  define BX_XMM_REGISTERS 63,2069
+#define BX_READ_XMM_REG(67,2130
+#define BX_READ_XMM_REG_HI_QWORD(70,2235
+#define BX_READ_XMM_REG_LO_QWORD(74,2366
+#define BX_READ_XMM_REG_LO_DWORD(78,2497
+#define BX_READ_XMM_REG_LO_WORD(82,2628
+#define BX_XMM_REG_HI_QWORD 86,2752
+#define BX_XMM_REG_LO_QWORD 87,2805
+#define BX_XMM_REG_LO_DWORD 88,2858
+#define BX_WRITE_XMM_REG(91,2937
+#define BX_WRITE_XMM_REG_HI_QWORD(95,3098
+#define BX_WRITE_XMM_REG_LO_QWORD(99,3283
+#define BX_WRITE_XMM_REG_LO_DWORD(103,3468
+#define MXCSR_EXCEPTIONS 140,4894
+#define MXCSR_DAZ 141,4946
+#define MXCSR_MASKED_EXCEPTIONS 142,4998
+#define MXCSR_ROUNDING_CONTROL 143,5050
+#define MXCSR_FLUSH_MASKED_UNDERFLOW 144,5102
+#define MXCSR_MISALIGNED_EXCEPTION_MASK 145,5154
+#define MXCSR_IE 147,5207
+#define MXCSR_DE 148,5235
+#define MXCSR_ZE 149,5263
+#define MXCSR_OE 150,5291
+#define MXCSR_UE 151,5319
+#define MXCSR_PE 152,5347
+#define MXCSR_IM 154,5376
+#define MXCSR_DM 155,5404
+#define MXCSR_ZM 156,5432
+#define MXCSR_OM 157,5460
+#define MXCSR_UM 158,5488
+#define MXCSR_PM 159,5516
+#define MXCSR_RESET 161,5545
+#define IMPLEMENT_MXCSR_ACCESSOR(170,5722
+  #define MXCSR 202,6961
+  #define BX_MXCSR_REGISTER 203,7013
+  #define MXCSR_MASK 204,7071
+BX_CPP_INLINE Bit8s BX_CPP_AttrRegparmN(215,7451
+BX_CPP_INLINE Bit16s BX_CPP_AttrRegparmN(228,7922
+BX_CPP_INLINE Bit8u BX_CPP_AttrRegparmN(241,8392
+BX_CPP_INLINE Bit16u BX_CPP_AttrRegparmN(254,8856

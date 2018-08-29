@@ -1,0 +1,13 @@
+*.o
+*.d
+cpu/libcpu.a
+disasm/libdisasm.a
+fpu/libfpu.a
+memory/libmemory.a
+concrete-whitebochs
+concrete-whitedisasm
+fuzzball-whitebochs
+fuzzball-whitedisasm
+run-on-cpu
+test-cache
+whitedisasm-many

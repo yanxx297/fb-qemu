@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ "$1" == "symbolic" -o "$1" == "sym" ]
+then
+    WB="./symbolic-whitebochs"
+elif [ "$1" == "concrete" -o "$1" == "conc" ]
+then
+    WB="./concrete-whitebochs"
+else
+    echo "Invalid argument \"$1\". Use either \"concrete\" or \"symbolic\"."
+    exit 1
+fi
+
+if [ -f "$2" ]
+then
+    SNAP=$(mktemp)
+    gunzip -c "$2" > $SNAP
+else
+    echo "Invalid snapshot \"$2\"."
+    exit 1
+fi
+
+if [ "$3" != "" ]
+then
+    if echo "$3" | grep -q "\\\\x"
+    then
+	X86="$3"
+    else
+	tmp=$(mktemp)
+	asm=$(echo -n "$3" | sed "s/%/%%/g")
+	printf ".text\n$asm\n" | as -32 - -o $tmp 2> /dev/null
+	if [ $? -ne 0 ]
+	then
+	    echo "Invalid assembly instruction \"$3\"."
+	    exit 1
+	fi
+	objcopy -O binary -j .text $tmp
+	X86=$(hexdump -v -e '/1 "*%02X"' $tmp | sed "s/\*/\\\\x/g")
+	rm -f $tmp
+    fi
+fi
+echo $X86
+$WB $SNAP $X86
+rm -f $SNAP

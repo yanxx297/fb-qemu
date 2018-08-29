@@ -707,7 +707,7 @@ print "Starting FuzzBall:", cmdline_
 print "#"*columns()
 print
 
-open("/tmp/fuzzball.cmd", "w").write(" ".join(["\"%s\"" % c for c in cmdline]))
+open("/tmp/fuzzball-qemu.cmd", "w").write(" ".join(["\"%s\"" % c for c in cmdline]))
 
 if KERNEL:
     open("%s/snapshot" % OUTDIR, "w").write(snapshot_md5)

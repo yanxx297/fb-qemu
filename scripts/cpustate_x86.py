@@ -651,7 +651,7 @@ class X86Dump():
             s += str(self.cpus[i])
 
             s += "\n[GDT #%d]\n" % i
-            for sel in range(0,25):
+            for sel in range(0,51):
                 seg = self.parse_seg(i, sel << 3)
                 s += "   [%.2d] [%.2x] Base:%.8x Limit:%.8x Type:%.4x \n" % (sel, seg.selector, seg.base, seg.limit, seg.type)
                 
