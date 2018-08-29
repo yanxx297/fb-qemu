@@ -95,7 +95,7 @@ tempfiles = []
 
 dump_region = False
 preferred_value = False
-cpustate_addr = 0x622dd2a0
+cpustate_addr = 0x622dd310
 phys_mem = (0x544d3000, 16777216)
 start_address = 0x6004ae15
 end_address = 0x6004ae20    # One instruction after the first instruction after the test case
