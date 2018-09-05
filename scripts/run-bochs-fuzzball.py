@@ -28,7 +28,7 @@ FUZZBALL_ENV_ARGS = os.getenv("FUZZBALL_ARGS", "")
 FUZZBALL_MAX_ITERS = os.getenv("FUZZBALL_MAX_ITERATIONS", "4096")
 FUZZBALL_ARGS = "-no-sym-regions -solver stp-external -solver-path \
         ../fuzzball/stp/stp -linux-syscalls -trace-iterations -zero-memory \
-        -table-limit 8 -query-branch-limit 5 -no-sym-regions %s -total-timeout 7200" % \
+        -table-limit 12 -query-branch-limit 5 %s -total-timeout 7200" % \
         (FUZZBALL_ENV_ARGS)
 KERNEL = os.getenv("KERNEL_MODE", False)
 EXTRA_DESC_COND = os.path.join(HERE, "extra-desc-conds.txt")
