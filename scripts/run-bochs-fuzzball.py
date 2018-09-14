@@ -495,7 +495,10 @@ if corefile:
 # ===-----------------------------------------------------------------------===
 for r, s, a in cpu_regs:
     if r.startswith("reg_") and symbolic_regs and not r in ["reg_EIP"]:
-        cmdline +=make_reg_symbolic(a, r, s)
+        v, m = 0, 0
+        if r == "reg_EFLAGS":
+            m = (1<<9)
+        cmdline +=make_reg_symbolic(a, r, s, v, m)
         if dump_region:
             cmdline += ["-dump-region", "0x%.8x:%d=out_%s__%d" % (a, s, r, s)]
 
@@ -508,7 +511,7 @@ for r, s, a in cpu_regs:
             cmdline += ["-dump-region", "0x%.8x:%d=out_%s__%d" % (a, 2, r, s)]
         else:
             v = 0
-
+    
     if KERNEL:
         if r.startswith("creg_") and symbolic_cregs:
             v, m, z = 0, 0, False
