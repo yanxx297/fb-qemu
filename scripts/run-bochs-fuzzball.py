@@ -634,7 +634,11 @@ for i in range(1, idt_limit / 8):
 cr0 = snapshot.cpus[0].sregs_state.cr0
 cr4 = snapshot.cpus[0].sregs_state.cr4
 cr3 = snapshot.cpus[0].sregs_state.cr3 & CR3_PAGING_MASK
-assert (cr0 & CR0_PG) and not (cr4 & CR4_PAE)
+assert not (cr4 & CR4_PAE)
+
+# Paging is turned off in Bochs when comparing it with user-mode QEMU
+if KERNEL:
+    assert (cr0 & CR0_PG)
 
 deref4 = lambda x: deref(snapshot.mem.data, x, 4)
 chunk4 = lambda x: chunk(x)[0]
