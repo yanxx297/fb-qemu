@@ -109,12 +109,13 @@ BX_CPU_C::read_virtual_checks(bx_segment_reg_t *seg, Bit32u offset, unsigned len
     case 2: case 3: /* read/write */
     case 10: case 11: /* execute/read */
     case 14: case 15: /* execute/read-only, conforming */
-      if (offset > (seg->cache.u.segment.limit_scaled - length + 1)
-          || (length-1 > seg->cache.u.segment.limit_scaled))
-      {
-        BX_ERROR(("read_virtual_checks(): read beyond limit"));
-        return 0;
-      }
+      /* Comment out this check for user-mode */
+      // if (offset > (seg->cache.u.segment.limit_scaled - length + 1)
+      //     || (length-1 > seg->cache.u.segment.limit_scaled))
+      // {
+      //   BX_ERROR(("read_virtual_checks(): read beyond limit"));
+      //   return 0;
+      // }
       if (seg->cache.u.segment.limit_scaled >= 15) {
         // Mark cache as being OK type for succeeding reads. See notes for
         // write checks; similar code.

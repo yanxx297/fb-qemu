@@ -1588,7 +1588,7 @@ void BX_CPU_C::access_read_linear(bx_address laddr, unsigned len, unsigned curr_
   Bit32u pageOffset = PAGE_OFFSET(laddr);
 
   /* check for reference across multiple pages */
-  if ((pageOffset + len) <= 4096) {
+  /*if ((pageOffset + len) <= 4096) { */
     // Access within single page.
     BX_CPU_THIS_PTR address_xlation.paddress1 =
         dtranslate_linear(laddr, curr_pl, xlate_rw);
@@ -1599,7 +1599,7 @@ void BX_CPU_C::access_read_linear(bx_address laddr, unsigned len, unsigned curr_
     BX_DBG_LIN_MEMORY_ACCESS(BX_CPU_ID, laddr,
         BX_CPU_THIS_PTR address_xlation.paddress1, len, curr_pl,
         BX_READ, (Bit8u*) data);
-  }
+/*  }
   else {
     // access across 2 pages
     BX_CPU_THIS_PTR address_xlation.paddress1 =
@@ -1650,6 +1650,7 @@ void BX_CPU_C::access_read_linear(bx_address laddr, unsigned len, unsigned curr_
         BX_READ, (Bit8u*) data);
 #endif
   }
+*/  
 }
 
 void BX_CPU_C::access_write_physical(bx_phy_address paddr, unsigned len, void *data)
