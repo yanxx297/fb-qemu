@@ -28,7 +28,6 @@
 // if static member functions on, then there is only one memory
 #define BX_MEM_SMF  static
 #define BX_MEM_THIS BX_MEM(0)->
-typedef __SIZE_TYPE__ uintptr_t;
 
 class BX_CPU_C;
 

@@ -27,11 +27,6 @@
 
 #define BX_MEM_VECTOR_ALIGN 4096
 
-/* STRALIGN returns the number of bytes to add to a pointer to make it
- * point to a (unsigned long)-aligned piece of memory */
-#define STRALIGN(x) ((((uintptr_t)x+sizeof(long)-1)&(-sizeof(long)))-(uintptr_t)x)
-#define UNALIGNED(x,y) (((unsigned long)x & (sizeof (unsigned long)-1)) ^ ((unsigned long)y & (sizeof (unsigned long)-1)))
-
 BX_MEM_C::BX_MEM_C() {
   actual_vector = vector = NULL;
   len    = 0;
@@ -96,30 +91,10 @@ void *memcpy_diet (void *dst, const void *src, size_t n)
 {
     void           *res = dst;
     unsigned char  *c1, *c2;
-    int             tmp;
-    unsigned long  *lx1 = NULL;
-    const unsigned long *lx2 = NULL;
-
-    if ((tmp = STRALIGN(dst))) {
-      c1 = (unsigned char *) dst;
-      c2 = (unsigned char *) src;
-      while (tmp-- && n--)
-	*c1++ = *c2++;
-      if (n == (size_t) - 1)
-	return (res);
-      dst = c1;
-      src = c2;
-    }
-
-    lx1 = (unsigned long *) dst;
-    lx2 = (unsigned long *) src;
-
-    for (; n >= sizeof(unsigned long); n -= sizeof(unsigned long))
-      *lx1++ = *lx2++;
 
     if (n) {
-        c1 = (unsigned char *) (lx1?lx1:dst);
-        c2 = (unsigned char *) (lx1?lx2:src);
+        c1 = (unsigned char *) dst;
+        c2 = (unsigned char *) src;
         while (n--)
             *c1++ = *c2++;
     }
