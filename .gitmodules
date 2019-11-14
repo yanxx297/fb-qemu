@@ -3,4 +3,4 @@
 	url = https://github.com/yanxx297/qemu-1.5.3
 [submodule "fuzzball"]
 	path = fuzzball
-	url = https://github.com/yanxx297/fb-qemu-fuzzball
+	url = https://github.com/yanxx297/fuzzball
